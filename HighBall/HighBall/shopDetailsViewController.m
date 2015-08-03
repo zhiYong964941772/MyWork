@@ -8,15 +8,20 @@
 
 #import "shopDetailsViewController.h"
 #import "shopDetailsTableViewCell.h"
+#import "UIButton+button.h"
+#import "UIView+Extension.h"
 @interface shopDetailsViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
-@property (weak, nonatomic) IBOutlet UIView *shopView;
+@property (strong, nonatomic) IBOutlet UIView *shopView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *scrollFootView;
 @property (weak, nonatomic) IBOutlet UILabel *shoeName;
 @property (weak, nonatomic) IBOutlet UILabel *feature;
 @property (weak, nonatomic) IBOutlet UILabel *money;
 @property (weak, nonatomic) IBOutlet UILabel *rank;
 @property (weak, nonatomic) IBOutlet UILabel *judge;
 @property (weak, nonatomic) IBOutlet UITableView *judgeView;
+@property (weak, nonatomic) IBOutlet UIView *tarBarView;
+
 @property (strong,nonatomic) NSArray *allImage;
 @property (strong,nonatomic) UIPageControl *pageControl;
 @end
@@ -30,7 +35,45 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"商品详情";
     [self scrollViewWithrealize];
+    self.judgeView.tableHeaderView = self.scrollFootView;
+    [self Button];
+    }
+//自定义控健
+- (void)Button{
+    self.tarBarView.backgroundColor = [UIColor grayColor];
+    CGRect frame = [[UIScreen mainScreen]bounds];
+       UIButton *lovebtn = [UIButton buttonWithTitle:@"关注" Image:[UIImage imageNamed:@"iconfont-guanzhu.png"] HighlightedImage:[UIImage imageNamed:@"iconfont-guanzhu.png"] NormalColor:[UIColor whiteColor] selectedColor:[UIColor grayColor] Action:@selector(guanzhu) Target:self];
+    UIButton *shopbtn = [UIButton buttonWithTitle:@"购物车" Image:[UIImage imageNamed:@"gouwuche.png"] HighlightedImage:[UIImage imageNamed:@"gouwuche.png"] NormalColor:[UIColor whiteColor] selectedColor:[UIColor grayColor] Action:@selector(gouwuche) Target:self];
+    UIButton *pullShop = [UIButton buttonWithTitle:@"加入购物车" Image:nil HighlightedImage:nil NormalColor:[UIColor whiteColor] selectedColor:[UIColor grayColor] Action:@selector(jiaru) Target:self];
+    lovebtn.x = 0;
+    lovebtn.y = 0;
+    shopbtn.x = 80;
+    shopbtn.y = 0;
+    pullShop.x = 200;
+    pullShop.y = 0;
+    lovebtn.width = 100;
+    lovebtn.height = 50;
+    shopbtn.width = 100;
+    shopbtn.height = 50;
+    pullShop.width = 120;
+    pullShop.height = 50;
+    [self.tarBarView addSubview:lovebtn];
+    [self.tarBarView addSubview:shopbtn];
+    [self.tarBarView addSubview:pullShop];
+    
+
+    
+}
+- (void)guanzhu{
+    NSLog(@"已经关注了这件商品");
+}
+- (void)gouwuche{
+    NSLog(@"购物车");
+}
+- (void)jiaru{
+    NSLog(@"加入购物车");
 }
 - (void)scrollViewWithrealize{
     CGRect frame = [[UIScreen mainScreen]bounds];
@@ -53,7 +96,7 @@
     pageControl.pageIndicatorTintColor = [UIColor blackColor];
     pageControl.currentPageIndicatorTintColor = [UIColor redColor];
     pageControl.userInteractionEnabled = NO;
-    [self.scrollView addSubview:pageControl];
+    [self.scrollFootView addSubview:pageControl];
     
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -66,7 +109,7 @@
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return 5;
     
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -80,7 +123,10 @@
     return self.shopView;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return 73;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 135;
 }
 //鞋子的简介
 - (IBAction)pingpai:(UIButton *)sender {
@@ -94,5 +140,7 @@
 - (IBAction)pingjia:(UIButton *)sender {
     NSLog(@"你想说什么");
 }
+//关注实现按钮
+
 
 @end

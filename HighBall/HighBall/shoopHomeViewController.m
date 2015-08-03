@@ -77,7 +77,10 @@
     CGPoint p = scrollView.contentOffset;//获取视图偏移的原点位置坐标
     NSUInteger index = p.x/self.shoopScrollView.frame.size.width;
     self.pageControl.currentPage = index;//设置小圆点的位置
-    
+    [UIView animateWithDuration:1.0f animations:^{
+        
+        
+    }];
     
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -104,6 +107,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     shopDetailsViewController *shop = [[shopDetailsViewController alloc]initWithNibName:@"shopDetailsViewController" bundle:nil];
+    shop.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:shop animated:YES];
     
 }

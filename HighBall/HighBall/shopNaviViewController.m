@@ -38,12 +38,7 @@
     image = [self scaleToSize:image size:imageSize];
     
     [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
-    
-    
-   
-        
-        
-        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back) Image:@"navigationbar_back" HightImage:@"navigationbar_back_highlighted"];
+           viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back) Image:@"navigationbar_back" HightImage:@"navigationbar_back_highlighted"];
         
 //        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back2) Image:@"navigationbar_more" HightImage:@"navigationbar_more_highlighted"];
     
@@ -58,7 +53,11 @@
 }
 
 - (void)back{
-    [self dismissViewControllerAnimated:NO completion:nil];
+    if (self.viewControllers.count>1) {
+        [self popViewControllerAnimated:YES];
+    }
+    else{
+        [self dismissViewControllerAnimated:NO completion:nil];}
 }
 //- (void)back2{
 //    [self popToRootViewControllerAnimated:YES];

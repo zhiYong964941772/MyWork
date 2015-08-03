@@ -114,6 +114,9 @@
 		887903501B4A61020047C38B /* chuxuka.png in Resources */ = {isa = PBXBuildFile; fileRef = 8879034C1B4A61020047C38B /* chuxuka.png */; };
 		887903511B4A61020047C38B /* weixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8879034D1B4A61020047C38B /* weixin.png */; };
 		887903521B4A61020047C38B /* xinyongka.png in Resources */ = {isa = PBXBuildFile; fileRef = 8879034E1B4A61020047C38B /* xinyongka.png */; };
+		88825AA61B6F39A1004DA252 /* iconfont-guanzhu.png in Resources */ = {isa = PBXBuildFile; fileRef = 88825AA51B6F39A0004DA252 /* iconfont-guanzhu.png */; };
+		88825AA81B6F3B40004DA252 /* gouwuche.png in Resources */ = {isa = PBXBuildFile; fileRef = 88825AA71B6F3B40004DA252 /* gouwuche.png */; };
+		88825AAB1B6F4375004DA252 /* UIButton+button.m in Sources */ = {isa = PBXBuildFile; fileRef = 88825AAA1B6F4375004DA252 /* UIButton+button.m */; };
 		88970CB11B1EA03500CC15C7 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 88970CAF1B1EA03500CC15C7 /* map.png */; };
 		88970CB21B1EA03500CC15C7 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88970CB01B1EA03500CC15C7 /* phone.png */; };
 		88A695451AEB2AE60020F51F /* mapImag.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A6952E1AEB2AE60020F51F /* mapImag.png */; };
@@ -422,6 +425,10 @@
 		8879034C1B4A61020047C38B /* chuxuka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chuxuka.png; sourceTree = "<group>"; };
 		8879034D1B4A61020047C38B /* weixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weixin.png; sourceTree = "<group>"; };
 		8879034E1B4A61020047C38B /* xinyongka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xinyongka.png; sourceTree = "<group>"; };
+		88825AA51B6F39A0004DA252 /* iconfont-guanzhu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-guanzhu.png"; sourceTree = "<group>"; };
+		88825AA71B6F3B40004DA252 /* gouwuche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gouwuche.png; sourceTree = "<group>"; };
+		88825AA91B6F4375004DA252 /* UIButton+button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+button.h"; sourceTree = "<group>"; };
+		88825AAA1B6F4375004DA252 /* UIButton+button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+button.m"; sourceTree = "<group>"; };
 		88970CAF1B1EA03500CC15C7 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		88970CB01B1EA03500CC15C7 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
 		88A6952E1AEB2AE60020F51F /* mapImag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapImag.png; sourceTree = "<group>"; };
@@ -780,6 +787,8 @@
 				880E23711B6732E1006728E3 /* AirFight.m */,
 				884A095A1B69F4DB004287CD /* UIBarButtonItem+BarButton.h */,
 				884A095B1B69F4DB004287CD /* UIBarButtonItem+BarButton.m */,
+				88825AA91B6F4375004DA252 /* UIButton+button.h */,
+				88825AAA1B6F4375004DA252 /* UIButton+button.m */,
 			);
 			name = "底层数据";
 			sourceTree = "<group>";
@@ -992,6 +1001,7 @@
 		884A095D1B6A0F4C004287CD /* 商城 */ = {
 			isa = PBXGroup;
 			children = (
+				88825AA51B6F39A0004DA252 /* iconfont-guanzhu.png */,
 				884A096B1B6A1B2E004287CD /* hallball02.jpg */,
 				884A096C1B6A1B2E004287CD /* hallball01.jpg */,
 				884A096D1B6A1B2E004287CD /* hallball03.jpg */,
@@ -1005,6 +1015,7 @@
 				884076FB1B6CBE9400418E9D /* iconfont-iconstar.png */,
 				884076FD1B6CC5FE00418E9D /* iconfont-tubiaojinru36 (1).png */,
 				884076FF1B6CC60E00418E9D /* iconfont-jinru (1).png */,
+				88825AA71B6F3B40004DA252 /* gouwuche.png */,
 			);
 			name = "商城";
 			sourceTree = "<group>";
@@ -1607,6 +1618,7 @@
 				881F0E3C1B4E672D002E0C9C /* zhixiang.png in Resources */,
 				88711D731B6B6E7100A05BA1 /* iconfont-shouyeshouye_selected.png in Resources */,
 				887903401B4A28FA0047C38B /* FillViewController.xib in Resources */,
+				88825AA61B6F39A1004DA252 /* iconfont-guanzhu.png in Resources */,
 				880EDDF81B1E9A8B00B5FC25 /* light_rain.png in Resources */,
 				88B94C4D1B4635E10099CA24 /* OrderTableViewController.xib in Resources */,
 				880E23771B675352006728E3 /* alternative.plist in Resources */,
@@ -1694,6 +1706,7 @@
 				88A6954C1AEB2AE60020F51F /* Home10.png in Resources */,
 				88B94C791B4636190099CA24 /* BallSpellNameTableViewController.xib in Resources */,
 				88BD8C821B4D09180025F011 /* OrderDetailsViewController.xib in Resources */,
+				88825AA81B6F3B40004DA252 /* gouwuche.png in Resources */,
 				88B94C5C1B4635F80099CA24 /* BallSpellDetailsViewController.xib in Resources */,
 				880EDDF71B1E9A8B00B5FC25 /* fog.png in Resources */,
 				88FEEF631B1C0FB7009997EF /* daohang.png in Resources */,
@@ -1782,6 +1795,7 @@
 				88B94C611B4635F80099CA24 /* WeatherViewController.m in Sources */,
 				88B94C2B1B4634830099CA24 /* Citie.m in Sources */,
 				88B94C9B1B4636DB0099CA24 /* CalendarMonthCollectionViewLayout.m in Sources */,
+				88825AAB1B6F4375004DA252 /* UIButton+button.m in Sources */,
 				88A695AE1AEB6DA30020F51F /* AFSecurityPolicy.m in Sources */,
 				88AF48731B57BA98001AEC7C /* AirFlightViewController.m in Sources */,
 				88BD8CA11B4D09970025F011 /* PubDailTableViewController.m in Sources */,
