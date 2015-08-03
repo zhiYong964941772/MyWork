@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F9H-Rw-zpK">
+                        <rect key="frame" x="10" y="5" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Wvx-0p-n3s"/>
+                            <constraint firstAttribute="height" constant="70" id="aan-9E-M7v"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="山丘/7138码/18洞" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llq-dM-6ca">
+                        <rect key="frame" x="95" y="32" width="119" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="389-ma-Ylr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="球道布局合理，运作流畅" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7J-lN-ujH">
+                        <rect key="frame" x="95" y="56" width="127" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Kn4-sS-38n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 380" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhC-JZ-R73">
+                        <rect key="frame" x="232" y="25" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="3sU-pD-Tim"/>
+                            <constraint firstAttribute="height" constant="20" id="l1w-Ow-YeU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="1" green="0.41382853829999999" blue="0.063451807710000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最高返 20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA9-O8-7Jh">
+                        <rect key="frame" x="232" y="48" width="80" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="eiN-5l-Hcu"/>
+                            <constraint firstAttribute="width" constant="80" id="rHh-9c-3to"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.52689208679999999" blue="0.15806978420000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="清远碧桂园假日半岛高尔夫球" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTt-Ci-Svt">
+                        <rect key="frame" x="95" y="5" width="157" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="pNN-a3-uf9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F9H-Rw-zpK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="7y9-O4-LQM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kTt-Ci-Svt" secondAttribute="trailing" constant="60" id="AaR-Pf-PEF"/>
+                    <constraint firstItem="eA9-O8-7Jh" firstAttribute="top" secondItem="fhC-JZ-R73" secondAttribute="bottom" constant="3" id="FSY-5N-rud"/>
+                    <constraint firstItem="fhC-JZ-R73" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="GVY-Ik-ipt"/>
+                    <constraint firstItem="llq-dM-6ca" firstAttribute="leading" secondItem="F9H-Rw-zpK" secondAttribute="trailing" constant="15" id="KSU-5O-aHF"/>
+                    <constraint firstItem="fhC-JZ-R73" firstAttribute="leading" secondItem="llq-dM-6ca" secondAttribute="trailing" constant="18" id="NdM-1G-gsl"/>
+                    <constraint firstAttribute="bottom" secondItem="F9H-Rw-zpK" secondAttribute="bottom" constant="4" id="Xhx-QA-1Fd"/>
+                    <constraint firstItem="kTt-Ci-Svt" firstAttribute="leading" secondItem="F9H-Rw-zpK" secondAttribute="trailing" constant="15" id="XwC-Ll-iCp"/>
+                    <constraint firstItem="eA9-O8-7Jh" firstAttribute="leading" secondItem="z7J-lN-ujH" secondAttribute="trailing" constant="10" id="YaK-RH-qLm"/>
+                    <constraint firstItem="eA9-O8-7Jh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="blj-6N-HEg"/>
+                    <constraint firstItem="F9H-Rw-zpK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="d2w-l3-oHU"/>
+                    <constraint firstItem="llq-dM-6ca" firstAttribute="top" secondItem="kTt-Ci-Svt" secondAttribute="bottom" constant="7" id="fNj-d3-ZwI"/>
+                    <constraint firstItem="z7J-lN-ujH" firstAttribute="leading" secondItem="F9H-Rw-zpK" secondAttribute="trailing" constant="15" id="lRx-Vy-8wc"/>
+                    <constraint firstItem="z7J-lN-ujH" firstAttribute="top" secondItem="llq-dM-6ca" secondAttribute="bottom" constant="9" id="m4Z-R7-lCD"/>
+                    <constraint firstItem="kTt-Ci-Svt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="osd-e5-Ypf"/>
+                    <constraint firstAttribute="bottom" secondItem="z7J-lN-ujH" secondAttribute="bottom" constant="8" id="tHV-0t-2yT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eA9-O8-7Jh" secondAttribute="bottom" constant="8" id="xHV-Fw-Wrl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLable" destination="llq-dM-6ca" id="WP1-0y-tK9"/>
+                <outlet property="headImageView" destination="F9H-Rw-zpK" id="F1h-4b-SoS"/>
+                <outlet property="highReturen" destination="eA9-O8-7Jh" id="Bkp-gB-YZO"/>
+                <outlet property="judgeLable" destination="z7J-lN-ujH" id="Yle-zI-o19"/>
+                <outlet property="moneyLable" destination="fhC-JZ-R73" id="HgG-sh-o5u"/>
+                <outlet property="nickLable" destination="kTt-Ci-Svt" id="PE2-hO-F2D"/>
+            </connections>
+            <point key="canvasLocation" x="142" y="320"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
