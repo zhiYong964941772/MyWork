@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIView *shoopHotView;
 @property (strong, nonatomic) UIPageControl *pageControl;
 @property (strong,nonatomic) NSArray *array;
+@property (strong,nonatomic) NSTimer *timer;
+@property (assign,nonatomic) NSInteger currentTime;
 @end
 
 @implementation shoopHomeViewController
@@ -33,9 +35,51 @@
     searchBar.width = 200;
     searchBar.height = 30;
     self.navigationItem.titleView = searchBar;
+    
+         [self addTimer];
    
-    [self scrollView];
+    
+    
+    
    }
+- (void)addTimer{
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:4.0f target:self selector:@selector(scrollViewImage:) userInfo:nil repeats:YES];
+    
+        [self scrollView];
+    
+   
+    
+
+}
+- (void)scrollViewImage:(NSTimer *)timer{
+    [UIView animateWithDuration:1.0f animations:^{
+        self.shoopScrollView.contentOffset = CGPointMake(self.shoopScrollView.frame.size.width*self.currentTime, 0);
+        
+    } completion:^(BOOL finished) {
+        [self scrollViewDidEndDecelerating:self.shoopScrollView];
+    }];
+    
+    
+}
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    CGPoint p = scrollView.contentOffset;//获取视图偏移的原点位置坐标
+    NSUInteger index = p.x/self.shoopScrollView.frame.size.width;
+    self.pageControl.currentPage = index;//设置小圆点的位置
+    self.currentTime ++;
+    if (self.currentTime >self.array.count-1) {
+        [self deleteTimer];
+        
+        [self.shoopScrollView setContentOffset:CGPointMake(0, 0) animated:NO];
+        [self addTimer];
+    }
+}
+- (void)deleteTimer{
+    [self.timer invalidate];
+    self.timer = nil;
+    self.currentTime = 0;
+
+}
+
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
    
@@ -73,16 +117,6 @@
     
  }
 // 视图滚动后调用的方法
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    CGPoint p = scrollView.contentOffset;//获取视图偏移的原点位置坐标
-    NSUInteger index = p.x/self.shoopScrollView.frame.size.width;
-    self.pageControl.currentPage = index;//设置小圆点的位置
-    [UIView animateWithDuration:1.0f animations:^{
-        
-        
-    }];
-    
-}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }

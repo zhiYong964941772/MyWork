@@ -10,6 +10,9 @@
 #import "shopDetailsTableViewCell.h"
 #import "UIButton+button.h"
 #import "UIView+Extension.h"
+#import "longShopViewController.h"
+#import "judgeTableViewController.h"
+#import "shopJudgeViewController.h"
 @interface shopDetailsViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIView *shopView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -21,7 +24,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *judge;
 @property (weak, nonatomic) IBOutlet UITableView *judgeView;
 @property (weak, nonatomic) IBOutlet UIView *tarBarView;
-
+@property (assign,nonatomic) NSInteger current;
+@property (nonatomic,strong)NSTimer *timer;
 @property (strong,nonatomic) NSArray *allImage;
 @property (strong,nonatomic) UIPageControl *pageControl;
 @end
@@ -39,7 +43,32 @@
     [self scrollViewWithrealize];
     self.judgeView.tableHeaderView = self.scrollFootView;
     [self Button];
+    [self addTimer];
     }
+- (void)addTimer{
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:4.0f target:self selector:@selector(timerWithAction:) userInfo:nil repeats:YES];
+    
+    
+    
+}
+- (void)timerWithAction:(NSTimer *)timer{
+    
+        [UIView animateWithDuration:1.0f animations:^{
+            self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width*self.current, 0);
+        } completion:^(BOOL finished) {
+            [self scrollViewDidEndDecelerating:self.scrollView];
+        }];
+    
+   
+    
+    
+    
+}
+- (void)deleted{
+    [self.timer invalidate];
+    self.timer = nil;
+    self.current = 0;
+}
 //自定义控健
 - (void)Button{
     self.tarBarView.backgroundColor = [UIColor grayColor];
@@ -100,16 +129,27 @@
     
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    CGPoint p = scrollView.contentOffset;
-    NSUInteger index = p.x/self.scrollView.frame.size.width;
-    self.pageControl.currentPage = index;
- 
-}
+   
+        CGPoint p = scrollView.contentOffset;
+        NSUInteger index = p.x/self.scrollView.frame.size.width;
+        self.pageControl.currentPage = index;
+        self.current++;
+        if (self.current >self.allImage.count-1) {
+            [self deleted];
+            double delayInSeconds = 2.0;
+                            [self.scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
+                [self addTimer];
+           
+           
+        }
+
+    
+   }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 10;
     
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -126,19 +166,23 @@
     return 73;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 135;
+    return 150;
 }
 //鞋子的简介
 - (IBAction)pingpai:(UIButton *)sender {
     NSLog(@"点我了");
-    
+    longShopViewController *longShop = [[longShopViewController alloc]initWithNibName:@"longShopViewController" bundle:nil];
+    [self.navigationController pushViewController:longShop animated:YES];
 }
 //鞋子的尺寸
 - (IBAction)guige:(UIButton *)sender {
-    NSLog(@"点我了");
+    shopJudgeViewController *shopJudge = [[shopJudgeViewController alloc]initWithNibName:@"shopJudgeViewController" bundle:nil];
+    [self presentViewController:shopJudge animated:YES completion:nil];
 }
 - (IBAction)pingjia:(UIButton *)sender {
     NSLog(@"你想说什么");
+    judgeTableViewController *judge = [[judgeTableViewController alloc]initWithNibName:@"judgeTableViewController" bundle:nil];
+    [self.navigationController pushViewController:judge animated:YES];
 }
 //关注实现按钮
 

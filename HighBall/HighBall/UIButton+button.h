@@ -10,4 +10,5 @@
 
 @interface UIButton (button)
 +(UIButton *)buttonWithTitle:(NSString *)title Image:(UIImage *)image HighlightedImage:(UIImage *)highlightedImage NormalColor:(UIColor *)color selectedColor:(UIColor *)selectColor Action:(SEL)action Target:(id)target;
+
 @end
