@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9A55551B724B2B00D42B7E /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9A55541B724B2B00D42B7E /* BaiduMapAPI.framework */; };
+		2B9A55571B724B8100D42B7E /* longShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B9A55561B724B8100D42B7E /* longShopViewController.xib */; };
 		88009E171B47762600CD5BB9 /* mapImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 88009E161B47762600CD5BB9 /* mapImage.png */; };
 		88009E251B47DBB400CD5BB9 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 88009E241B47DBB400CD5BB9 /* contact.png */; };
 		8800C7781AF890830019B478 /* backA.png in Resources */ = {isa = PBXBuildFile; fileRef = 8800C7771AF890830019B478 /* backA.png */; };
@@ -99,7 +101,6 @@
 		886FD4161B6091B500D8E47E /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 886FD4151B6091B500D8E47E /* SearchBar.m */; };
 		886FD4191B6091C200D8E47E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 886FD4181B6091C200D8E47E /* UIView+Extension.m */; };
 		886FD41B1B609ACF00D8E47E /* 目的城市.png in Resources */ = {isa = PBXBuildFile; fileRef = 886FD41A1B609ACF00D8E47E /* 目的城市.png */; };
-		88711D521B6B5C0E00A05BA1 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88711D511B6B5C0E00A05BA1 /* BaiduMapAPI.framework */; };
 		88711D561B6B601D00A05BA1 /* iconfont-gouwuche.png in Resources */ = {isa = PBXBuildFile; fileRef = 88711D531B6B601D00A05BA1 /* iconfont-gouwuche.png */; };
 		88711D571B6B601D00A05BA1 /* iconfont-category (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 88711D541B6B601D00A05BA1 /* iconfont-category (1).png */; };
 		88711D581B6B601D00A05BA1 /* iconfont-shouyeshouye.png in Resources */ = {isa = PBXBuildFile; fileRef = 88711D551B6B601D00A05BA1 /* iconfont-shouyeshouye.png */; };
@@ -118,7 +119,6 @@
 		88825AA81B6F3B40004DA252 /* gouwuche.png in Resources */ = {isa = PBXBuildFile; fileRef = 88825AA71B6F3B40004DA252 /* gouwuche.png */; };
 		88825AAB1B6F4375004DA252 /* UIButton+button.m in Sources */ = {isa = PBXBuildFile; fileRef = 88825AAA1B6F4375004DA252 /* UIButton+button.m */; };
 		88825B001B70A038004DA252 /* longShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88825AFE1B70A038004DA252 /* longShopViewController.m */; };
-		88825B011B70A038004DA252 /* longShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88825AFF1B70A038004DA252 /* longShopViewController.xib */; };
 		88825B051B70A049004DA252 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88825B031B70A049004DA252 /* TableViewCell.m */; };
 		88825B061B70A049004DA252 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88825B041B70A049004DA252 /* TableViewCell.xib */; };
 		88825B0A1B70A0E2004DA252 /* 0abb46c72c730df531d8331830de35ee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88825B071B70A0E2004DA252 /* 0abb46c72c730df531d8331830de35ee.jpg */; };
@@ -308,6 +308,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B9A55541B724B2B00D42B7E /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = ../../Desktop/BaiduMap_IOSSDK_v2.7.0_All/BaiduMap_IOSSDK_v2.7.0_Sample/BaiduMapAPI.framework; sourceTree = "<group>"; };
+		2B9A55561B724B8100D42B7E /* longShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = longShopViewController.xib; sourceTree = "<group>"; };
 		88009E161B47762600CD5BB9 /* mapImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapImage.png; sourceTree = "<group>"; };
 		88009E241B47DBB400CD5BB9 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
 		8800C7771AF890830019B478 /* backA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backA.png; sourceTree = "<group>"; };
@@ -432,7 +434,6 @@
 		886FD4171B6091C200D8E47E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		886FD4181B6091C200D8E47E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		886FD41A1B609ACF00D8E47E /* 目的城市.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "目的城市.png"; sourceTree = "<group>"; };
-		88711D511B6B5C0E00A05BA1 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = ../../Desktop/BaiduMap_IOSSDK_v2.8.0_All/BaiduMap_IOSSDK_v2.8.0_Sample/BaiduMapAPI.framework; sourceTree = "<group>"; };
 		88711D531B6B601D00A05BA1 /* iconfont-gouwuche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-gouwuche.png"; sourceTree = "<group>"; };
 		88711D541B6B601D00A05BA1 /* iconfont-category (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-category (1).png"; sourceTree = "<group>"; };
 		88711D551B6B601D00A05BA1 /* iconfont-shouyeshouye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-shouyeshouye.png"; sourceTree = "<group>"; };
@@ -456,7 +457,6 @@
 		88825AAA1B6F4375004DA252 /* UIButton+button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+button.m"; sourceTree = "<group>"; };
 		88825AFD1B70A038004DA252 /* longShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longShopViewController.h; sourceTree = "<group>"; };
 		88825AFE1B70A038004DA252 /* longShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = longShopViewController.m; sourceTree = "<group>"; };
-		88825AFF1B70A038004DA252 /* longShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = longShopViewController.xib; path = /Users/imac/Lai/HighBall/HighBall/longShopViewController.xib; sourceTree = "<absolute>"; };
 		88825B021B70A049004DA252 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		88825B031B70A049004DA252 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		88825B041B70A049004DA252 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -740,13 +740,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				882B35BD1B0C35C4007810B2 /* libsqlite3.dylib in Frameworks */,
-				88711D521B6B5C0E00A05BA1 /* BaiduMapAPI.framework in Frameworks */,
 				882B35BB1B0C35BD007810B2 /* libsqlite3.0.dylib in Frameworks */,
 				8800C7901AF8A3190019B478 /* OpenGLES.framework in Frameworks */,
 				8800C7941AF8A3190019B478 /* UIKit.framework in Frameworks */,
 				8800C7911AF8A3190019B478 /* QuartzCore.framework in Frameworks */,
 				8800C78E1AF8A3190019B478 /* Security.framework in Frameworks */,
 				8800C7951AF8A3190019B478 /* Foundation.framework in Frameworks */,
+				2B9A55551B724B2B00D42B7E /* BaiduMapAPI.framework in Frameworks */,
 				8800C7921AF8A3190019B478 /* CoreLocation.framework in Frameworks */,
 				8800C78F1AF8A3190019B478 /* MessageUI.framework in Frameworks */,
 				8800C7931AF8A3190019B478 /* SystemConfiguration.framework in Frameworks */,
@@ -889,7 +889,7 @@
 		883CD8811AE7915D00A50F7E = {
 			isa = PBXGroup;
 			children = (
-				88711D511B6B5C0E00A05BA1 /* BaiduMapAPI.framework */,
+				2B9A55541B724B2B00D42B7E /* BaiduMapAPI.framework */,
 				883CD88C1AE7915D00A50F7E /* HighBall */,
 				883CD8A61AE7915D00A50F7E /* HighBallTests */,
 				883CD88B1AE7915D00A50F7E /* Products */,
@@ -1053,7 +1053,7 @@
 				884076F61B6CBC3400418E9D /* shopDetailsTableViewCell.xib */,
 				88825AFD1B70A038004DA252 /* longShopViewController.h */,
 				88825AFE1B70A038004DA252 /* longShopViewController.m */,
-				88825AFF1B70A038004DA252 /* longShopViewController.xib */,
+				2B9A55561B724B8100D42B7E /* longShopViewController.xib */,
 				88825B021B70A049004DA252 /* TableViewCell.h */,
 				88825B031B70A049004DA252 /* TableViewCell.m */,
 				88825B041B70A049004DA252 /* TableViewCell.xib */,
@@ -1777,6 +1777,7 @@
 				881F0E3E1B4E6FFA002E0C9C /* wangfan.png in Resources */,
 				88FA9C921B71A87E008B4F8D /* shopJudgeTableView.xib in Resources */,
 				883F6FA71B4695AD00D53E79 /* jiantou.png in Resources */,
+				2B9A55571B724B8100D42B7E /* longShopViewController.xib in Resources */,
 				884076DF1B6C665C00418E9D /* iconfont-gouwuche_selected.png in Resources */,
 				88BD8D101B4D1F750025F011 /* chack.png in Resources */,
 				88BD8C861B4D09180025F011 /* PayOrderTableViewController.xib in Resources */,
@@ -1789,7 +1790,6 @@
 				88A695591AEB2AE60020F51F /* xianggang.png in Resources */,
 				88FA9C971B71A89D008B4F8D /* showJudgeTableViewCell.xib in Resources */,
 				88FEEF621B1C0FB7009997EF /* xiangqing.png in Resources */,
-				88825B011B70A038004DA252 /* longShopViewController.xib in Resources */,
 				886FD41B1B609ACF00D8E47E /* 目的城市.png in Resources */,
 				88A6954B1AEB2AE60020F51F /* Home1.png in Resources */,
 				88825B0B1B70A0E2004DA252 /* 39cf7f190ffcdbfc0c75501e6e10dc98.jpg in Resources */,
