@@ -13,6 +13,7 @@
 #import "longShopViewController.h"
 #import "judgeTableViewController.h"
 #import "shopJudgeViewController.h"
+#import "shopJudgeTableView.h"
 @interface shopDetailsViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIView *shopView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -102,8 +103,9 @@
     NSLog(@"购物车");
 }
 - (void)jiaru{
-    NSLog(@"加入购物车");
-}
+    shopJudgeTableView *shopJudge = [[shopJudgeTableView alloc]initWithNibName:@"shopJudgeTableView" bundle:nil];
+    [self.navigationController pushViewController:shopJudge animated:YES];
+    }
 - (void)scrollViewWithrealize{
     CGRect frame = [[UIScreen mainScreen]bounds];
     self.scrollView.contentSize = CGSizeMake(frame.size.width*self.allImage.count, self.scrollView.frame.size.height);

@@ -27,7 +27,7 @@
                 <constraint firstItem="jli-Fc-gkP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pWi-DD-R3x"/>
                 <constraint firstItem="jli-Fc-gkP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zHr-hz-CeG"/>
             </constraints>
-            <point key="canvasLocation" x="411" y="191"/>
+            <point key="canvasLocation" x="213" y="199"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

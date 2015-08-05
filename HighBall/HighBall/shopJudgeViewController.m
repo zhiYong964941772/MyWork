@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadViewWithNewView];
+    self.view.backgroundColor = [UIColor clearColor];
 }
 - (void)loadViewWithNewView{
     
