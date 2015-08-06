@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="shopJudgeTableView">
             <connections>
+                <outlet property="cancelView" destination="dsx-2D-csV" id="UqC-sw-hwZ"/>
                 <outlet property="footView" destination="AEt-98-7bG" id="zX2-1K-PId"/>
                 <outlet property="secondfootView" destination="c0d-U5-ekL" id="bAg-Ru-99L"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -195,10 +196,78 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="370" y="270"/>
+            <point key="canvasLocation" x="438" y="382"/>
+        </view>
+        <view contentMode="scaleToFill" id="dsx-2D-csV">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPG-0Q-WWh">
+                    <rect key="frame" x="30" y="116" width="70" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="V5l-bw-D8Y"/>
+                        <constraint firstAttribute="width" constant="70" id="t4h-z1-k6g"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="NOButton:" destination="-1" eventType="touchUpInside" id="qUE-fe-1TL"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0abb46c72c730df531d8331830de35ee.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="g5p-zf-sK4">
+                    <rect key="frame" x="0.0" y="89" width="260" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="P6V-Ck-f8N"/>
+                        <constraint firstAttribute="height" constant="2" id="hi7-Rx-Cek"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY0-a2-4yV">
+                    <rect key="frame" x="160" y="115" width="70" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="OKButton:" destination="-1" eventType="touchUpInside" id="ANK-7g-fqb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您确定要删除商品？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYH-LI-Nvj">
+                    <rect key="frame" x="26" y="25" width="209" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="2gj-D8-ye1"/>
+                        <constraint firstAttribute="width" constant="209" id="6i6-7y-n8n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="g5p-zf-sK4" firstAttribute="leading" secondItem="dsx-2D-csV" secondAttribute="leading" id="4hd-4S-QZe"/>
+                <constraint firstAttribute="bottom" secondItem="iY0-a2-4yV" secondAttribute="bottom" constant="25" id="8bV-g6-cbC"/>
+                <constraint firstItem="g5p-zf-sK4" firstAttribute="top" secondItem="JYH-LI-Nvj" secondAttribute="bottom" constant="15" id="9Jv-Lk-yBy"/>
+                <constraint firstItem="iY0-a2-4yV" firstAttribute="top" secondItem="g5p-zf-sK4" secondAttribute="bottom" constant="24" id="FB0-pp-qjI"/>
+                <constraint firstItem="iY0-a2-4yV" firstAttribute="height" secondItem="zPG-0Q-WWh" secondAttribute="height" id="G7r-l7-1cP"/>
+                <constraint firstAttribute="bottom" secondItem="zPG-0Q-WWh" secondAttribute="bottom" constant="24" id="HkE-pU-zVm"/>
+                <constraint firstAttribute="trailing" secondItem="g5p-zf-sK4" secondAttribute="trailing" id="cTL-3t-x8W"/>
+                <constraint firstAttribute="trailing" secondItem="iY0-a2-4yV" secondAttribute="trailing" constant="30" id="dHE-z3-Oi6"/>
+                <constraint firstItem="JYH-LI-Nvj" firstAttribute="leading" secondItem="dsx-2D-csV" secondAttribute="leading" constant="26" id="fI8-Tl-9n5"/>
+                <constraint firstItem="iY0-a2-4yV" firstAttribute="width" secondItem="zPG-0Q-WWh" secondAttribute="width" id="ffn-Lg-260"/>
+                <constraint firstItem="zPG-0Q-WWh" firstAttribute="leading" secondItem="dsx-2D-csV" secondAttribute="leading" constant="30" id="fqh-9X-Vk2"/>
+                <constraint firstAttribute="trailing" secondItem="JYH-LI-Nvj" secondAttribute="trailing" constant="25" id="hB5-8a-Iy7"/>
+                <constraint firstItem="JYH-LI-Nvj" firstAttribute="top" secondItem="dsx-2D-csV" secondAttribute="top" constant="25" id="siB-u7-0Kn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="438" y="85"/>
         </view>
     </objects>
     <resources>
+        <image name="0abb46c72c730df531d8331830de35ee.jpg" width="400" height="400"/>
         <image name="iconfont-gou.png" width="32" height="32"/>
         <image name="iconfont-yuan.png" width="32" height="32"/>
     </resources>

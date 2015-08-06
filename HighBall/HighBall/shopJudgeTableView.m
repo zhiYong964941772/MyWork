@@ -13,6 +13,7 @@
 @interface shopJudgeTableView ()
 @property (strong, nonatomic) IBOutlet UIView *footView;
 @property (weak, nonatomic) IBOutlet UIView *secondfootView;
+@property (strong, nonatomic) IBOutlet UIView *cancelView;
 
 
 @end
@@ -87,8 +88,24 @@
     return 200;
 }
 - (IBAction)cancelButton:(UIButton *)sender {
+    JKAlertDialog *alert = [[JKAlertDialog alloc]initWithName:nil message:nil color:[UIColor clearColor] andBoolen:NO];
+    alert.shopView = self.cancelView;
+    [alert show];
+    
+    
     
 }
+- (IBAction)OKButton:(UIButton *)sender {
+}
+- (IBAction)NOButton:(UIButton *)sender {
+}
+
+
+
+
+
+
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -23,6 +23,7 @@ typedef void(^JKAlertDialogHandler)(JKAlertDialogItem *item);
 {
     UIView *_coverView;
     UIView *_alertView;
+    UIView *_shop;
     UILabel *_labelTitle;
     UILabel *_labelmessage;
     
@@ -40,10 +41,10 @@ typedef void(^JKAlertDialogHandler)(JKAlertDialogItem *item);
 //将要显示在alert上的自定义view
 @property(strong,nonatomic)UIView *contentView;
 @property(nonatomic,strong)UIColor *color;
-
+@property(nonatomic,strong)UIView *shopView;
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message color:(UIColor *)color andBoolen:(BOOL)boolen;
 
-
+- (instancetype)initWithName:(NSString *)name message:(NSString *)message color:(UIColor *)color andBoolen:(BOOL)boolen;
 - (void)show;
 - (void)dismiss;
 @end

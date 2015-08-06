@@ -29,7 +29,50 @@
     }
     return self;
 }
+- (instancetype)initWithName:(NSString *)name message:(NSString *)message color:(UIColor *)color andBoolen:(BOOL)boolen{
+    
+    self = [super init];
+    if (self) {
+        _items = [[NSMutableArray alloc] init];
+        _title  = name;
+        _message = message;
+        _color=color;
+        _boolen=boolen;
+        [self showViews:boolen];
+    }
+    return self;
+}
+-(void)showViews:(BOOL)boolens{
+    //创建一个隔离的View
+    self.frame = [UIScreen mainScreen].bounds;
+    _coverView = [[UIView alloc]initWithFrame:self.frame];
+    _coverView.backgroundColor = [UIColor blackColor];
+    _coverView.alpha = 0;
+    [self addSubview:_coverView];
+    _shop = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 260, 170)];
+    _shop.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+    _shop.layer.cornerRadius = 5.0;
+    _shop.backgroundColor = _color;
+    [self addSubview:_shop];
+    _labelTitle=[[UILabel alloc]initWithFrame:CGRectMake(10, 10, 240, 30)];
+    _labelTitle.font = [UIFont boldSystemFontOfSize:20];
+    _labelTitle.textColor = [UIColor whiteColor];
+    _labelTitle.textAlignment = NSTextAlignmentCenter;
+    _labelTitle.numberOfLines = 0;
+    _labelTitle.text=_title;
+    _labelTitle.lineBreakMode = NSLineBreakByCharWrapping;
+    [_shop addSubview:_labelTitle];
+    
+    if (boolens==YES) {
+        //关闭按钮
+        UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(210, 10, 40, 30)];
+        [btn setTitle:@"关闭" forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(dissMissAction) forControlEvents:UIControlEventTouchUpInside];
+        [_shop addSubview:btn];
+    }
 
+
+}
 -(void)buildViews:(BOOL)boolen{
     //创建一个隔离的View
     self.frame = [UIScreen mainScreen].bounds;
@@ -70,11 +113,13 @@
 -(void)layoutSubviews{
 
     self.contentView.frame = CGRectMake(0,50,self.contentView.frame.size.width, 250);
+    self.shopView.frame = CGRectMake(0,0,self.shopView.frame.size.width, self.shopView.frame.size.height);
 }
 
 -(void)willMoveToSuperview:(UIView *)newSuperview
 {
     [_alertView addSubview:self.contentView];
+    [_shop addSubview:self.shopView];
 }
 
 -(void)dissMissAction
@@ -116,12 +161,15 @@
                                      [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
                                      [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
     [_alertView.layer addAnimation:popAnimation forKey:nil];
+    [_shop.layer addAnimation:popAnimation forKey:nil];
+
 }
 
 - (void)hideAnimation{
     [UIView animateWithDuration:0.4 animations:^{
         _coverView.alpha = 0.0;
         _alertView.alpha = 0.0;
+        _shop.alpha = 0.0;
         
     } completion:^(BOOL finished) {
          [self removeFromSuperview];
