@@ -91,6 +91,9 @@
                     <state key="normal" title="结算">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="settleButton:" destination="-1" eventType="touchUpInside" id="fCc-8v-AGd"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(1)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4D-Et-O7h">
                     <rect key="frame" x="292" y="15" width="20" height="20"/>

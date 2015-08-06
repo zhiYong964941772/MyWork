@@ -130,6 +130,8 @@
 		88825B241B70C5CC004DA252 /* iconfont-jiahao.png in Resources */ = {isa = PBXBuildFile; fileRef = 88825B221B70C5CC004DA252 /* iconfont-jiahao.png */; };
 		88970CB11B1EA03500CC15C7 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 88970CAF1B1EA03500CC15C7 /* map.png */; };
 		88970CB21B1EA03500CC15C7 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88970CB01B1EA03500CC15C7 /* phone.png */; };
+		88A59CA81B73610D00D5D9D2 /* confirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A59CA61B73610D00D5D9D2 /* confirmViewController.m */; };
+		88A59CA91B73610D00D5D9D2 /* confirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A59CA71B73610D00D5D9D2 /* confirmViewController.xib */; };
 		88A695451AEB2AE60020F51F /* mapImag.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A6952E1AEB2AE60020F51F /* mapImag.png */; };
 		88A6954B1AEB2AE60020F51F /* Home1.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A695351AEB2AE60020F51F /* Home1.png */; };
 		88A6954C1AEB2AE60020F51F /* Home10.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A695361AEB2AE60020F51F /* Home10.png */; };
@@ -466,6 +468,9 @@
 		88825B221B70C5CC004DA252 /* iconfont-jiahao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-jiahao.png"; sourceTree = "<group>"; };
 		88970CAF1B1EA03500CC15C7 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		88970CB01B1EA03500CC15C7 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		88A59CA51B73610D00D5D9D2 /* confirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = confirmViewController.h; sourceTree = "<group>"; };
+		88A59CA61B73610D00D5D9D2 /* confirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = confirmViewController.m; sourceTree = "<group>"; };
+		88A59CA71B73610D00D5D9D2 /* confirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = confirmViewController.xib; sourceTree = "<group>"; };
 		88A6952E1AEB2AE60020F51F /* mapImag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapImag.png; sourceTree = "<group>"; };
 		88A695351AEB2AE60020F51F /* Home1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home1.png; sourceTree = "<group>"; };
 		88A695361AEB2AE60020F51F /* Home10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home10.png; sourceTree = "<group>"; };
@@ -1123,6 +1128,9 @@
 				88FA9C931B71A89D008B4F8D /* showJudgeTableViewCell.h */,
 				88FA9C941B71A89D008B4F8D /* showJudgeTableViewCell.m */,
 				88FA9C951B71A89D008B4F8D /* showJudgeTableViewCell.xib */,
+				88A59CA51B73610D00D5D9D2 /* confirmViewController.h */,
+				88A59CA61B73610D00D5D9D2 /* confirmViewController.m */,
+				88A59CA71B73610D00D5D9D2 /* confirmViewController.xib */,
 			);
 			name = "购物车";
 			sourceTree = "<group>";
@@ -1808,6 +1816,7 @@
 				88B94C371B4634F80099CA24 /* HomeTableViewCell.xib in Resources */,
 				88A6954F1AEB2AE60020F51F /* Home4.png in Resources */,
 				880949151B4F5D890007E788 /* airImage.png in Resources */,
+				88A59CA91B73610D00D5D9D2 /* confirmViewController.xib in Resources */,
 				883CD89B1AE7915D00A50F7E /* Images.xcassets in Resources */,
 				883F6F921B467A5500D53E79 /* pubimage.png in Resources */,
 				88B94C7B1B4636190099CA24 /* BallSpellScheduleViewController.xib in Resources */,
@@ -1868,6 +1877,7 @@
 				884076DD1B6C60C900418E9D /* shopNaviViewController.m in Sources */,
 				88B94C381B4634F80099CA24 /* HomeViewController.m in Sources */,
 				88B94C971B4636DB0099CA24 /* CalendarDayCell.m in Sources */,
+				88A59CA81B73610D00D5D9D2 /* confirmViewController.m in Sources */,
 				88BD8CAE1B4D09C90025F011 /* PubsTableViewController.m in Sources */,
 				88BD8CA51B4D09970025F011 /* PubMapViewController.m in Sources */,
 				882304CC1B687E6400CE063F /* BallNavigationController.m in Sources */,

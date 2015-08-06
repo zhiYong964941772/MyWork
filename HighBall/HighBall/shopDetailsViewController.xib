@@ -70,13 +70,13 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xvV-eG-XLb">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0abb46c72c730df531d8331830de35ee.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xvV-eG-XLb">
                     <rect key="frame" x="0.0" y="68" width="320" height="1"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="8Tx-Zh-v45"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NFw-L0-9xY">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0abb46c72c730df531d8331830de35ee.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NFw-L0-9xY">
                     <rect key="frame" x="0.0" y="107" width="320" height="1"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="eL7-62-Q0P"/>
@@ -219,6 +219,7 @@
         </view>
     </objects>
     <resources>
+        <image name="0abb46c72c730df531d8331830de35ee.jpg" width="400" height="400"/>
         <image name="iconfont-jinru (1).png" width="32" height="32"/>
         <image name="iconfont-tubiaojinru36 (1).png" width="32" height="32"/>
     </resources>

@@ -8,6 +8,7 @@
 
 #import "shoopHomeTableCell.h"
 @interface shoopHomeTableCell()
+//商品的各种属性
 @property (weak, nonatomic) IBOutlet UIImageView *shoopImageView;
 @property (weak, nonatomic) IBOutlet UILabel *shoopEnglishName;
 @property (weak, nonatomic) IBOutlet UILabel *shoopChinaName;

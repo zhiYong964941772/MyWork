@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *shoopScrollView;
 @property (weak, nonatomic) IBOutlet UIView *shoopHotView;
 @property (strong, nonatomic) UIPageControl *pageControl;
-@property (strong,nonatomic) NSArray *array;
+@property (strong,nonatomic) NSArray *array;//假数据
 @property (strong,nonatomic) NSTimer *timer;
 @property (assign,nonatomic) NSInteger currentTime;
 @end
@@ -30,20 +30,20 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+//添加搜索框
     SearchBar *searchBar = [SearchBar searchBar];
     searchBar.width = 200;
     searchBar.height = 30;
     self.navigationItem.titleView = searchBar;
     
-         [self addTimer];
+         [self addTimer];//添加定时循环事件
    
     
     
     
    }
 - (void)addTimer{
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:4.0f target:self selector:@selector(scrollViewImage:) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:4.0f target:self selector:@selector(scrollViewImage:) userInfo:nil repeats:YES];//初始化一个循环
     
         [self scrollView];
     
@@ -51,6 +51,7 @@
     
 
 }
+//添加动画
 - (void)scrollViewImage:(NSTimer *)timer{
     [UIView animateWithDuration:1.0f animations:^{
         self.shoopScrollView.contentOffset = CGPointMake(self.shoopScrollView.frame.size.width*self.currentTime, 0);
@@ -73,6 +74,7 @@
         [self addTimer];
     }
 }
+//删除循环
 - (void)deleteTimer{
     [self.timer invalidate];
     self.timer = nil;
@@ -133,12 +135,14 @@
     
     return cell;
 }
+//设置栏目视图
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     return self.shoopHotView;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 120;
 }
+//点击事件
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     shopDetailsViewController *shop = [[shopDetailsViewController alloc]initWithNibName:@"shopDetailsViewController" bundle:nil];
     shop.hidesBottomBarWhenPushed = YES;

@@ -10,13 +10,13 @@
 #import "showJudgeTableViewCell.h"
 #import "UIView+Extension.h"
 #import "JKAlertDialog.h"
-
+#import "confirmViewController.h"
 @interface shopJudgeTableView ()
-@property (strong, nonatomic) IBOutlet UIView *footView;
+@property (strong, nonatomic) IBOutlet UIView *footView;//结算删除视图
 @property (weak, nonatomic) IBOutlet UIView *secondfootView;
-@property (strong, nonatomic) IBOutlet UIView *cancelView;
-@property (strong, nonatomic) JKAlertDialog *alert;
-@property (strong,nonatomic) UIButton *btn;
+@property (strong, nonatomic) IBOutlet UIView *cancelView;//小窗
+@property (strong, nonatomic) JKAlertDialog *alert;//弹小窗
+@property (strong,nonatomic) UIButton *btn;//编辑按钮
 @property (strong,nonatomic) UIView *NoView;
 @end
 
@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.footView.hidden = YES;
+    self.footView.hidden = YES;//隐藏视图
     [self footWithView];
    self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
    self.btn.frame = CGRectMake(0, 0, 50, 50);
@@ -79,9 +79,11 @@
     
     return cell;
 }
+//打勾
 - (IBAction)gouButton:(UIButton *)sender {
     sender.selected = !sender.selected;
     NSNumber *number = [NSNumber numberWithBool:sender.selected];
+    //通知选择事件
     [[NSNotificationCenter defaultCenter]postNotificationName:@"gouButton" object:nil userInfo:@{@"selectde":number}];
 
     
@@ -110,21 +112,25 @@
     self.secondfootView.hidden = YES;
     UIView *fool = [[UIView alloc]initWithFrame:[[UIScreen mainScreen]bounds ]];
     fool.backgroundColor = [UIColor whiteColor];
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(fool.frame.size.width/2, fool.frame.size.height/2, 280, 320)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(50,50, 280, 320)];
     label.numberOfLines = 0;
     label.text = @"您的购物车是空的";
     label.font = [UIFont systemFontOfSize:25];
     self.NoView = fool;
-    [fool addSubview:label];
+    [self.NoView addSubview:label];
     
     
-    [self.tableView addSubview:fool];
+    [self.tableView addSubview:self.NoView];
     
 }
 - (IBAction)NOButton:(UIButton *)sender {
     self.alert.hidden = YES;
     [self.btn setTitle:@"编辑" forState:UIControlStateNormal];
     self.secondfootView.hidden = YES;
+}
+- (IBAction)settleButton:(UIButton *)sender {
+    confirmViewController *confirm = [[confirmViewController alloc]initWithNibName:@"confirmViewController" bundle:nil];
+    [self.navigationController pushViewController:confirm animated:YES];
 }
 
 
