@@ -9,8 +9,10 @@
 #import "shopJudgeTableView.h"
 #import "showJudgeTableViewCell.h"
 #import "UIView+Extension.h"
+#import "JKAlertDialog.h"
 @interface shopJudgeTableView ()
 @property (strong, nonatomic) IBOutlet UIView *footView;
+@property (weak, nonatomic) IBOutlet UIView *secondfootView;
 
 
 @end
@@ -20,11 +22,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self footWithView];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 50, 50);
+    [btn setTitle:@"编辑" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btn:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *bar = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    self.navigationItem.rightBarButtonItem = bar;
+   }
+- (void)btn:(UIButton *)button{
+    [UIView animateWithDuration:1.0f animations:^{
+        self.secondfootView.hidden = !self.secondfootView.hidden;
+        [button setTitle:@"完成" forState:UIControlStateNormal];
+        if (self.secondfootView.hidden) {
+            [button setTitle:@"编辑" forState:UIControlStateNormal];
+    
+    }
+    }];
     
 }
 - (void)footWithView{
     self.footView.backgroundColor = [UIColor colorWithRed:2/255.0 green:2/255.0 blue:2/255.0 alpha:0.9];
     self.title = @"购物车";
+    self.secondfootView.hidden = YES;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -64,8 +83,11 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 50;
 }
-- (CGFloat)tableView:(nonnull UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+- (CGFloat)tableView:( UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 200;
+}
+- (IBAction)cancelButton:(UIButton *)sender {
+    
 }
 /*
 // Override to support conditional editing of the table view.

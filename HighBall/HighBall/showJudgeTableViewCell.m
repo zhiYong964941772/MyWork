@@ -37,9 +37,16 @@
        }
 - (IBAction)jiaButton:(UIButton *)sender {
     self.count++;
+    self.sumLabel.text = [NSString stringWithFormat:@"%ld",(long)self.count];
     
 }
 - (IBAction)jianButton:(UIButton *)sender {
-    self.count--;
+    if (self.count>1) {
+        self.count--;
+        
+        self.sumLabel.text = [NSString stringWithFormat:@"%ld",(long)self.count];
+        
+    }
+    
     }
 @end

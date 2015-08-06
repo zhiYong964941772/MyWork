@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B9A55551B724B2B00D42B7E /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9A55541B724B2B00D42B7E /* BaiduMapAPI.framework */; };
 		2B9A55571B724B8100D42B7E /* longShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B9A55561B724B8100D42B7E /* longShopViewController.xib */; };
 		88009E171B47762600CD5BB9 /* mapImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 88009E161B47762600CD5BB9 /* mapImage.png */; };
 		88009E251B47DBB400CD5BB9 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 88009E241B47DBB400CD5BB9 /* contact.png */; };
@@ -98,6 +97,7 @@
 		884A09701B6A1B2E004287CD /* hallball01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 884A096C1B6A1B2E004287CD /* hallball01.jpg */; };
 		884A09711B6A1B2E004287CD /* hallball03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 884A096D1B6A1B2E004287CD /* hallball03.jpg */; };
 		884A09721B6A1B2E004287CD /* hallball04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 884A096E1B6A1B2E004287CD /* hallball04.jpg */; };
+		884E01521B73292A008E242F /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884E01511B73292A008E242F /* BaiduMapAPI.framework */; };
 		886FD4161B6091B500D8E47E /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 886FD4151B6091B500D8E47E /* SearchBar.m */; };
 		886FD4191B6091C200D8E47E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 886FD4181B6091C200D8E47E /* UIView+Extension.m */; };
 		886FD41B1B609ACF00D8E47E /* 目的城市.png in Resources */ = {isa = PBXBuildFile; fileRef = 886FD41A1B609ACF00D8E47E /* 目的城市.png */; };
@@ -308,7 +308,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B9A55541B724B2B00D42B7E /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = ../../Desktop/BaiduMap_IOSSDK_v2.7.0_All/BaiduMap_IOSSDK_v2.7.0_Sample/BaiduMapAPI.framework; sourceTree = "<group>"; };
 		2B9A55561B724B8100D42B7E /* longShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = longShopViewController.xib; sourceTree = "<group>"; };
 		88009E161B47762600CD5BB9 /* mapImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapImage.png; sourceTree = "<group>"; };
 		88009E241B47DBB400CD5BB9 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
@@ -429,6 +428,7 @@
 		884A096C1B6A1B2E004287CD /* hallball01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hallball01.jpg; sourceTree = "<group>"; };
 		884A096D1B6A1B2E004287CD /* hallball03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hallball03.jpg; sourceTree = "<group>"; };
 		884A096E1B6A1B2E004287CD /* hallball04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hallball04.jpg; sourceTree = "<group>"; };
+		884E01511B73292A008E242F /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = ../../Desktop/BaiduMap_IOSSDK_v2.8.0_All/BaiduMap_IOSSDK_v2.8.0_Sample/BaiduMapAPI.framework; sourceTree = "<group>"; };
 		886FD4141B6091B500D8E47E /* SearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
 		886FD4151B6091B500D8E47E /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
 		886FD4171B6091C200D8E47E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -741,12 +741,12 @@
 			files = (
 				882B35BD1B0C35C4007810B2 /* libsqlite3.dylib in Frameworks */,
 				882B35BB1B0C35BD007810B2 /* libsqlite3.0.dylib in Frameworks */,
+				884E01521B73292A008E242F /* BaiduMapAPI.framework in Frameworks */,
 				8800C7901AF8A3190019B478 /* OpenGLES.framework in Frameworks */,
 				8800C7941AF8A3190019B478 /* UIKit.framework in Frameworks */,
 				8800C7911AF8A3190019B478 /* QuartzCore.framework in Frameworks */,
 				8800C78E1AF8A3190019B478 /* Security.framework in Frameworks */,
 				8800C7951AF8A3190019B478 /* Foundation.framework in Frameworks */,
-				2B9A55551B724B2B00D42B7E /* BaiduMapAPI.framework in Frameworks */,
 				8800C7921AF8A3190019B478 /* CoreLocation.framework in Frameworks */,
 				8800C78F1AF8A3190019B478 /* MessageUI.framework in Frameworks */,
 				8800C7931AF8A3190019B478 /* SystemConfiguration.framework in Frameworks */,
@@ -889,7 +889,7 @@
 		883CD8811AE7915D00A50F7E = {
 			isa = PBXGroup;
 			children = (
-				2B9A55541B724B2B00D42B7E /* BaiduMapAPI.framework */,
+				884E01511B73292A008E242F /* BaiduMapAPI.framework */,
 				883CD88C1AE7915D00A50F7E /* HighBall */,
 				883CD8A61AE7915D00A50F7E /* HighBallTests */,
 				883CD88B1AE7915D00A50F7E /* Products */,
