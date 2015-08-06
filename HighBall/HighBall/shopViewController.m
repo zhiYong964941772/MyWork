@@ -9,8 +9,8 @@
 #import "shopViewController.h"
 #import "shoopHomeViewController.h"
 #import "shopNaviViewController.h"
-#import "shopTableViewController.h"
 #import "shopSearchViewController.h"
+#import "shopJudgeTableView.h"
 @interface shopViewController ()
 
 @end
@@ -24,7 +24,7 @@
     [self tarBarWithController:vc Title:@"商城首页" Image:@"iconfont-shouyeshouye.png" SelectedImage:@"iconfont-shouyeshouye_selected"];
     shopSearchViewController *searchVc = [[shopSearchViewController alloc]initWithNibName:@"shopSearchViewController" bundle:nil];
     [self tarBarWithController:searchVc Title:@"分类" Image:@"iconfont-category (1).png" SelectedImage:@"iconfont-category (1)_search.png"];
-    shopTableViewController *shop = [[shopTableViewController alloc]initWithNibName:@"shopTableViewController" bundle:nil];
+    shopJudgeTableView *shop = [[shopJudgeTableView alloc]initWithNibName:@"shopJudgeTableView" bundle:nil];
     [self tarBarWithController:shop Title:@"购物车" Image:@"iconfont-gouwuche.png" SelectedImage:@"iconfont-gouwuche_selected.png"];
     
 }

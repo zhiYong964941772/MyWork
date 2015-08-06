@@ -10,27 +10,35 @@
 #import "showJudgeTableViewCell.h"
 #import "UIView+Extension.h"
 #import "JKAlertDialog.h"
+
 @interface shopJudgeTableView ()
 @property (strong, nonatomic) IBOutlet UIView *footView;
 @property (weak, nonatomic) IBOutlet UIView *secondfootView;
 @property (strong, nonatomic) IBOutlet UIView *cancelView;
-
-
+@property (strong, nonatomic) JKAlertDialog *alert;
+@property (strong,nonatomic) UIButton *btn;
+@property (strong,nonatomic) UIView *NoView;
 @end
 
 @implementation shopJudgeTableView
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.footView.hidden = YES;
     [self footWithView];
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 0, 50, 50);
-    [btn setTitle:@"编辑" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(btn:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *bar = [[UIBarButtonItem alloc]initWithCustomView:btn];
+   self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
+   self.btn.frame = CGRectMake(0, 0, 50, 50);
+    [self.btn setTitle:@"编辑" forState:UIControlStateNormal];
+    [self.btn addTarget:self action:@selector(btn:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *bar = [[UIBarButtonItem alloc]initWithCustomView:self.btn];
     self.navigationItem.rightBarButtonItem = bar;
    }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+}
 - (void)btn:(UIButton *)button{
+    self.footView.hidden = NO;
     [UIView animateWithDuration:1.0f animations:^{
         self.secondfootView.hidden = !self.secondfootView.hidden;
         [button setTitle:@"完成" forState:UIControlStateNormal];
@@ -90,14 +98,33 @@
 - (IBAction)cancelButton:(UIButton *)sender {
     JKAlertDialog *alert = [[JKAlertDialog alloc]initWithName:nil message:nil color:[UIColor clearColor] andBoolen:NO];
     alert.shopView = self.cancelView;
+    self.alert = alert;
     [alert show];
     
     
     
 }
 - (IBAction)OKButton:(UIButton *)sender {
+        self.alert.hidden = YES;
+    [self.btn setTitle:@"编辑" forState:UIControlStateNormal];
+    self.secondfootView.hidden = YES;
+    UIView *fool = [[UIView alloc]initWithFrame:[[UIScreen mainScreen]bounds ]];
+    fool.backgroundColor = [UIColor whiteColor];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(fool.frame.size.width/2, fool.frame.size.height/2, 280, 320)];
+    label.numberOfLines = 0;
+    label.text = @"您的购物车是空的";
+    label.font = [UIFont systemFontOfSize:25];
+    self.NoView = fool;
+    [fool addSubview:label];
+    
+    
+    [self.tableView addSubview:fool];
+    
 }
 - (IBAction)NOButton:(UIButton *)sender {
+    self.alert.hidden = YES;
+    [self.btn setTitle:@"编辑" forState:UIControlStateNormal];
+    self.secondfootView.hidden = YES;
 }
 
 

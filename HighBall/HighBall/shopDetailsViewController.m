@@ -104,7 +104,9 @@
 }
 - (void)jiaru{
     shopJudgeTableView *shopJudge = [[shopJudgeTableView alloc]initWithNibName:@"shopJudgeTableView" bundle:nil];
+    
     [self.navigationController pushViewController:shopJudge animated:YES];
+    
     }
 - (void)scrollViewWithrealize{
     CGRect frame = [[UIScreen mainScreen]bounds];
