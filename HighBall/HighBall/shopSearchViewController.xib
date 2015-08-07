@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="shopSearchViewController">
+            <connections>
+                <outlet property="MainTableView" destination="2p7-M3-dy9" id="nSW-pC-4QG"/>
+                <outlet property="secondCollection" destination="BMX-uu-8Uc" id="9sH-W5-XqO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="ndG-aN-8f1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2p7-M3-dy9">
+                    <rect key="frame" x="8" y="0.0" width="120" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="di4-LK-dvS"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6ms-zG-q2S"/>
+                        <outlet property="delegate" destination="-1" id="9Nx-vL-yu0"/>
+                    </connections>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BMX-uu-8Uc">
+                    <rect key="frame" x="128" y="0.0" width="192" height="568"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UKM-Z8-5Yg">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cL6-Ox-2Lg"/>
+                        <outlet property="delegate" destination="-1" id="r3h-xl-cfZ"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2p7-M3-dy9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="5J4-ue-iGG"/>
+                <constraint firstAttribute="trailing" secondItem="BMX-uu-8Uc" secondAttribute="trailing" id="NAu-yw-yuD"/>
+                <constraint firstAttribute="bottom" secondItem="BMX-uu-8Uc" secondAttribute="bottom" id="W0f-V5-KcE"/>
+                <constraint firstItem="2p7-M3-dy9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hTc-vw-WEk"/>
+                <constraint firstAttribute="bottom" secondItem="2p7-M3-dy9" secondAttribute="bottom" id="ht4-nT-7Ii"/>
+                <constraint firstItem="BMX-uu-8Uc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pAd-2r-3qj"/>
+                <constraint firstItem="BMX-uu-8Uc" firstAttribute="leading" secondItem="2p7-M3-dy9" secondAttribute="trailing" id="vJO-HF-rEm"/>
+            </constraints>
+            <point key="canvasLocation" x="286" y="172"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

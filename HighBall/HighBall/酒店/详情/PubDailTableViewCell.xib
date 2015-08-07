@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PubDailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pubimage.png" translatesAutoresizingMaskIntoConstraints="NO" id="vEP-4q-T7X">
+                        <rect key="frame" x="8" y="8" width="75" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="61" id="Jl1-WC-DsQ"/>
+                            <constraint firstAttribute="width" constant="75" id="W7V-JP-WrT"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzR-cb-fNq">
+                        <rect key="frame" x="8" y="69" width="74" height="22"/>
+                        <state key="normal" image="queren.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高级大床房" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtA-fy-EIU">
+                        <rect key="frame" x="98" y="8" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6N2-jO-uk3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAI-f3-y4K">
+                        <rect key="frame" x="252" y="66" width="60" height="25"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="4Za-V0-PWn"/>
+                            <constraint firstAttribute="width" constant="60" id="JeC-E3-QhO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                        <state key="normal" title="预定">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="fillOutAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kmw-bU-iGw"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥635" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vB-63-2lh">
+                        <rect key="frame" x="268" y="8" width="44" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6vM-yC-hoB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.99607843139999996" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4vB-63-2lh" secondAttribute="trailing" constant="8" id="Lm6-PY-0NI"/>
+                    <constraint firstItem="4vB-63-2lh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="OLU-zx-pj8"/>
+                    <constraint firstItem="KzR-cb-fNq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="OVX-BF-taT"/>
+                    <constraint firstItem="LtA-fy-EIU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="TuP-0j-iwo"/>
+                    <constraint firstItem="KzR-cb-fNq" firstAttribute="top" secondItem="vEP-4q-T7X" secondAttribute="bottom" id="VgM-o7-h6Z"/>
+                    <constraint firstItem="vEP-4q-T7X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="b7P-yM-JTg"/>
+                    <constraint firstAttribute="trailing" secondItem="eAI-f3-y4K" secondAttribute="trailing" constant="8" id="dm9-rD-JXR"/>
+                    <constraint firstAttribute="bottom" secondItem="KzR-cb-fNq" secondAttribute="bottom" constant="8" id="eoU-5a-ySr"/>
+                    <constraint firstItem="vEP-4q-T7X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="uWE-tJ-ftj"/>
+                    <constraint firstAttribute="bottom" secondItem="eAI-f3-y4K" secondAttribute="bottom" constant="8" id="vzn-i0-qz8"/>
+                    <constraint firstItem="LtA-fy-EIU" firstAttribute="leading" secondItem="vEP-4q-T7X" secondAttribute="trailing" constant="15" id="xZd-Oe-RpN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="220" y="330"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pubimage.png" width="75" height="73"/>
+        <image name="queren.png" width="74" height="19"/>
+    </resources>
+</document>
