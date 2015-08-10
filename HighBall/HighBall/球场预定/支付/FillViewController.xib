@@ -444,7 +444,7 @@
                 <constraint firstItem="3RE-xa-tsT" firstAttribute="top" secondItem="BAK-ry-TU9" secondAttribute="bottom" constant="15" id="wPH-v1-D36"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="957" y="481"/>
+            <point key="canvasLocation" x="639" y="430"/>
         </view>
         <view contentMode="scaleToFill" id="BLV-28-shl" userLabel="moneyNotHaveView">
             <rect key="frame" x="0.0" y="0.0" width="260" height="250"/>

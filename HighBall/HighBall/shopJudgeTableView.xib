@@ -199,7 +199,7 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="491" y="304"/>
+            <point key="canvasLocation" x="553" y="273"/>
         </view>
         <view contentMode="scaleToFill" id="dsx-2D-csV">
             <rect key="frame" x="0.0" y="0.0" width="260" height="170"/>

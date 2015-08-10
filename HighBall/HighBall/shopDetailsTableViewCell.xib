@@ -40,7 +40,7 @@
                             </mask>
                         </variation>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" image="iconfont-iconstar.png" translatesAutoresizingMaskIntoConstraints="NO" id="tEZ-LU-7hC">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="iconfont-iconstar.png" translatesAutoresizingMaskIntoConstraints="NO" id="tEZ-LU-7hC">
                         <rect key="frame" x="10" y="10" width="128" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="KZL-2I-fP9"/>

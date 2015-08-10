@@ -31,12 +31,13 @@
     [item setTitleTextAttributes:dicNoItem forState:UIControlStateDisabled];
     
     
+    
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     UIImage *image = [UIImage imageNamed:@"blueNavi.png"];
     CGSize imageSize = self.navigationBar.bounds.size;
     image = [self scaleToSize:image size:imageSize];
-    
+    self.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor]};
     [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
            viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back) Image:@"navigationbar_back" HightImage:@"navigationbar_back_highlighted"];
         

@@ -79,13 +79,13 @@
     UIButton *pullShop = [UIButton buttonWithTitle:@"加入购物车" Image:nil HighlightedImage:nil NormalColor:[UIColor whiteColor] selectedColor:[UIColor grayColor] Action:@selector(jiaru) Target:self];
     lovebtn.x = 0;
     lovebtn.y = 0;
-    shopbtn.x = 80;
+    shopbtn.x = 100;
     shopbtn.y = 0;
-    pullShop.x = 200;
+    pullShop.x = 240;
     pullShop.y = 0;
-    lovebtn.width = 100;
+    lovebtn.width = 120;
     lovebtn.height = 50;
-    shopbtn.width = 100;
+    shopbtn.width = 120;
     shopbtn.height = 50;
     pullShop.width = frame.size.width-lovebtn.width-shopbtn.width;
     pullShop.height = 50;

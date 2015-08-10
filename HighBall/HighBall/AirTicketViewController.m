@@ -248,7 +248,7 @@ static NSInteger apps;
 
 
            }
-    
+    [bunkName synchronize];
     
 }
 
@@ -267,7 +267,7 @@ static NSInteger apps;
             [self viewWillAppear:YES];
             break;
     }
-    
+    [defaults synchronize];
     
     
 }

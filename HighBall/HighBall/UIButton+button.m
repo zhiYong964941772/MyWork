@@ -18,10 +18,10 @@
         [btn setTitleColor:color forState:UIControlStateNormal];
         [btn setTitleColor:selectColor forState:UIControlStateHighlighted];
         btn.titleLabel.textAlignment = NSTextAlignmentLeft;
-        [btn setTitleEdgeInsets:UIEdgeInsetsMake(37, -20, 5, 0)];
+        [btn setTitleEdgeInsets:UIEdgeInsetsMake(37, 5, 5, 10)];
         [btn setImage:image forState:UIControlStateNormal];
         [btn setImage:highlightedImage forState:UIControlStateHighlighted];
-        [btn setImageEdgeInsets:UIEdgeInsetsMake(5, 38,18,10)];
+        [btn setImageEdgeInsets:UIEdgeInsetsMake(5, 50,18,10)];
         [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     }
     else{

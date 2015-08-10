@@ -63,6 +63,8 @@
 		882304DC1B68B34500CE063F /* avatar_default_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882304DB1B68B34500CE063F /* avatar_default_big@2x.png */; };
 		882B35BB1B0C35BD007810B2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882B35BA1B0C35BD007810B2 /* libsqlite3.0.dylib */; };
 		882B35BD1B0C35C4007810B2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882B35BC1B0C35C4007810B2 /* libsqlite3.dylib */; };
+		8831E00A1B7856ED0070029F /* payshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8831E0081B7856ED0070029F /* payshopViewController.m */; };
+		8831E00B1B7856ED0070029F /* payshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8831E0091B7856ED0070029F /* payshopViewController.xib */; };
 		883CD8901AE7915D00A50F7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CD88F1AE7915D00A50F7E /* main.m */; };
 		883CD8931AE7915D00A50F7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CD8921AE7915D00A50F7E /* AppDelegate.m */; };
 		883CD89B1AE7915D00A50F7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883CD89A1AE7915D00A50F7E /* Images.xcassets */; };
@@ -379,6 +381,9 @@
 		882304DB1B68B34500CE063F /* avatar_default_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_default_big@2x.png"; sourceTree = "<group>"; };
 		882B35BA1B0C35BD007810B2 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		882B35BC1B0C35C4007810B2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8831E0071B7856ED0070029F /* payshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payshopViewController.h; sourceTree = "<group>"; };
+		8831E0081B7856ED0070029F /* payshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = payshopViewController.m; sourceTree = "<group>"; };
+		8831E0091B7856ED0070029F /* payshopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = payshopViewController.xib; sourceTree = "<group>"; };
 		883CD88A1AE7915D00A50F7E /* HighBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883CD88E1AE7915D00A50F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883CD88F1AE7915D00A50F7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1139,6 +1144,9 @@
 				88A59CA51B73610D00D5D9D2 /* confirmViewController.h */,
 				88A59CA61B73610D00D5D9D2 /* confirmViewController.m */,
 				88A59CA71B73610D00D5D9D2 /* confirmViewController.xib */,
+				8831E0071B7856ED0070029F /* payshopViewController.h */,
+				8831E0081B7856ED0070029F /* payshopViewController.m */,
+				8831E0091B7856ED0070029F /* payshopViewController.xib */,
 			);
 			name = "购物车";
 			sourceTree = "<group>";
@@ -1774,6 +1782,7 @@
 				88825B231B70C5CC004DA252 /* iconfont-jianhao.png in Resources */,
 				88825B241B70C5CC004DA252 /* iconfont-jiahao.png in Resources */,
 				881F0E3E1B4E6FFA002E0C9C /* wangfan.png in Resources */,
+				8831E00B1B7856ED0070029F /* payshopViewController.xib in Resources */,
 				88FA9C921B71A87E008B4F8D /* shopJudgeTableView.xib in Resources */,
 				883F6FA71B4695AD00D53E79 /* jiantou.png in Resources */,
 				2B9A55571B724B8100D42B7E /* longShopViewController.xib in Resources */,
@@ -1869,6 +1878,7 @@
 				88BD8C711B4D08600025F011 /* SpellOrderDetailViewController.m in Sources */,
 				88A695AB1AEB6DA30020F51F /* AFHTTPRequestOperationManager.m in Sources */,
 				880949231B4F703D0007E788 /* CadinSchedleTableViewController.m in Sources */,
+				8831E00A1B7856ED0070029F /* payshopViewController.m in Sources */,
 				88AF485F1B57B325001AEC7C /* AirOrderDetailViewController.m in Sources */,
 				88A695AF1AEB6DA30020F51F /* AFURLConnectionOperation.m in Sources */,
 				88B53F231B3C012500638573 /* UIImage+WebP.m in Sources */,
