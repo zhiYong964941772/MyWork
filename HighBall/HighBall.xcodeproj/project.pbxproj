@@ -126,8 +126,6 @@
 		88825B111B70A610004DA252 /* parameterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88825B0F1B70A60F004DA252 /* parameterTableViewCell.xib */; };
 		88825B151B70B541004DA252 /* judgeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88825B131B70B541004DA252 /* judgeTableViewController.m */; };
 		88825B161B70B541004DA252 /* judgeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88825B141B70B541004DA252 /* judgeTableViewController.xib */; };
-		88825B1F1B70B99B004DA252 /* shopJudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88825B1D1B70B99B004DA252 /* shopJudgeViewController.m */; };
-		88825B201B70B99B004DA252 /* shopJudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88825B1E1B70B99B004DA252 /* shopJudgeViewController.xib */; };
 		88825B231B70C5CC004DA252 /* iconfont-jianhao.png in Resources */ = {isa = PBXBuildFile; fileRef = 88825B211B70C5CC004DA252 /* iconfont-jianhao.png */; };
 		88825B241B70C5CC004DA252 /* iconfont-jiahao.png in Resources */ = {isa = PBXBuildFile; fileRef = 88825B221B70C5CC004DA252 /* iconfont-jiahao.png */; };
 		88970CB11B1EA03500CC15C7 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 88970CAF1B1EA03500CC15C7 /* map.png */; };
@@ -282,6 +280,10 @@
 		88BD8CB11B4D09C90025F011 /* PubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BD8CAD1B4D09C90025F011 /* PubTableViewCell.xib */; };
 		88BD8D101B4D1F750025F011 /* chack.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BD8D0F1B4D1F750025F011 /* chack.png */; };
 		88C3CE771B6620CF001A1A0E /* 901b56a138683b88c540997771b885c6.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C3CE761B6620CF001A1A0E /* 901b56a138683b88c540997771b885c6.png */; };
+		88E423BF1B79A90B009B305B /* listViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E423BD1B79A90B009B305B /* listViewController.m */; };
+		88E423C01B79A90B009B305B /* listViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E423BE1B79A90B009B305B /* listViewController.xib */; };
+		88E423C41B79A940009B305B /* listTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E423C21B79A940009B305B /* listTableViewCell.m */; };
+		88E423C51B79A940009B305B /* listTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E423C31B79A940009B305B /* listTableViewCell.xib */; };
 		88F4C70E1AF2214D0038A1B1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F4C70D1AF2214D0038A1B1 /* CoreLocation.framework */; };
 		88FA9C911B71A87E008B4F8D /* shopJudgeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FA9C8F1B71A87E008B4F8D /* shopJudgeTableView.m */; };
 		88FA9C921B71A87E008B4F8D /* shopJudgeTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88FA9C901B71A87E008B4F8D /* shopJudgeTableView.xib */; };
@@ -466,9 +468,6 @@
 		88825B121B70B541004DA252 /* judgeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = judgeTableViewController.h; sourceTree = "<group>"; };
 		88825B131B70B541004DA252 /* judgeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = judgeTableViewController.m; sourceTree = "<group>"; };
 		88825B141B70B541004DA252 /* judgeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = judgeTableViewController.xib; sourceTree = "<group>"; };
-		88825B1C1B70B99B004DA252 /* shopJudgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shopJudgeViewController.h; sourceTree = "<group>"; };
-		88825B1D1B70B99B004DA252 /* shopJudgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shopJudgeViewController.m; sourceTree = "<group>"; };
-		88825B1E1B70B99B004DA252 /* shopJudgeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shopJudgeViewController.xib; sourceTree = "<group>"; };
 		88825B211B70C5CC004DA252 /* iconfont-jianhao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-jianhao.png"; sourceTree = "<group>"; };
 		88825B221B70C5CC004DA252 /* iconfont-jiahao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-jiahao.png"; sourceTree = "<group>"; };
 		88970CAF1B1EA03500CC15C7 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
@@ -717,6 +716,12 @@
 		88BD8CAD1B4D09C90025F011 /* PubTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PubTableViewCell.xib; path = "酒店/列表/PubTableViewCell.xib"; sourceTree = "<group>"; };
 		88BD8D0F1B4D1F750025F011 /* chack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chack.png; sourceTree = "<group>"; };
 		88C3CE761B6620CF001A1A0E /* 901b56a138683b88c540997771b885c6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 901b56a138683b88c540997771b885c6.png; sourceTree = "<group>"; };
+		88E423BC1B79A90B009B305B /* listViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listViewController.h; sourceTree = "<group>"; };
+		88E423BD1B79A90B009B305B /* listViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listViewController.m; sourceTree = "<group>"; };
+		88E423BE1B79A90B009B305B /* listViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = listViewController.xib; sourceTree = "<group>"; };
+		88E423C11B79A940009B305B /* listTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listTableViewCell.h; sourceTree = "<group>"; };
+		88E423C21B79A940009B305B /* listTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listTableViewCell.m; sourceTree = "<group>"; };
+		88E423C31B79A940009B305B /* listTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = listTableViewCell.xib; sourceTree = "<group>"; };
 		88F4C70D1AF2214D0038A1B1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		88FA9C8E1B71A87E008B4F8D /* shopJudgeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shopJudgeTableView.h; sourceTree = "<group>"; };
 		88FA9C8F1B71A87E008B4F8D /* shopJudgeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shopJudgeTableView.m; sourceTree = "<group>"; };
@@ -1070,9 +1075,6 @@
 				88825B121B70B541004DA252 /* judgeTableViewController.h */,
 				88825B131B70B541004DA252 /* judgeTableViewController.m */,
 				88825B141B70B541004DA252 /* judgeTableViewController.xib */,
-				88825B1C1B70B99B004DA252 /* shopJudgeViewController.h */,
-				88825B1D1B70B99B004DA252 /* shopJudgeViewController.m */,
-				88825B1E1B70B99B004DA252 /* shopJudgeViewController.xib */,
 			);
 			name = "商品详情";
 			sourceTree = "<group>";
@@ -1147,6 +1149,12 @@
 				8831E0071B7856ED0070029F /* payshopViewController.h */,
 				8831E0081B7856ED0070029F /* payshopViewController.m */,
 				8831E0091B7856ED0070029F /* payshopViewController.xib */,
+				88E423BC1B79A90B009B305B /* listViewController.h */,
+				88E423BD1B79A90B009B305B /* listViewController.m */,
+				88E423BE1B79A90B009B305B /* listViewController.xib */,
+				88E423C11B79A940009B305B /* listTableViewCell.h */,
+				88E423C21B79A940009B305B /* listTableViewCell.m */,
+				88E423C31B79A940009B305B /* listTableViewCell.xib */,
 			);
 			name = "购物车";
 			sourceTree = "<group>";
@@ -1759,7 +1767,6 @@
 				88AFEB2E1B60CF4600849AB6 /* heart.png in Resources */,
 				88B94CAA1B46373C0099CA24 /* finger1.png in Resources */,
 				88711D561B6B601D00A05BA1 /* iconfont-gouwuche.png in Resources */,
-				88825B201B70B99B004DA252 /* shopJudgeViewController.xib in Resources */,
 				88AF48601B57B325001AEC7C /* AirOrderDetailViewController.xib in Resources */,
 				88B94C621B4635F80099CA24 /* WeatherViewController.xib in Resources */,
 				88825B161B70B541004DA252 /* judgeTableViewController.xib in Resources */,
@@ -1835,6 +1842,8 @@
 				880949151B4F5D890007E788 /* airImage.png in Resources */,
 				88A59CA91B73610D00D5D9D2 /* confirmViewController.xib in Resources */,
 				883CD89B1AE7915D00A50F7E /* Images.xcassets in Resources */,
+				88E423C51B79A940009B305B /* listTableViewCell.xib in Resources */,
+				88E423C01B79A90B009B305B /* listViewController.xib in Resources */,
 				883F6F921B467A5500D53E79 /* pubimage.png in Resources */,
 				88B94C7B1B4636190099CA24 /* BallSpellScheduleViewController.xib in Resources */,
 				88FA9C9B1B71ACBB008B4F8D /* iconfont-yuan.png in Resources */,
@@ -1857,7 +1866,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88825B1F1B70B99B004DA252 /* shopJudgeViewController.m in Sources */,
 				88BD8C831B4D09180025F011 /* PayOrderTableViewCell.m in Sources */,
 				88B53F1D1B3C012500638573 /* SDWebImageDownloaderOperation.m in Sources */,
 				88A695B81AEB6DA30020F51F /* UIProgressView+AFNetworking.m in Sources */,
@@ -1967,6 +1975,7 @@
 				88A695B61AEB6DA30020F51F /* UIButton+AFNetworking.m in Sources */,
 				880949321B4F91C60007E788 /* ChoosePersonViewController.m in Sources */,
 				88B53F171B3C012500638573 /* MKAnnotationView+WebCache.m in Sources */,
+				88E423C41B79A940009B305B /* listTableViewCell.m in Sources */,
 				8809492D1B4F78950007E788 /* CadinDaileViewController.m in Sources */,
 				8879033F1B4A28FA0047C38B /* FillViewController.m in Sources */,
 				88B94C5E1B4635F80099CA24 /* ScheduleViewController.m in Sources */,
@@ -1981,6 +1990,7 @@
 				88B94C191B4634460099CA24 /* BallSpellJoserPaser.m in Sources */,
 				88B53F221B3C012500638573 /* UIImage+MultiFormat.m in Sources */,
 				88B53F1B1B3C012500638573 /* SDWebImageDecoder.m in Sources */,
+				88E423BF1B79A90B009B305B /* listViewController.m in Sources */,
 				88B53F211B3C012500638573 /* UIImage+GIF.m in Sources */,
 				88B94C781B4636190099CA24 /* BallSpellNameTableViewController.m in Sources */,
 				88BD8C851B4D09180025F011 /* PayOrderTableViewController.m in Sources */,

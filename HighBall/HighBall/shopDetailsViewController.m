@@ -12,8 +12,8 @@
 #import "UIView+Extension.h"
 #import "longShopViewController.h"
 #import "judgeTableViewController.h"
-#import "shopJudgeViewController.h"
 #import "shopJudgeTableView.h"
+#import "JKAlertDialog.h"
 @interface shopDetailsViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIView *shopView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *judge;
 @property (weak, nonatomic) IBOutlet UITableView *judgeView;
 @property (weak, nonatomic) IBOutlet UIView *tarBarView;
+@property (strong, nonatomic) IBOutlet UIView *shopSizeView;
 @property (assign,nonatomic) NSInteger current;
 @property (nonatomic,strong)NSTimer *timer;
 @property (strong,nonatomic) NSArray *allImage;
@@ -180,8 +181,11 @@
 }
 //鞋子的尺寸
 - (IBAction)guige:(UIButton *)sender {
-    shopJudgeViewController *shopJudge = [[shopJudgeViewController alloc]initWithNibName:@"shopJudgeViewController" bundle:nil];
-    [self presentViewController:shopJudge animated:YES completion:nil];
+    JKAlertDialog *alert = [[JKAlertDialog alloc]initWithName:@"" message:@"" color:[UIColor clearColor] andBoolen:NO AlertsWidth:self.shopSizeView.frame.size.width AlertsHeight:self.shopSizeView.frame.size.height];
+    alert.shopView = self.shopSizeView;
+    [alert show];
+
+
 }
 - (IBAction)pingjia:(UIButton *)sender {
     NSLog(@"你想说什么");

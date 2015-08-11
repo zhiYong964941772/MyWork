@@ -9,36 +9,52 @@
 #import "confirmViewController.h"
 #import "JKAlertDialog.h"
 #import "payshopViewController.h"
+#import "PayWayViewController.h"
+#import "listViewController.h"
 @interface confirmViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *payLabel;
 @property (strong,nonatomic) JKAlertDialog *alert;
 @property (strong, nonatomic) IBOutlet UIView *payView;
 @property (strong, nonatomic) IBOutlet UIView *paySucceedView;
-
 @end
 
 @implementation confirmViewController
-
+#define button self.moneyButton.selected = !self.moneyButton.selected
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"确认订单";
+    
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *payName = [defaults objectForKey:@"pay"];
     self.payLabel.text = payName;
-    self.alert.hidden = YES;
+        self.alert.hidden = YES;
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)moneyButton:(UIButton *)sender {
+    if ([self.payLabel.text isEqualToString:@"在线支付"]) {
+        PayWayViewController *vc=[[PayWayViewController alloc]initWithNibName:@"PayWayViewController" bundle:nil];
+        
+        [self.navigationController pushViewController:vc animated:YES];
+
+        
+    }else if([self.payLabel.text isEqualToString:@"资金支付"]){
+        payshopViewController *pay = [[payshopViewController alloc]initWithNibName:@"payshopViewController" bundle:nil];
+        [self.navigationController pushViewController:pay animated:YES];
+    }else{
+        NSLog(@"请选择支付方式");
+    }
+
 }
 //地址
 - (IBAction)informationButton:(UIButton *)sender {
 }
 //物品数量
 - (IBAction)shopButton:(UIButton *)sender {
+    listViewController *list = [[listViewController alloc]initWithNibName:@"listViewController" bundle:nil];
+    [self.navigationController pushViewController:list animated:YES];
 }
 //送货付款的方式
 - (IBAction)transportButton:(UIButton *)sender {
@@ -51,11 +67,9 @@
 //发票信息
 - (IBAction)invoiceButton:(UIButton *)sender {
 }
-//订单
-- (IBAction)orderButton:(UIButton *)sender {
-    payshopViewController *pay = [[payshopViewController alloc]initWithNibName:@"payshopViewController" bundle:nil];
-    [self.navigationController pushViewController:pay animated:YES];
-}
+
+
+
 - (IBAction)payButton:(UIButton *)sender {
      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
@@ -69,6 +83,7 @@
             break;
         case 1:
             [defaults setObject:sender.titleLabel.text forKey:@"pay"];
+           
             [self viewWillAppear:YES];
             
             break;

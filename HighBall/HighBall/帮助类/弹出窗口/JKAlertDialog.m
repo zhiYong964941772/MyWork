@@ -49,11 +49,19 @@
     _coverView.backgroundColor = [UIColor blackColor];
     _coverView.alpha = 0;
     [self addSubview:_coverView];
+    if (height>=400) {
+        _shop = [[UIView alloc]initWithFrame:CGRectMake(0, 0, width+50, height+50)];
+        _shop.center = CGPointMake(self.frame.size.width-(width/2), self.frame.size.height/2);
+        _shop.layer.cornerRadius = 5.0;
+        _shop.backgroundColor = _color;
+        [self addSubview:_shop];
+
+    }else{
     _shop = [[UIView alloc]initWithFrame:CGRectMake(0, 0, width+50, height+50)];
     _shop.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
     _shop.layer.cornerRadius = 5.0;
     _shop.backgroundColor = _color;
-    [self addSubview:_shop];
+        [self addSubview:_shop];}
     _labelTitle=[[UILabel alloc]initWithFrame:CGRectMake(10, 10, 240, 30)];
     _labelTitle.font = [UIFont boldSystemFontOfSize:20];
     _labelTitle.textColor = [UIColor whiteColor];
