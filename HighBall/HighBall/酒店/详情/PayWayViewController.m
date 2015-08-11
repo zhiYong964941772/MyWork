@@ -8,7 +8,7 @@
 
 #import "PayWayViewController.h"
 #import "PayOrderTableViewController.h"
-
+#import "WeChatViewController.h"
 @interface PayWayViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *PubName;
 @property (weak, nonatomic) IBOutlet UILabel *price;
@@ -38,6 +38,8 @@
         case 0:
         {
             NSLog(@"微信支付");
+            WeChatViewController *weChat = [[WeChatViewController alloc]initWithNibName:@"WeChatViewController" bundle:nil];
+            [self.navigationController pushViewController:weChat animated:YES];
         }
             break;
         case 1:

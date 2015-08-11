@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="KGk-i7-Jjw" customClass="addressTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陈xx" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHi-rN-KvL">
+                        <rect key="frame" x="15" y="15" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Zbi-8B-jNc"/>
+                            <constraint firstAttribute="width" constant="42" id="krc-ck-0hs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广东省广州市越秀区东华南路98号10-1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ull-Kd-xnN">
+                        <rect key="frame" x="15" y="24" width="297" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="297" id="4bb-k5-abD"/>
+                            <constraint firstAttribute="height" constant="58" id="EFS-cJ-IZd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15521301050" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egz-Gb-Yw8">
+                        <rect key="frame" x="87" y="16" width="124" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="124" id="CDr-yL-7Sj"/>
+                            <constraint firstAttribute="height" constant="21" id="fX6-WR-EM6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ull-Kd-xnN" secondAttribute="bottom" constant="17" id="BYb-O4-n44"/>
+                    <constraint firstItem="Egz-Gb-Yw8" firstAttribute="leading" secondItem="pHi-rN-KvL" secondAttribute="trailing" constant="30" id="Rbg-sn-v8E"/>
+                    <constraint firstAttribute="trailing" secondItem="ull-Kd-xnN" secondAttribute="trailing" constant="8" id="RjX-Q0-33s"/>
+                    <constraint firstItem="pHi-rN-KvL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="Up4-rB-yUG"/>
+                    <constraint firstItem="Egz-Gb-Yw8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="YaX-WC-159"/>
+                    <constraint firstItem="pHi-rN-KvL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="YkS-0W-w8Z"/>
+                    <constraint firstItem="ull-Kd-xnN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ge1-eK-5r7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="ull-Kd-xnN" id="ZsC-CU-O9h"/>
+                <outlet property="nameLabel" destination="pHi-rN-KvL" id="Vph-GT-kXs"/>
+                <outlet property="phoneLabel" destination="Egz-Gb-Yw8" id="z6g-Ts-AwB"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="183"/>
+        </tableViewCell>
+    </objects>
+</document>

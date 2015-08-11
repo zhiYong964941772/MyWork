@@ -11,6 +11,8 @@
 #import "payshopViewController.h"
 #import "PayWayViewController.h"
 #import "listViewController.h"
+#import "addressViewController.h"
+#import "invoiceViewController.h"
 @interface confirmViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *payLabel;
 @property (strong,nonatomic) JKAlertDialog *alert;
@@ -50,6 +52,8 @@
 }
 //地址
 - (IBAction)informationButton:(UIButton *)sender {
+    addressViewController *address = [[addressViewController alloc]initWithNibName:@"addressViewController" bundle:nil];
+    [self.navigationController pushViewController:address animated:YES];
 }
 //物品数量
 - (IBAction)shopButton:(UIButton *)sender {
@@ -66,6 +70,9 @@
 }
 //发票信息
 - (IBAction)invoiceButton:(UIButton *)sender {
+    invoiceViewController *invoice = [[invoiceViewController alloc]initWithNibName:@"invoiceViewController" bundle:nil];
+    [self.navigationController pushViewController:invoice animated:YES];
+    
 }
 
 

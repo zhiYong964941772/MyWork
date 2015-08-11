@@ -27,7 +27,7 @@
                 <constraint firstAttribute="bottom" secondItem="xRd-gY-Pxf" secondAttribute="bottom" id="eqB-mX-RiP"/>
                 <constraint firstItem="xRd-gY-Pxf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mMY-9R-FSU"/>
             </constraints>
-            <point key="canvasLocation" x="427" y="352"/>
+            <point key="canvasLocation" x="327" y="346"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
