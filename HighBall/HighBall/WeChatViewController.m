@@ -61,4 +61,8 @@
 - (void)pay{
     self.arrayView.hidden = YES;
 }
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"pay" object:nil];
+    NSLog(@"123");
+}
 @end

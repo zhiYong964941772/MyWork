@@ -49,4 +49,7 @@
     }
     
     }
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"gouButton" object:nil];
+}
 @end

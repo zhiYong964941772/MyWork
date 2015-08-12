@@ -54,7 +54,7 @@
 {
     self.navigationController.navigationBarHidden=NO;
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"blueNavi.png"] forBarMetrics:UIBarMetricsDefault];
+    
     
     mainTable.delegate = self;
     mainTable.dataSource = self;

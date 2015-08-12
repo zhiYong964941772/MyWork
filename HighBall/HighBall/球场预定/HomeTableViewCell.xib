@@ -97,7 +97,7 @@
                 <outlet property="moneyLable" destination="fhC-JZ-R73" id="HgG-sh-o5u"/>
                 <outlet property="nickLable" destination="kTt-Ci-Svt" id="PE2-hO-F2D"/>
             </connections>
-            <point key="canvasLocation" x="142" y="320"/>
+            <point key="canvasLocation" x="243" y="276"/>
         </tableViewCell>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

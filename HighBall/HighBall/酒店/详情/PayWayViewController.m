@@ -9,6 +9,8 @@
 #import "PayWayViewController.h"
 #import "PayOrderTableViewController.h"
 #import "WeChatViewController.h"
+#import "bankViewController.h"
+#import "shuoMingViewController.h"
 @interface PayWayViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *PubName;
 @property (weak, nonatomic) IBOutlet UILabel *price;
@@ -45,6 +47,8 @@
         case 1:
         {
             NSLog(@"信用卡支付");
+            bankViewController *bank = [[bankViewController alloc]initWithNibName:@"bankViewController" bundle:nil];
+            [self.navigationController pushViewController:bank animated:YES];
         }
             break;
         case 2:
@@ -64,7 +68,7 @@
 }
 
 - (IBAction)creditCardExplain:(id)sender {
-    PayOrderTableViewController *vc=[[PayOrderTableViewController alloc]initWithNibName:@"PayOrderTableViewController" bundle:nil];
+    shuoMingViewController *vc = [[shuoMingViewController alloc]initWithNibName:@"shuoMingViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

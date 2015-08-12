@@ -35,9 +35,7 @@
     
     self.title=@"球场搜索";
     
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
-    backItem.tintColor=[UIColor whiteColor];
-    self.navigationItem.leftBarButtonItem = backItem;
+    
 }
 //通过判断本地是否存储了值
 -(void)initValue

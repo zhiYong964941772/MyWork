@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="shuoMingViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baozhang.png" translatesAutoresizingMaskIntoConstraints="NO" id="YRm-Xe-jUe">
+                    <rect key="frame" x="0.0" y="46" width="320" height="390"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94610080948795183" green="0.93669992469879515" blue="0.93455854668674687" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YRm-Xe-jUe" secondAttribute="trailing" id="Qz9-ca-xTC"/>
+                <constraint firstAttribute="bottom" secondItem="YRm-Xe-jUe" secondAttribute="bottom" constant="132" id="UDP-pa-FD6"/>
+                <constraint firstItem="YRm-Xe-jUe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="46" id="ZoJ-3H-LA5"/>
+                <constraint firstItem="YRm-Xe-jUe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="k1j-Gz-ucO"/>
+            </constraints>
+            <point key="canvasLocation" x="490" y="268"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baozhang.png" width="499" height="444"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
