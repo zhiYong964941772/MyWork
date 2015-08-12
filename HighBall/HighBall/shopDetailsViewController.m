@@ -184,9 +184,7 @@
     JKAlertDialog *alert = [[JKAlertDialog alloc]initWithName:@"" message:@"" color:[UIColor clearColor] andBoolen:NO AlertsWidth:self.shopSizeView.frame.size.width AlertsHeight:self.shopSizeView.frame.size.height];
     alert.shopView = self.shopSizeView;
     [alert show];
-
-
-}
+    }
 - (IBAction)pingjia:(UIButton *)sender {
     NSLog(@"你想说什么");
     judgeTableViewController *judge = [[judgeTableViewController alloc]initWithNibName:@"judgeTableViewController" bundle:nil];

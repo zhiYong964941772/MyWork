@@ -26,8 +26,10 @@ static char emptyImageKey;
 {
     objc_setAssociatedObject(self, &emptyImageKey, image, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+
 - (void)lt_setBackgroundColors:(UIColor *)backgroundColor{
     if (!self.overlay) {
+        
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
         self.overlay = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, CGRectGetHeight(self.bounds)+20)];
         self.overlay.userInteractionEnabled = NO;
@@ -44,5 +46,17 @@ static char emptyImageKey;
 }
 - (void)setAlpha:(CGFloat)alpha forSubviewsOfView:(UIView *)view
 {
+    for (UIView *subview in view.subviews){
+        if (subview == self.overlay) {
+            continue;
+        }
+        subview.alpha = alpha;
+        [self setAlpha:alpha forSubviewsOfView:subview];
+    }
+}
+- (void)lt_reset{
+    [self setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [self.overlay removeFromSuperview];
+    self.overlay = nil;
 }
 @end

@@ -8,10 +8,9 @@
 
 #import "shopNaviViewController.h"
 #import "UIBarButtonItem+BarButton.h"
+
 @interface shopNaviViewController ()
-
 @end
-
 @implementation shopNaviViewController
 
 - (void)viewDidLoad {
@@ -34,17 +33,20 @@
     
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    UIImage *image = [UIImage imageNamed:@"blueNavi.png"];
-    CGSize imageSize = self.navigationBar.bounds.size;
-    image = [self scaleToSize:image size:imageSize];
-    self.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor]};
-    [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+    
            viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back) Image:@"navigationbar_back" HightImage:@"navigationbar_back_highlighted"];
         
 //        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back2) Image:@"navigationbar_more" HightImage:@"navigationbar_more_highlighted"];
     
     [super pushViewController:viewController animated:animated];
+    UIImage *image = [UIImage imageNamed:@"blueNavi.png"];
+    CGSize imageSize = self.navigationBar.bounds.size;
+    image = [self scaleToSize:image size:imageSize];
+    self.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+
 }
+
 - (UIImage *)scaleToSize:(UIImage *)img size:(CGSize)size{
     UIGraphicsBeginImageContext(size);
     [img drawInRect:CGRectMake(0, 0, size.width, size.height)];
@@ -55,8 +57,16 @@
 
 - (void)back{
     if (self.viewControllers.count>1) {
+        
         [self popViewControllerAnimated:YES];
-    }
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"weChat" object:nil];
+        UIImage *image = [UIImage imageNamed:@"blueNavi.png"];
+        CGSize imageSize = self.navigationBar.bounds.size;
+        image = [self scaleToSize:image size:imageSize];
+        self.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor]};
+        [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+
+            }
     else{
         [self dismissViewControllerAnimated:NO completion:nil];}
 }
