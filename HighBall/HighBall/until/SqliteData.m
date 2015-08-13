@@ -20,6 +20,7 @@
     
     databasePath=[[NSString alloc]initWithString:[docsDir stringByAppendingPathComponent:@"ballSpellInfos.db"]];
     NSFileManager *filemgr=[NSFileManager defaultManager];
+    
     if ([filemgr fileExistsAtPath:databasePath]==NO) {
         const char *dbpath=[databasePath UTF8String];
         if (sqlite3_open(dbpath, &dataDB)==SQLITE_OK) {

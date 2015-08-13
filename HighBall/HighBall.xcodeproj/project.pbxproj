@@ -90,6 +90,11 @@
 		884076FC1B6CBE9400418E9D /* iconfont-iconstar.png in Resources */ = {isa = PBXBuildFile; fileRef = 884076FB1B6CBE9400418E9D /* iconfont-iconstar.png */; };
 		884076FE1B6CC5FE00418E9D /* iconfont-tubiaojinru36 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 884076FD1B6CC5FE00418E9D /* iconfont-tubiaojinru36 (1).png */; };
 		884077001B6CC60E00418E9D /* iconfont-jinru (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 884076FF1B6CC60E00418E9D /* iconfont-jinru (1).png */; };
+		88450AB91B7C881E004E1522 /* mealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88450AB71B7C881E004E1522 /* mealViewController.m */; };
+		88450ABA1B7C881E004E1522 /* mealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88450AB81B7C881E004E1522 /* mealViewController.xib */; };
+		88450ABE1B7C8867004E1522 /* mealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88450ABC1B7C8867004E1522 /* mealTableViewCell.m */; };
+		88450ABF1B7C8867004E1522 /* mealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88450ABD1B7C8867004E1522 /* mealTableViewCell.xib */; };
+		88450AC31B7C92C8004E1522 /* iconfont-chuanshu.png in Resources */ = {isa = PBXBuildFile; fileRef = 88450AC21B7C92C8004E1522 /* iconfont-chuanshu.png */; };
 		884A095C1B69F4DB004287CD /* UIBarButtonItem+BarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 884A095B1B69F4DB004287CD /* UIBarButtonItem+BarButton.m */; };
 		884A09691B6A1392004287CD /* shoopHomeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 884A09671B6A1392004287CD /* shoopHomeTableCell.m */; };
 		884A096A1B6A1392004287CD /* shoopHomeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 884A09681B6A1392004287CD /* shoopHomeTableCell.xib */; };
@@ -440,6 +445,13 @@
 		884076FB1B6CBE9400418E9D /* iconfont-iconstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-iconstar.png"; sourceTree = "<group>"; };
 		884076FD1B6CC5FE00418E9D /* iconfont-tubiaojinru36 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-tubiaojinru36 (1).png"; sourceTree = "<group>"; };
 		884076FF1B6CC60E00418E9D /* iconfont-jinru (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-jinru (1).png"; sourceTree = "<group>"; };
+		88450AB61B7C881E004E1522 /* mealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mealViewController.h; sourceTree = "<group>"; };
+		88450AB71B7C881E004E1522 /* mealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mealViewController.m; sourceTree = "<group>"; };
+		88450AB81B7C881E004E1522 /* mealViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mealViewController.xib; sourceTree = "<group>"; };
+		88450ABB1B7C8867004E1522 /* mealTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mealTableViewCell.h; sourceTree = "<group>"; };
+		88450ABC1B7C8867004E1522 /* mealTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mealTableViewCell.m; sourceTree = "<group>"; };
+		88450ABD1B7C8867004E1522 /* mealTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mealTableViewCell.xib; sourceTree = "<group>"; };
+		88450AC21B7C92C8004E1522 /* iconfont-chuanshu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-chuanshu.png"; sourceTree = "<group>"; };
 		884A095A1B69F4DB004287CD /* UIBarButtonItem+BarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BarButton.h"; sourceTree = "<group>"; };
 		884A095B1B69F4DB004287CD /* UIBarButtonItem+BarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BarButton.m"; sourceTree = "<group>"; };
 		884A09661B6A1392004287CD /* shoopHomeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoopHomeTableCell.h; sourceTree = "<group>"; };
@@ -1034,6 +1046,7 @@
 				88B94C331B4634F80099CA24 /* HomeViewController.h */,
 				88B94C341B4634F80099CA24 /* HomeViewController.m */,
 				88B94C351B4634F80099CA24 /* HomeViewController.xib */,
+				88450AB51B7C85C7004E1522 /* 套餐 */,
 				881547181B5F3A3A00A74949 /* 商城 */,
 				880CB9581B4CBB9800894CCB /* 机票 */,
 				883F6F6F1B4658F800D53E79 /* 酒店 */,
@@ -1138,6 +1151,35 @@
 				88825B141B70B541004DA252 /* judgeTableViewController.xib */,
 			);
 			name = "商品详情";
+			sourceTree = "<group>";
+		};
+		88450AB51B7C85C7004E1522 /* 套餐 */ = {
+			isa = PBXGroup;
+			children = (
+				88450AC01B7C8871004E1522 /* 套餐首页 */,
+			);
+			name = "套餐";
+			sourceTree = "<group>";
+		};
+		88450AC01B7C8871004E1522 /* 套餐首页 */ = {
+			isa = PBXGroup;
+			children = (
+				88450AB61B7C881E004E1522 /* mealViewController.h */,
+				88450AB71B7C881E004E1522 /* mealViewController.m */,
+				88450AB81B7C881E004E1522 /* mealViewController.xib */,
+				88450ABB1B7C8867004E1522 /* mealTableViewCell.h */,
+				88450ABC1B7C8867004E1522 /* mealTableViewCell.m */,
+				88450ABD1B7C8867004E1522 /* mealTableViewCell.xib */,
+			);
+			name = "套餐首页";
+			sourceTree = "<group>";
+		};
+		88450AC11B7C92BA004E1522 /* 套餐 */ = {
+			isa = PBXGroup;
+			children = (
+				88450AC21B7C92C8004E1522 /* iconfont-chuanshu.png */,
+			);
+			name = "套餐";
 			sourceTree = "<group>";
 		};
 		884A095D1B6A0F4C004287CD /* 商城 */ = {
@@ -1335,6 +1377,7 @@
 		88A6952B1AEB2AE50020F51F /* image */ = {
 			isa = PBXGroup;
 			children = (
+				88450AC11B7C92BA004E1522 /* 套餐 */,
 				88E423E41B79F249009B305B /* 支付 */,
 				884A095D1B6A0F4C004287CD /* 商城 */,
 				882304D41B68AA4200CE063F /* 个人 */,
@@ -1795,6 +1838,7 @@
 				880949291B4F717D0007E788 /* CadinSchedleTableViewCell.xib in Resources */,
 				88825B0A1B70A0E2004DA252 /* 0abb46c72c730df531d8331830de35ee.jpg in Resources */,
 				884076FE1B6CC5FE00418E9D /* iconfont-tubiaojinru36 (1).png in Resources */,
+				88450ABA1B7C881E004E1522 /* mealViewController.xib in Resources */,
 				88A695451AEB2AE60020F51F /* mapImag.png in Resources */,
 				881FA3661B02FA1900429D50 /* mapapi.bundle in Resources */,
 				884076F31B6CB3D800418E9D /* shopDetailsViewController.xib in Resources */,
@@ -1831,6 +1875,7 @@
 				88AF48761B57BA98001AEC7C /* AirFlightTableViewCell.xib in Resources */,
 				882304DA1B68AC3200CE063F /* space_backimage.jpeg in Resources */,
 				88B94CAB1B46373C0099CA24 /* finger2.png in Resources */,
+				88450AC31B7C92C8004E1522 /* iconfont-chuanshu.png in Resources */,
 				883F6F841B4673A700D53E79 /* yansi.png in Resources */,
 				88970CB11B1EA03500CC15C7 /* map.png in Resources */,
 				88BD8C841B4D09180025F011 /* PayOrderTableViewCell.xib in Resources */,
@@ -1869,6 +1914,7 @@
 				88A6954D1AEB2AE60020F51F /* Home2.png in Resources */,
 				88B94C4B1B4635E10099CA24 /* OrderTableViewCell.xib in Resources */,
 				88711D571B6B601D00A05BA1 /* iconfont-category (1).png in Resources */,
+				88450ABF1B7C8867004E1522 /* mealTableViewCell.xib in Resources */,
 				880EDDEE1B1E9A8B00B5FC25 /* overcast.png in Resources */,
 				882304DC1B68B34500CE063F /* avatar_default_big@2x.png in Resources */,
 				88AF487C1B57BAD5001AEC7C /* threeImage.png in Resources */,
@@ -1976,6 +2022,7 @@
 				882304D21B6885E200CE063F /* UserViewController.m in Sources */,
 				88A695B91AEB6DA30020F51F /* UIRefreshControl+AFNetworking.m in Sources */,
 				880949371B4F94150007E788 /* InsertPersonViewController.m in Sources */,
+				88450ABE1B7C8867004E1522 /* mealTableViewCell.m in Sources */,
 				88B94C5B1B4635F80099CA24 /* BallSpellDetailsViewController.m in Sources */,
 				88A695BA1AEB6DA30020F51F /* UIWebView+AFNetworking.m in Sources */,
 				88BD8C9F1B4D09970025F011 /* PubDailTableViewCell.m in Sources */,
@@ -2051,6 +2098,7 @@
 				88825B151B70B541004DA252 /* judgeTableViewController.m in Sources */,
 				88B94C7A1B4636190099CA24 /* BallSpellScheduleViewController.mm in Sources */,
 				88E423E21B79E1FF009B305B /* WeChatViewController.m in Sources */,
+				88450AB91B7C881E004E1522 /* mealViewController.m in Sources */,
 				882304C91B687BE100CE063F /* BallTarBarViewController.m in Sources */,
 				881F0E361B4E4F19002E0C9C /* AirTicketViewController.m in Sources */,
 				88B94C2C1B4634830099CA24 /* CourselInfo.m in Sources */,

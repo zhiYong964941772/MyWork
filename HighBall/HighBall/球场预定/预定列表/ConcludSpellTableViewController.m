@@ -49,10 +49,7 @@
     mapItem.tintColor=[UIColor whiteColor];
     self.navigationItem.rightBarButtonItem=mapItem;
     
-    UIBarButtonItem *backItem=[[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
-    backItem.tintColor=[UIColor whiteColor];
-    self.navigationItem.leftBarButtonItem=backItem;
-    
+        
     self.title=self.city;
 }
 

@@ -688,7 +688,7 @@
                 <constraint firstItem="0nL-XD-jRl" firstAttribute="leading" secondItem="tme-NX-iH0" secondAttribute="leading" id="zMl-Nl-VG6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="636" y="481"/>
+            <point key="canvasLocation" x="1015" y="481"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

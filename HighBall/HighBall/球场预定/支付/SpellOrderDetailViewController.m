@@ -106,8 +106,8 @@
 //退订按钮，数据提交
 - (IBAction)backOrderAction:(id)sender {
     UIColor *color=[UIColor colorWithRed:0.0/255 green:136.0/255 blue:254.0/255 alpha:1];
-    CGFloat w = self.backOrderBtn.frame.size.width;
-    CGFloat h = self.backOrderBtn.frame.size.height;
+    CGFloat w = self.backOrderview.frame.size.width;
+    CGFloat h = self.backOrderview.frame.size.height;
     JKAlertDialog *aler=[[JKAlertDialog alloc]initWithTitle:@"温馨提醒" message:@"" color:color andBoolen:NO AlertsWidth:w AlertsHeight:h];
     aler.contentView=self.backOrderview;
     [aler show];

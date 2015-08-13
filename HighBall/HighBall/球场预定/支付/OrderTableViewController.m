@@ -31,10 +31,7 @@
     self.title=@"订单页面";
     
     //左上角返回按钮
-    UIBarButtonItem *backItem=[[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
-    backItem.tintColor=[UIColor whiteColor];
-    self.navigationItem.leftBarButtonItem=backItem;
-    
+        
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(spellOrder:) name:@"spellOrder" object:nil];
 }
 

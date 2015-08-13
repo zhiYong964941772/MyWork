@@ -20,6 +20,7 @@
 #import "shoopHomeViewController.h"
 #import "AirFight.h"
 #import "shopViewController.h"
+#import "mealViewController.h"
 @interface HomeViewController (){
     SqliteData *_dataDB;//引用数据库
     bool isGeoSearch;
@@ -290,10 +291,9 @@
             break;
         case 4:
         {
-            NSArray *array = [AirFight allFight];
-            NSLog(@"%@",array);
-            
-            
+            mealViewController *meal = [[mealViewController alloc]initWithNibName:@"mealViewController" bundle:nil];
+            meal.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:meal animated:YES];
             
             
             

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="88" id="KGk-i7-Jjw" customClass="mealTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3f443e226b11207e165a8033babfa2b0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yPb-x0-WHv">
+                        <rect key="frame" x="8" y="9" width="70" height="69"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Akp-Yq-kqb"/>
+                            <constraint firstAttribute="height" constant="70" id="DdG-BZ-Wf1"/>
+                            <constraint firstAttribute="height" constant="69" id="lu0-bz-3Gl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DdG-BZ-Wf1"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="海口4日高尔夫套餐.观澜湖3球场.深度体验" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G80-WH-Clq">
+                        <rect key="frame" x="86" y="12" width="234" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="GUk-Vq-wWV"/>
+                            <constraint firstAttribute="width" constant="234" id="vxF-uQ-XVa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="起" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8w-GK-aDf">
+                        <rect key="frame" x="180" y="57" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="mpc-iM-X5k"/>
+                            <constraint firstAttribute="height" constant="20" id="oWY-O0-LlG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 3880.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-4n-QGn">
+                        <rect key="frame" x="86" y="57" width="226" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="226" id="0GB-FK-uU2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yPb-x0-WHv" secondAttribute="bottom" constant="9" id="217-wG-m9L"/>
+                    <constraint firstAttribute="bottom" secondItem="A8w-GK-aDf" secondAttribute="bottom" constant="10" id="AL6-Bn-BJ4"/>
+                    <constraint firstItem="yPb-x0-WHv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="GWy-XX-3ti"/>
+                    <constraint firstItem="A8w-GK-aDf" firstAttribute="top" secondItem="G80-WH-Clq" secondAttribute="bottom" constant="8" id="HfL-yP-S79"/>
+                    <constraint firstItem="ETf-4n-QGn" firstAttribute="leading" secondItem="yPb-x0-WHv" secondAttribute="trailing" constant="8" id="P0a-Up-fkE"/>
+                    <constraint firstItem="G80-WH-Clq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="QDx-9H-KVY"/>
+                    <constraint firstAttribute="bottom" secondItem="yPb-x0-WHv" secondAttribute="bottom" constant="9" id="R6I-BG-64w"/>
+                    <constraint firstAttribute="trailing" secondItem="A8w-GK-aDf" secondAttribute="trailing" constant="120" id="TTa-bV-UrJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ETf-4n-QGn" secondAttribute="bottom" constant="1" id="ZSg-cV-nwf"/>
+                    <constraint firstItem="ETf-4n-QGn" firstAttribute="top" secondItem="G80-WH-Clq" secondAttribute="bottom" constant="8" id="bO6-o3-4p8"/>
+                    <constraint firstItem="G80-WH-Clq" firstAttribute="leading" secondItem="yPb-x0-WHv" secondAttribute="trailing" constant="8" id="qPx-Fp-GSf"/>
+                    <constraint firstItem="yPb-x0-WHv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="uU3-UH-83H"/>
+                    <constraint firstItem="yPb-x0-WHv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="yfc-IH-hsa"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="217-wG-m9L"/>
+                        <exclude reference="uU3-UH-83H"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageShop" destination="yPb-x0-WHv" id="Dbl-jf-nNT"/>
+                <outlet property="moneyLabel" destination="ETf-4n-QGn" id="Oym-YN-kw8"/>
+                <outlet property="nameLabel" destination="G80-WH-Clq" id="oqi-wh-VIV"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="267"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="3f443e226b11207e165a8033babfa2b0.jpg" width="740" height="460"/>
+    </resources>
+</document>

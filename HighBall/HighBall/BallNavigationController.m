@@ -22,13 +22,13 @@
 + (void)initialize{
     UIBarButtonItem *item = [UIBarButtonItem appearance];
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-    dic[NSForegroundColorAttributeName] = [UIColor orangeColor];
-    dic[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    dic[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    dic[NSFontAttributeName] = [UIFont systemFontOfSize:18];
     [item setTitleTextAttributes:dic forState:UIControlStateNormal];
     
     NSMutableDictionary *dicNoItem = [NSMutableDictionary dictionary];
     dicNoItem[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
-    dicNoItem[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    dicNoItem[NSFontAttributeName] = [UIFont systemFontOfSize:18];
     [item setTitleTextAttributes:dicNoItem forState:UIControlStateDisabled];
     
     

@@ -17,7 +17,13 @@
 #define frame [[UIScreen mainScreen]bounds]
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    /**
+     * 微信的界面设置
+     *
+     *  @param pay 通知中心监听变化，然后实现视图的隐藏
+     *
+     *  @return 空值
+     */
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(pay) name:@"weChat" object:nil];
     self.image = [UIImage imageNamed:@"blackImage"];
     CGSize imageSize = self.navigationController.navigationBar.bounds.size;
@@ -39,7 +45,11 @@
     [self.arrayView addSubview:imageView];
 
         }
+
 - (UIImage *)scaleToSize:(UIImage *)img size:(CGSize)size{
+    /**
+     *  设置image的大小
+     */
     UIGraphicsBeginImageContext(size);
     [img drawInRect:CGRectMake(0, 0, size.width, size.height)];
     UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -49,6 +59,9 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    /**
+     *  设置navigationbar的样式
+     */
     [self.navigationController.navigationBar setBackgroundImage:self.image forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar addSubview:self.arrayView];
    
@@ -59,9 +72,15 @@
     NSLog(@"%lu",(unsigned long)self.navigationController.viewControllers.count);
 }
 - (void)pay{
+    /**
+     *  监听事件的实现
+     */
     self.arrayView.hidden = YES;
 }
 - (void)dealloc{
+    /**
+     *  释放监听对象
+     */
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"pay" object:nil];
     NSLog(@"123");
 }
