@@ -52,7 +52,7 @@
                 <constraint firstItem="MEN-Ah-8HP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kfN-6h-fLm"/>
                 <constraint firstAttribute="trailing" secondItem="MEN-Ah-8HP" secondAttribute="trailing" id="qbb-tG-P7D"/>
             </constraints>
-            <point key="canvasLocation" x="447" y="384"/>
+            <point key="canvasLocation" x="464" y="281"/>
         </view>
         <view contentMode="scaleToFill" id="E9l-T5-cAZ">
             <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
@@ -201,7 +201,7 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="813" y="653"/>
+            <point key="canvasLocation" x="813" y="264"/>
         </view>
         <view contentMode="scaleToFill" id="PYG-Tv-dHb">
             <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>

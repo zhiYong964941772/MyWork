@@ -14,6 +14,8 @@
 @interface mealViewController ()<UITableViewDelegate,UITableViewDataSource>{
     SqliteData *_dbData;
 }
+
+@property (strong, nonatomic) IBOutlet UIView *mobileTableView;
 @property (weak, nonatomic) IBOutlet UIImageView *mobileView;
 @property (weak, nonatomic) IBOutlet UITableView *mealTableView;
 @property (strong,nonatomic) NSArray *ballSpellInfos;
@@ -24,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  
     self.navigationController.navigationBarHidden = NO;
     self.ballSpellInfos = [NSArray array];
     _dbData = [[SqliteData alloc]init];
@@ -36,6 +39,9 @@
     [ref addTarget:self action:@selector(refreshActionMeal ) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = ref;
     [self loadButton];
+    
+    self.mealTableView.tableHeaderView = self.mobileTableView;
+    
 }
 - (void)loadButton{
        UIBarButtonItem *mapItem=[[UIBarButtonItem alloc]initWithTitle:@"选择" style:UIBarButtonItemStylePlain target:self action:@selector(cityButton)];
@@ -91,9 +97,9 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 88;
 }
+
 //综合//价格
 - (IBAction)synthesizeBtn:(UIButton *)sender {
-     [self.mealTableView reloadData];
     CGRect frame = self.mobileView.frame;
     frame.origin.x = sender.tag *frame.size.width;
     [UIView animateWithDuration:0.5 animations:^{
