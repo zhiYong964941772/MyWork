@@ -46,6 +46,10 @@
 		880EDDF51B1E9A8B00B5FC25 /* shower3.png in Resources */ = {isa = PBXBuildFile; fileRef = 880EDDE51B1E9A8B00B5FC25 /* shower3.png */; };
 		880EDDF71B1E9A8B00B5FC25 /* fog.png in Resources */ = {isa = PBXBuildFile; fileRef = 880EDDE71B1E9A8B00B5FC25 /* fog.png */; };
 		880EDDF81B1E9A8B00B5FC25 /* light_rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 880EDDE81B1E9A8B00B5FC25 /* light_rain.png */; };
+		880F328F1B7F3A1A00C94868 /* searchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880F328D1B7F3A1A00C94868 /* searchTableViewController.m */; };
+		880F32901B7F3A1A00C94868 /* searchTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880F328E1B7F3A1A00C94868 /* searchTableViewController.xib */; };
+		880F32941B7F3A2C00C94868 /* searchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880F32921B7F3A2C00C94868 /* searchViewController.m */; };
+		880F32951B7F3A2C00C94868 /* searchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880F32931B7F3A2C00C94868 /* searchViewController.xib */; };
 		8815471D1B5F3BA200A74949 /* shoopHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8815471B1B5F3BA200A74949 /* shoopHomeViewController.m */; };
 		8815471E1B5F3BA200A74949 /* shoopHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8815471C1B5F3BA200A74949 /* shoopHomeViewController.xib */; };
 		881F0E361B4E4F19002E0C9C /* AirTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F0E341B4E4F19002E0C9C /* AirTicketViewController.m */; };
@@ -383,6 +387,12 @@
 		880EDDE51B1E9A8B00B5FC25 /* shower3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shower3.png; sourceTree = "<group>"; };
 		880EDDE71B1E9A8B00B5FC25 /* fog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fog.png; sourceTree = "<group>"; };
 		880EDDE81B1E9A8B00B5FC25 /* light_rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_rain.png; sourceTree = "<group>"; };
+		880F328C1B7F3A1A00C94868 /* searchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchTableViewController.h; sourceTree = "<group>"; };
+		880F328D1B7F3A1A00C94868 /* searchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchTableViewController.m; sourceTree = "<group>"; };
+		880F328E1B7F3A1A00C94868 /* searchTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = searchTableViewController.xib; sourceTree = "<group>"; };
+		880F32911B7F3A2C00C94868 /* searchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchViewController.h; sourceTree = "<group>"; };
+		880F32921B7F3A2C00C94868 /* searchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchViewController.m; sourceTree = "<group>"; };
+		880F32931B7F3A2C00C94868 /* searchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = searchViewController.xib; sourceTree = "<group>"; };
 		8815471A1B5F3BA200A74949 /* shoopHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoopHomeViewController.h; sourceTree = "<group>"; };
 		8815471B1B5F3BA200A74949 /* shoopHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoopHomeViewController.m; sourceTree = "<group>"; };
 		8815471C1B5F3BA200A74949 /* shoopHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shoopHomeViewController.xib; sourceTree = "<group>"; };
@@ -875,6 +885,19 @@
 			name = "天气";
 			sourceTree = "<group>";
 		};
+		880F328B1B7F39F300C94868 /* 测试 */ = {
+			isa = PBXGroup;
+			children = (
+				880F328C1B7F3A1A00C94868 /* searchTableViewController.h */,
+				880F328D1B7F3A1A00C94868 /* searchTableViewController.m */,
+				880F328E1B7F3A1A00C94868 /* searchTableViewController.xib */,
+				880F32911B7F3A2C00C94868 /* searchViewController.h */,
+				880F32921B7F3A2C00C94868 /* searchViewController.m */,
+				880F32931B7F3A2C00C94868 /* searchViewController.xib */,
+			);
+			name = "测试";
+			sourceTree = "<group>";
+		};
 		881547181B5F3A3A00A74949 /* 商城 */ = {
 			isa = PBXGroup;
 			children = (
@@ -993,6 +1016,7 @@
 		883CD88C1AE7915D00A50F7E /* HighBall */ = {
 			isa = PBXGroup;
 			children = (
+				880F328B1B7F39F300C94868 /* 测试 */,
 				883CD8911AE7915D00A50F7E /* AppDelegate.h */,
 				883CD8921AE7915D00A50F7E /* AppDelegate.m */,
 				883CD89A1AE7915D00A50F7E /* Images.xcassets */,
@@ -1847,6 +1871,7 @@
 				8879034F1B4A61020047C38B /* zhifubao.png in Resources */,
 				88825B0C1B70A0E2004DA252 /* 3f443e226b11207e165a8033babfa2b0.jpg in Resources */,
 				8815471E1B5F3BA200A74949 /* shoopHomeViewController.xib in Resources */,
+				880F32951B7F3A2C00C94868 /* searchViewController.xib in Resources */,
 				887903501B4A61020047C38B /* chuxuka.png in Resources */,
 				88A695581AEB2AE60020F51F /* shouer.png in Resources */,
 				88AF48741B57BA98001AEC7C /* AirFlightViewController.xib in Resources */,
@@ -1919,6 +1944,7 @@
 				882304DC1B68B34500CE063F /* avatar_default_big@2x.png in Resources */,
 				88AF487C1B57BAD5001AEC7C /* threeImage.png in Resources */,
 				880949331B4F91C60007E788 /* ChoosePersonViewController.xib in Resources */,
+				880F32901B7F3A1A00C94868 /* searchTableViewController.xib in Resources */,
 				883F6F961B46878B00D53E79 /* mapAction.png in Resources */,
 				883CD89E1AE7915D00A50F7E /* LaunchScreen.xib in Resources */,
 				88FA9CA61B71B414008B4F8D /* iconfont-14052229.png in Resources */,
@@ -2038,6 +2064,7 @@
 				88AF485F1B57B325001AEC7C /* AirOrderDetailViewController.m in Sources */,
 				88A695AF1AEB6DA30020F51F /* AFURLConnectionOperation.m in Sources */,
 				88B53F231B3C012500638573 /* UIImage+WebP.m in Sources */,
+				880F32941B7F3A2C00C94868 /* searchViewController.m in Sources */,
 				88A695B41AEB6DA30020F51F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				88A695B01AEB6DA30020F51F /* AFURLRequestSerialization.m in Sources */,
 				88B94C981B4636DB0099CA24 /* CalendarDayModel.m in Sources */,
@@ -2131,6 +2158,7 @@
 				880949321B4F91C60007E788 /* ChoosePersonViewController.m in Sources */,
 				88B53F171B3C012500638573 /* MKAnnotationView+WebCache.m in Sources */,
 				88E423C41B79A940009B305B /* listTableViewCell.m in Sources */,
+				880F328F1B7F3A1A00C94868 /* searchTableViewController.m in Sources */,
 				8809492D1B4F78950007E788 /* CadinDaileViewController.m in Sources */,
 				8879033F1B4A28FA0047C38B /* FillViewController.m in Sources */,
 				88B94C5E1B4635F80099CA24 /* ScheduleViewController.m in Sources */,

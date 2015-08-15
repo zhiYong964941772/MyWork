@@ -25,8 +25,8 @@
 @implementation BallSpellCityViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden=YES;
-    self.searchResuls=[NSMutableArray array];
+    self.title = @"城市选择";
+        self.searchResuls=[NSMutableArray array];
     [mainTable registerClass:[UITableViewCell class] forCellReuseIdentifier:@"maincell"];
     [self.searchTVC.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"searchCell"];
     [self initUI];
@@ -52,11 +52,9 @@
 
 -(void)initUI
 {
-    self.navigationController.navigationBarHidden=NO;
     
     
-    
-    mainTable.delegate = self;
+        mainTable.delegate = self;
     mainTable.dataSource = self;
     _array = [[NSMutableArray alloc]init];
     self.province=[[Province alloc]init];
@@ -66,12 +64,9 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    self.navigationController.navigationBarHidden=YES;
+    
 }
 
-- (IBAction)backAction:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -245,19 +240,24 @@
 
 
 - (IBAction)searchAction:(id)sender {
+   // CGRect frame = [[UIScreen mainScreen]bounds];
     //初始化搜索
     if (!_searchTVC) {
-        _searchTVC = [[UITableViewController alloc]initWithStyle:UITableViewStylePlain];
+        _searchTVC = [[UITableViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        
+        
     }
     self.searchTVC.tableView.dataSource = self;
     self.searchTVC.tableView.delegate = self;
     //创建搜索控制器
+    
     self.searchController = [[UISearchController alloc]initWithSearchResultsController:self.searchTVC];
     //当搜索框中的内容发生变化时，由谁来处理
     self.searchController.searchResultsUpdater = self;
     //提示信息
     self.searchController.searchBar.placeholder = @"城市名称";
     self.searchController.searchBar.prompt = @"请输入要查询的城市";
+
     //展示搜索控制器
     [self presentViewController:self.searchController animated:YES completion:nil];
 }
@@ -277,4 +277,5 @@
     self.searchResuls = array;
     [self.searchTVC.tableView reloadData];
 }
+
 @end

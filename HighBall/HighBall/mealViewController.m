@@ -11,6 +11,8 @@
 #import "SqliteData.h"
 #import "BallSpellInfo.h"
 #import "BallSpellAPI.h"
+#import "BallSpellCityViewController.h"
+#import "searchTableViewController.h"
 @interface mealViewController ()<UITableViewDelegate,UITableViewDataSource>{
     SqliteData *_dbData;
 }
@@ -23,7 +25,10 @@
 @end
 
 @implementation mealViewController
-
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
   
@@ -109,7 +114,10 @@
 //价格
 //城市的搜索
 - (void)cityButton{
-    NSLog(@"搜索城市");
+//    BallSpellCityViewController *ballCity = [[BallSpellCityViewController alloc]initWithNibName:@"BallSpellCityViewController" bundle:nil];
+//    [self.navigationController pushViewController:ballCity animated:YES];
+    searchTableViewController *search = [[searchTableViewController alloc]initWithNibName:@"searchTableViewController" bundle:nil];
+    [self.navigationController pushViewController:search animated:YES];
 }
 
 @end
