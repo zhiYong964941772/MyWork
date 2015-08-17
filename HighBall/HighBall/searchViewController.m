@@ -17,13 +17,15 @@ static NSString *identf = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identf];
-    
+    [self.tableView reloadData];
 }
 
 
 #pragma mark - Table view data source
 
-
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.resultArray.count;
 
@@ -32,13 +34,28 @@ static NSString *identf = @"Cell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identf forIndexPath:indexPath];
-    cell.textLabel.text = self.resultArray[indexPath.row];
+    if (!cell){
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identf];
+    }
+    
+    cell.textLabel.text =  self.resultArray[indexPath.row];
     
     
     return cell;
 }
-
-
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *myView=[[UIView alloc]initWithFrame:CGRectMake(0, 0,self.view.frame.size.width, 40)];
+    [myView setBackgroundColor:[UIColor redColor]];
+    UILabel *lable=[[UILabel alloc]initWithFrame:CGRectMake(10, 10, 250, 25)];
+    lable.font=[UIFont systemFontOfSize:17];
+    lable.textColor=[UIColor grayColor];
+    lable.text=@"搜索得到的城市";
+    [myView addSubview:lable];
+    return myView;
+}
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

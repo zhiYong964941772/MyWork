@@ -84,7 +84,7 @@
                 <outlet property="moneyLabel" destination="ETf-4n-QGn" id="Oym-YN-kw8"/>
                 <outlet property="nameLabel" destination="G80-WH-Clq" id="oqi-wh-VIV"/>
             </connections>
-            <point key="canvasLocation" x="289" y="267"/>
+            <point key="canvasLocation" x="402" y="311"/>
         </tableViewCell>
     </objects>
     <resources>

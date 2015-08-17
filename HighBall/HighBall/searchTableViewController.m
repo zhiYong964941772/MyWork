@@ -22,6 +22,7 @@
 static NSString *iden = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"选择城市";
         [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:iden];
     self.searchResultViewController = [[searchViewController alloc]initWithNibName:@"searchViewController" bundle:nil];
     self.searchController = [[UISearchController alloc]initWithSearchResultsController:self.searchResultViewController];
@@ -29,7 +30,7 @@ static NSString *iden = @"Cell";
     self.searchController.searchBar.placeholder = @"城市名称";
     self.searchController.searchBar.prompt = @"请输入要查询的城市";
     [self.searchController.searchBar sizeToFit];
-    self.searchController.searchBar.showsCancelButton = YES;
+    self.searchController.searchBar.showsCancelButton = NO;
     NSArray *searchArr;
     if ([[[UIDevice currentDevice]systemVersion]floatValue]>=7.0) {
         searchArr = [(self.searchController.searchBar.subviews[0])subviews];
@@ -67,6 +68,7 @@ static NSString *iden = @"Cell";
             }
         }
         self.citys=arr;
+       
     }];
 }
 -(void)initUI
@@ -76,6 +78,7 @@ static NSString *iden = @"Cell";
         _array = [[NSMutableArray alloc]init];
     self.province=[[Province alloc]init];
     didSection = _array.count;
+    self.tableView.tableHeaderView = self.searchController.searchBar;
 }
 
 
@@ -102,12 +105,11 @@ static NSString *iden = @"Cell";
         NSString *str=nil;
     if (!cell) {
         cell = [tableView dequeueReusableCellWithIdentifier:iden forIndexPath:indexPath];
-        Province *p=_array[didSection];
-        Citie *citi=p.cities[indexPath.row];
-        str=citi.cityName;
-
+        
     }
-    
+    Province *p=_array[didSection];
+    Citie *citi=p.cities[indexPath.row];
+    str=citi.cityName;
     cell.textLabel.text =str;
     
     
@@ -187,6 +189,7 @@ return myView;
             [self didSelectCellRowFirstDo:NO nextDo:YES];
         }
     }
+    
 }
 - (void)didSelectCellRowFirstDo:(BOOL)firstDoInsert nextDo:(BOOL)nextDoInsert
 {
@@ -216,7 +219,7 @@ return myView;
 }
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController{
     NSString *searchText = searchController.searchBar.text;
-    NSInteger index = searchController.searchBar.selectedScopeButtonIndex;
+    NSInteger index = self.searchController.searchBar.selectedScopeButtonIndex;
     NSLog(@"%ld",(long)index);
     NSMutableArray *searchResults = [NSMutableArray array];
     for (NSString *p in self.citys) {

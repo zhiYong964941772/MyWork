@@ -47,7 +47,7 @@
             }
         }
         self.citys=arr;
-    }];
+            }];
 }
 
 -(void)initUI
@@ -250,14 +250,14 @@
     self.searchTVC.tableView.dataSource = self;
     self.searchTVC.tableView.delegate = self;
     //创建搜索控制器
-    
+    self.definesPresentationContext = YES;
     self.searchController = [[UISearchController alloc]initWithSearchResultsController:self.searchTVC];
     //当搜索框中的内容发生变化时，由谁来处理
     self.searchController.searchResultsUpdater = self;
     //提示信息
     self.searchController.searchBar.placeholder = @"城市名称";
     self.searchController.searchBar.prompt = @"请输入要查询的城市";
-
+    [self.searchController.view setAccessibilityFrame:CGRectMake(0, 50, self.view.frame.size.width, self.view.frame.size.height-50)];
     //展示搜索控制器
     [self presentViewController:self.searchController animated:YES completion:nil];
 }

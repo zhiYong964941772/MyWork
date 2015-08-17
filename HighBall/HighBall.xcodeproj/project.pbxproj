@@ -67,6 +67,8 @@
 		882304DC1B68B34500CE063F /* avatar_default_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882304DB1B68B34500CE063F /* avatar_default_big@2x.png */; };
 		882B35BB1B0C35BD007810B2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882B35BA1B0C35BD007810B2 /* libsqlite3.0.dylib */; };
 		882B35BD1B0C35C4007810B2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882B35BC1B0C35C4007810B2 /* libsqlite3.dylib */; };
+		882BD9741B81D6620070D27E /* mealDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882BD9721B81D6620070D27E /* mealDetailsController.m */; };
+		882BD9751B81D6620070D27E /* mealDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882BD9731B81D6620070D27E /* mealDetailsController.xib */; };
 		8831E00A1B7856ED0070029F /* payshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8831E0081B7856ED0070029F /* payshopViewController.m */; };
 		8831E00B1B7856ED0070029F /* payshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8831E0091B7856ED0070029F /* payshopViewController.xib */; };
 		883CD8901AE7915D00A50F7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CD88F1AE7915D00A50F7E /* main.m */; };
@@ -417,6 +419,9 @@
 		882304DB1B68B34500CE063F /* avatar_default_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_default_big@2x.png"; sourceTree = "<group>"; };
 		882B35BA1B0C35BD007810B2 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		882B35BC1B0C35C4007810B2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		882BD9711B81D6620070D27E /* mealDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mealDetailsController.h; sourceTree = "<group>"; };
+		882BD9721B81D6620070D27E /* mealDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mealDetailsController.m; sourceTree = "<group>"; };
+		882BD9731B81D6620070D27E /* mealDetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mealDetailsController.xib; sourceTree = "<group>"; };
 		8831E0071B7856ED0070029F /* payshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payshopViewController.h; sourceTree = "<group>"; };
 		8831E0081B7856ED0070029F /* payshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = payshopViewController.m; sourceTree = "<group>"; };
 		8831E0091B7856ED0070029F /* payshopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = payshopViewController.xib; sourceTree = "<group>"; };
@@ -975,6 +980,16 @@
 			name = "个人";
 			sourceTree = "<group>";
 		};
+		882BD9701B81D6040070D27E /* 详情 */ = {
+			isa = PBXGroup;
+			children = (
+				882BD9711B81D6620070D27E /* mealDetailsController.h */,
+				882BD9721B81D6620070D27E /* mealDetailsController.m */,
+				882BD9731B81D6620070D27E /* mealDetailsController.xib */,
+			);
+			name = "详情";
+			sourceTree = "<group>";
+		};
 		882C2F5B1B7464640012C9CD /* 支付 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1180,6 +1195,7 @@
 		88450AB51B7C85C7004E1522 /* 套餐 */ = {
 			isa = PBXGroup;
 			children = (
+				882BD9701B81D6040070D27E /* 详情 */,
 				88450AC01B7C8871004E1522 /* 套餐首页 */,
 			);
 			name = "套餐";
@@ -1951,6 +1967,7 @@
 				88009E251B47DBB400CD5BB9 /* contact.png in Resources */,
 				884076ED1B6CA05600418E9D /* iconfont-category (1)_search.png in Resources */,
 				88932A6F1B7B475100B3A99A /* shuoMingViewController.xib in Resources */,
+				882BD9751B81D6620070D27E /* mealDetailsController.xib in Resources */,
 				88B94C5F1B4635F80099CA24 /* ScheduleViewController.xib in Resources */,
 				88825B231B70C5CC004DA252 /* iconfont-jianhao.png in Resources */,
 				88825B241B70C5CC004DA252 /* iconfont-jiahao.png in Resources */,
@@ -2044,6 +2061,7 @@
 				88BD8CA31B4D09970025F011 /* PubInformationViewController.m in Sources */,
 				88B53F181B3C012500638573 /* NSData+ImageContentType.m in Sources */,
 				88E423CE1B79C32B009B305B /* addressViewController.m in Sources */,
+				882BD9741B81D6620070D27E /* mealDetailsController.m in Sources */,
 				88B94C361B4634F80099CA24 /* HomeTableViewCell.m in Sources */,
 				882304D21B6885E200CE063F /* UserViewController.m in Sources */,
 				88A695B91AEB6DA30020F51F /* UIRefreshControl+AFNetworking.m in Sources */,
