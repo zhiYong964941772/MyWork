@@ -65,6 +65,9 @@
 		882304D61B68AA5A00CE063F /* ideal-space.png in Resources */ = {isa = PBXBuildFile; fileRef = 882304D51B68AA5A00CE063F /* ideal-space.png */; };
 		882304DA1B68AC3200CE063F /* space_backimage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 882304D91B68AC3200CE063F /* space_backimage.jpeg */; };
 		882304DC1B68B34500CE063F /* avatar_default_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882304DB1B68B34500CE063F /* avatar_default_big@2x.png */; };
+		8826F4961B82D2A100C2F899 /* iconfont-hongdian.png in Resources */ = {isa = PBXBuildFile; fileRef = 8826F4951B82D2A100C2F899 /* iconfont-hongdian.png */; };
+		8826F49A1B830F5C00C2F899 /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8826F4981B830F5C00C2F899 /* SecondTableViewCell.m */; };
+		8826F49B1B830F5C00C2F899 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8826F4991B830F5C00C2F899 /* SecondTableViewCell.xib */; };
 		882B35BB1B0C35BD007810B2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882B35BA1B0C35BD007810B2 /* libsqlite3.0.dylib */; };
 		882B35BD1B0C35C4007810B2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882B35BC1B0C35C4007810B2 /* libsqlite3.dylib */; };
 		882BD9741B81D6620070D27E /* mealDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882BD9721B81D6620070D27E /* mealDetailsController.m */; };
@@ -417,6 +420,10 @@
 		882304D51B68AA5A00CE063F /* ideal-space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ideal-space.png"; sourceTree = "<group>"; };
 		882304D91B68AC3200CE063F /* space_backimage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space_backimage.jpeg; sourceTree = "<group>"; };
 		882304DB1B68B34500CE063F /* avatar_default_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_default_big@2x.png"; sourceTree = "<group>"; };
+		8826F4951B82D2A100C2F899 /* iconfont-hongdian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-hongdian.png"; sourceTree = "<group>"; };
+		8826F4971B830F5C00C2F899 /* SecondTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTableViewCell.h; sourceTree = "<group>"; };
+		8826F4981B830F5C00C2F899 /* SecondTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewCell.m; sourceTree = "<group>"; };
+		8826F4991B830F5C00C2F899 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 		882B35BA1B0C35BD007810B2 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		882B35BC1B0C35C4007810B2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		882BD9711B81D6620070D27E /* mealDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mealDetailsController.h; sourceTree = "<group>"; };
@@ -986,6 +993,9 @@
 				882BD9711B81D6620070D27E /* mealDetailsController.h */,
 				882BD9721B81D6620070D27E /* mealDetailsController.m */,
 				882BD9731B81D6620070D27E /* mealDetailsController.xib */,
+				8826F4971B830F5C00C2F899 /* SecondTableViewCell.h */,
+				8826F4981B830F5C00C2F899 /* SecondTableViewCell.m */,
+				8826F4991B830F5C00C2F899 /* SecondTableViewCell.xib */,
 			);
 			name = "详情";
 			sourceTree = "<group>";
@@ -1218,6 +1228,7 @@
 			isa = PBXGroup;
 			children = (
 				88450AC21B7C92C8004E1522 /* iconfont-chuanshu.png */,
+				8826F4951B82D2A100C2F899 /* iconfont-hongdian.png */,
 			);
 			name = "套餐";
 			sourceTree = "<group>";
@@ -1898,6 +1909,7 @@
 				88E423D61B79CB19009B305B /* newAddressViewController.xib in Resources */,
 				88932A6A1B7B320C00B3A99A /* bankViewController.xib in Resources */,
 				881F0E3C1B4E672D002E0C9C /* zhixiang.png in Resources */,
+				8826F49B1B830F5C00C2F899 /* SecondTableViewCell.xib in Resources */,
 				88E423CF1B79C32B009B305B /* addressViewController.xib in Resources */,
 				88FA9CA41B71B203008B4F8D /* iconfont-jia.png in Resources */,
 				88711D731B6B6E7100A05BA1 /* iconfont-shouyeshouye_selected.png in Resources */,
@@ -2008,6 +2020,7 @@
 				88BD8CA41B4D09970025F011 /* PubInformationViewController.xib in Resources */,
 				88711D581B6B601D00A05BA1 /* iconfont-shouyeshouye.png in Resources */,
 				88A6954C1AEB2AE60020F51F /* Home10.png in Resources */,
+				8826F4961B82D2A100C2F899 /* iconfont-hongdian.png in Resources */,
 				88E423CA1B79C30F009B305B /* addressTableViewCell.xib in Resources */,
 				88B94C791B4636190099CA24 /* BallSpellNameTableViewController.xib in Resources */,
 				88BD8C821B4D09180025F011 /* OrderDetailsViewController.xib in Resources */,
@@ -2194,6 +2207,7 @@
 				88B53F1B1B3C012500638573 /* SDWebImageDecoder.m in Sources */,
 				88E423BF1B79A90B009B305B /* listViewController.m in Sources */,
 				88B53F211B3C012500638573 /* UIImage+GIF.m in Sources */,
+				8826F49A1B830F5C00C2F899 /* SecondTableViewCell.m in Sources */,
 				88B94C781B4636190099CA24 /* BallSpellNameTableViewController.m in Sources */,
 				88BD8C851B4D09180025F011 /* PayOrderTableViewController.m in Sources */,
 			);

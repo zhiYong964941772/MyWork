@@ -13,6 +13,7 @@
 #import "BallSpellAPI.h"
 #import "BallSpellCityViewController.h"
 #import "searchTableViewController.h"
+#import "mealDetailsController.h"
 @interface mealViewController ()<UITableViewDelegate,UITableViewDataSource>{
     SqliteData *_dbData;
 }
@@ -101,6 +102,10 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 88;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    mealDetailsController *meal = [[mealDetailsController alloc]initWithNibName:@"mealDetailsController" bundle:nil];
+    [self.navigationController pushViewController:meal animated:YES];
 }
 
 //综合//价格
