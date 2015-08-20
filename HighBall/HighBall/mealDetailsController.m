@@ -8,6 +8,7 @@
 
 #import "mealDetailsController.h"
 #import "SecondTableViewCell.h"
+#import "CKViewController.h"
 @interface mealDetailsController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UIView *footView;
 @property (weak, nonatomic) IBOutlet UIImageView *rollView;
@@ -146,7 +147,8 @@
 }
 //预定
 - (IBAction)appointmentBtn:(UIButton *)sender {
-    NSLog(@".....");
+    CKViewController *kvc = [[CKViewController alloc]init];
+    [self.navigationController pushViewController:kvc animated:YES];
 }
 
 

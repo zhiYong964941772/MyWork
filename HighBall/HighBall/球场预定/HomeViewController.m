@@ -62,7 +62,7 @@
         CLLocationManager *locationManager = [[CLLocationManager alloc]init];
         [locationManager requestAlwaysAuthorization];
         [locationManager requestWhenInUseAuthorization];
-        
+      
         
         
     }
