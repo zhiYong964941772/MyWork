@@ -10,5 +10,5 @@
 
 @interface foolView : UIView
 @property (nonatomic,strong)NSString *name;
-- (void)show;
+- (void)show:(NSString *)money;
 @end

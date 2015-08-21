@@ -9,18 +9,29 @@
 
 #import "foolView.h"
 #import "JKAlertDialog.h"
+
 #define Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define Frame [[UIScreen mainScreen]bounds]
 @interface foolView()
 @property (nonatomic,strong)UILabel *money;
+@property (nonatomic,strong)UILabel *zong;
 @end
 @implementation foolView
 static NSInteger num = 1;
 static NSInteger mon = 200;
--(void)show{
+- (UILabel *)money{
+    if (!_money) {
+        _money = [[UILabel alloc]initWithFrame:CGRectMake(self.frame.size.width-320, 15, 150, 40)];
+        self.money.textColor = [UIColor whiteColor];
+        self.money.font = [UIFont systemFontOfSize:22];
+    }
+    return _money;
+}
+-(void)show:(NSString *)money{
     self.backgroundColor = Color(249, 57, 28);
     self.frame = CGRectMake(0, Frame.size.height - 134, Frame.size.width, 70);
     //接收事件
+    self.money.text = money;
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(num:) name:@"num" object:nil];
     [self initWithFootView:self];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(name:) name:@"title" object:nil];
@@ -36,6 +47,7 @@ static NSInteger mon = 200;
 
 - (void)initWithFootView:(UIView *)footView{
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 15, 100, 40)];
+    self.zong = label;
     label.textColor = [UIColor whiteColor];
     label.font = [UIFont systemFontOfSize:17];
     label.text = @"总额：";
@@ -44,18 +56,17 @@ static NSInteger mon = 200;
     /**
      金额变化
      */
-    UILabel *label2 = [[UILabel alloc]initWithFrame:CGRectMake(label.frame.size.width-40, label.frame.origin.y, 150, 40)];
-    self.money = label2;
-    label2.textColor = [UIColor whiteColor];
-    label2.font = [UIFont systemFontOfSize:22];
-    label2.text = @"¥ 3000";
-    [footView addSubview:label2];
+    
+   
+   
+    
+    [footView addSubview:self.money];
     
     /**
      *  商品清单的显示按钮
      */
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(label2.frame.size.width-10, 20, 40, 30);
+    btn.frame = CGRectMake(self.money.frame.size.width-10, 20, 40, 30);
     [btn setTitle:@"明细" forState:UIControlStateNormal];
     btn.userInteractionEnabled = YES;
     [btn addTarget:self action:@selector(mingxi) forControlEvents:UIControlEventTouchUpInside];
@@ -144,14 +155,16 @@ static NSInteger mon = 200;
     }
 }
 - (void)xiayibu{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setValue:self.money.text forKey:@"money"];
     if ([self.name  isEqual: @"选择日期／人数"]) {
-        NSLog(@"123");
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"ziYuan" object:nil];
         
     }else{
         NSLog(@"坑坑");
     }
 
-    
+    [defaults synchronize];
 }
 -(void)dealloc{
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"title" object:nil];

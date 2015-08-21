@@ -13,6 +13,7 @@
 #import "CKViewController.h"
 #import "CKCalendarView.h"
 #import "JKAlertDialog.h"
+#import "ziYuanViewController.h"
 #define Frame [[UIScreen mainScreen]bounds]
 #define Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 static NSInteger num = 1;//商品的数量
@@ -40,7 +41,7 @@ static NSInteger num = 1;//商品的数量
         [backgrouView addSubview:calendar];
         UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, Frame.size.height-calendar.frame.size.height-90, Frame.size.width, 135)];
         self.fool = [[foolView alloc]init];
-        [self.fool show];
+        [self.fool show:@"¥ 200"];
         
         view.backgroundColor = [UIColor whiteColor];
         [self initWithView:view];
@@ -60,6 +61,13 @@ static NSInteger num = 1;//商品的数量
     [super viewDidLoad];
 	self.title = @"选择日期／人数";
     [[NSNotificationCenter defaultCenter]postNotificationName:@"title" object:nil userInfo:@{@"name":self.title}];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(ziYuan) name:@"ziYuan" object:nil];
+}
+- (void)ziYuan{
+    ziYuanViewController *ziYuan = [[ziYuanViewController alloc]initWithNibName:@"ziYuanViewController" bundle:nil];
+    [self.navigationController pushViewController:ziYuan animated:YES];
+    
+    
 }
 /**
  *  配置界面的控件

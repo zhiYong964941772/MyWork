@@ -7,7 +7,7 @@
 //
 
 #import "ziYuanViewController.h"
-
+#import "foolView.h"
 @interface ziYuanViewController ()
 
 @end
@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+   self.title = @"选择资源";
+    foolView *fool = [[foolView alloc]init];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [fool show:[defaults objectForKey:@"money"]];
+    [defaults synchronize];
+    [self.view addSubview:fool];
 }
 
 - (void)didReceiveMemoryWarning {
