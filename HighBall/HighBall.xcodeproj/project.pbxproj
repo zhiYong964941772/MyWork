@@ -72,6 +72,9 @@
 		882B35BD1B0C35C4007810B2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882B35BC1B0C35C4007810B2 /* libsqlite3.dylib */; };
 		882BD9741B81D6620070D27E /* mealDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882BD9721B81D6620070D27E /* mealDetailsController.m */; };
 		882BD9751B81D6620070D27E /* mealDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882BD9731B81D6620070D27E /* mealDetailsController.xib */; };
+		882CA6131B86F98500D15C71 /* foolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 882CA6121B86F98500D15C71 /* foolView.m */; };
+		882CA6171B8714BA00D15C71 /* ziYuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882CA6151B8714BA00D15C71 /* ziYuanViewController.m */; };
+		882CA6181B8714BA00D15C71 /* ziYuanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882CA6161B8714BA00D15C71 /* ziYuanViewController.xib */; };
 		8831E00A1B7856ED0070029F /* payshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8831E0081B7856ED0070029F /* payshopViewController.m */; };
 		8831E00B1B7856ED0070029F /* payshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8831E0091B7856ED0070029F /* payshopViewController.xib */; };
 		883CD8901AE7915D00A50F7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CD88F1AE7915D00A50F7E /* main.m */; };
@@ -435,6 +438,11 @@
 		882BD9711B81D6620070D27E /* mealDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mealDetailsController.h; sourceTree = "<group>"; };
 		882BD9721B81D6620070D27E /* mealDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mealDetailsController.m; sourceTree = "<group>"; };
 		882BD9731B81D6620070D27E /* mealDetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mealDetailsController.xib; sourceTree = "<group>"; };
+		882CA6111B86F98500D15C71 /* foolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foolView.h; sourceTree = "<group>"; };
+		882CA6121B86F98500D15C71 /* foolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = foolView.m; sourceTree = "<group>"; };
+		882CA6141B8714BA00D15C71 /* ziYuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ziYuanViewController.h; sourceTree = "<group>"; };
+		882CA6151B8714BA00D15C71 /* ziYuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ziYuanViewController.m; sourceTree = "<group>"; };
+		882CA6161B8714BA00D15C71 /* ziYuanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ziYuanViewController.xib; sourceTree = "<group>"; };
 		8831E0071B7856ED0070029F /* payshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payshopViewController.h; sourceTree = "<group>"; };
 		8831E0081B7856ED0070029F /* payshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = payshopViewController.m; sourceTree = "<group>"; };
 		8831E0091B7856ED0070029F /* payshopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = payshopViewController.xib; sourceTree = "<group>"; };
@@ -972,6 +980,9 @@
 				88C068901B85CED300F01428 /* CKViewController.m */,
 				88C0688C1B85CEBF00F01428 /* CKCalendarView.h */,
 				88C0688D1B85CEBF00F01428 /* CKCalendarView.m */,
+				882CA6141B8714BA00D15C71 /* ziYuanViewController.h */,
+				882CA6151B8714BA00D15C71 /* ziYuanViewController.m */,
+				882CA6161B8714BA00D15C71 /* ziYuanViewController.xib */,
 				88C068961B85D60600F01428 /* right_arrow@2x.png */,
 				88C068971B85D60600F01428 /* right_arrow.png */,
 				88C068981B85D60600F01428 /* left_arrow@2x.png */,
@@ -1651,6 +1662,8 @@
 				88AFEAEE1B60C49C00849AB6 /* cityCell.m */,
 				880E23781B675B48006728E3 /* AirTime.h */,
 				880E23791B675B48006728E3 /* AirTime.m */,
+				882CA6111B86F98500D15C71 /* foolView.h */,
+				882CA6121B86F98500D15C71 /* foolView.m */,
 			);
 			name = "类";
 			sourceTree = "<group>";
@@ -1962,6 +1975,7 @@
 				88B94CAB1B46373C0099CA24 /* finger2.png in Resources */,
 				88450AC31B7C92C8004E1522 /* iconfont-chuanshu.png in Resources */,
 				883F6F841B4673A700D53E79 /* yansi.png in Resources */,
+				882CA6181B8714BA00D15C71 /* ziYuanViewController.xib in Resources */,
 				88970CB11B1EA03500CC15C7 /* map.png in Resources */,
 				88BD8C841B4D09180025F011 /* PayOrderTableViewCell.xib in Resources */,
 				88825B061B70A049004DA252 /* TableViewCell.xib in Resources */,
@@ -2132,6 +2146,7 @@
 				88B53F231B3C012500638573 /* UIImage+WebP.m in Sources */,
 				880F32941B7F3A2C00C94868 /* searchViewController.m in Sources */,
 				88A695B41AEB6DA30020F51F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				882CA6171B8714BA00D15C71 /* ziYuanViewController.m in Sources */,
 				88A695B01AEB6DA30020F51F /* AFURLRequestSerialization.m in Sources */,
 				88B94C981B4636DB0099CA24 /* CalendarDayModel.m in Sources */,
 				88A695AC1AEB6DA30020F51F /* AFHTTPSessionManager.m in Sources */,
@@ -2216,6 +2231,7 @@
 				88B94C4A1B4635E10099CA24 /* OrderTableViewCell.m in Sources */,
 				88A695B51AEB6DA30020F51F /* UIAlertView+AFNetworking.m in Sources */,
 				883CD8901AE7915D00A50F7E /* main.m in Sources */,
+				882CA6131B86F98500D15C71 /* foolView.m in Sources */,
 				88AF485D1B57B325001AEC7C /* AirOrderTableViewCell.m in Sources */,
 				88A695B11AEB6DA30020F51F /* AFURLResponseSerialization.m in Sources */,
 				880E237D1B675D11006728E3 /* AirFilghtView.m in Sources */,
