@@ -52,6 +52,7 @@
 		880F32951B7F3A2C00C94868 /* searchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880F32931B7F3A2C00C94868 /* searchViewController.xib */; };
 		8815471D1B5F3BA200A74949 /* shoopHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8815471B1B5F3BA200A74949 /* shoopHomeViewController.m */; };
 		8815471E1B5F3BA200A74949 /* shoopHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8815471C1B5F3BA200A74949 /* shoopHomeViewController.xib */; };
+		88162EB41B8C464B000CC9C8 /* ziYuan.m in Sources */ = {isa = PBXBuildFile; fileRef = 88162EB31B8C464B000CC9C8 /* ziYuan.m */; };
 		881F0E361B4E4F19002E0C9C /* AirTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F0E341B4E4F19002E0C9C /* AirTicketViewController.m */; };
 		881F0E371B4E4F19002E0C9C /* AirTicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881F0E351B4E4F19002E0C9C /* AirTicketViewController.xib */; };
 		881F0E3A1B4E5032002E0C9C /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 881F0E391B4E5032002E0C9C /* header.png */; };
@@ -410,6 +411,8 @@
 		8815471A1B5F3BA200A74949 /* shoopHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoopHomeViewController.h; sourceTree = "<group>"; };
 		8815471B1B5F3BA200A74949 /* shoopHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoopHomeViewController.m; sourceTree = "<group>"; };
 		8815471C1B5F3BA200A74949 /* shoopHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shoopHomeViewController.xib; sourceTree = "<group>"; };
+		88162EB21B8C464B000CC9C8 /* ziYuan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ziYuan.h; sourceTree = "<group>"; };
+		88162EB31B8C464B000CC9C8 /* ziYuan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ziYuan.m; sourceTree = "<group>"; };
 		881F0E2F1B4E4A53002E0C9C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		881F0E311B4E4A58002E0C9C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		881F0E331B4E4F19002E0C9C /* AirTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirTicketViewController.h; sourceTree = "<group>"; };
@@ -438,7 +441,7 @@
 		882BD9711B81D6620070D27E /* mealDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mealDetailsController.h; sourceTree = "<group>"; };
 		882BD9721B81D6620070D27E /* mealDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mealDetailsController.m; sourceTree = "<group>"; };
 		882BD9731B81D6620070D27E /* mealDetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mealDetailsController.xib; sourceTree = "<group>"; };
-		882CA6111B86F98500D15C71 /* foolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foolView.h; sourceTree = "<group>"; };
+		882CA6111B86F98500D15C71 /* foolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foolView.h; sourceTree = "<group>"; tabWidth = 5; };
 		882CA6121B86F98500D15C71 /* foolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = foolView.m; sourceTree = "<group>"; };
 		882CA6141B8714BA00D15C71 /* ziYuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ziYuanViewController.h; sourceTree = "<group>"; };
 		882CA6151B8714BA00D15C71 /* ziYuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ziYuanViewController.m; sourceTree = "<group>"; };
@@ -1664,6 +1667,8 @@
 				880E23791B675B48006728E3 /* AirTime.m */,
 				882CA6111B86F98500D15C71 /* foolView.h */,
 				882CA6121B86F98500D15C71 /* foolView.m */,
+				88162EB21B8C464B000CC9C8 /* ziYuan.h */,
+				88162EB31B8C464B000CC9C8 /* ziYuan.m */,
 			);
 			name = "类";
 			sourceTree = "<group>";
@@ -2164,6 +2169,7 @@
 				88A59CA81B73610D00D5D9D2 /* confirmViewController.m in Sources */,
 				88BD8CAE1B4D09C90025F011 /* PubsTableViewController.m in Sources */,
 				88BD8CA51B4D09970025F011 /* PubMapViewController.m in Sources */,
+				88162EB41B8C464B000CC9C8 /* ziYuan.m in Sources */,
 				882304CC1B687E6400CE063F /* BallNavigationController.m in Sources */,
 				88932A691B7B320C00B3A99A /* bankViewController.m in Sources */,
 				88B53F1E1B3C012500638573 /* SDWebImageManager.m in Sources */,

@@ -35,7 +35,7 @@ static NSInteger num = 1;//商品的数量
         CKCalendarView *calendar = [[CKCalendarView alloc] initWithStartDay:startMonday];
         CGRect frame = [[UIScreen mainScreen]bounds];
         calendar.frame = CGRectMake(frame.size.width/2-calendar.frame.size.width/2-5, 10, 330, 200);
-        NSLog(@"%@",CGSizeCreateDictionaryRepresentation(calendar.frame.size));
+        //NSLog(@"%@",CGSizeCreateDictionaryRepresentation(calendar.frame.size));
         UIView *backgrouView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Frame.size.width, calendar.frame.size.height+164)];
         backgrouView.backgroundColor = [UIColor whiteColor];
         [backgrouView addSubview:calendar];
@@ -60,7 +60,7 @@ static NSInteger num = 1;//商品的数量
 {
     [super viewDidLoad];
 	self.title = @"选择日期／人数";
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"title" object:nil userInfo:@{@"name":self.title}];
+   
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(ziYuan) name:@"ziYuan" object:nil];
 }
 - (void)ziYuan{

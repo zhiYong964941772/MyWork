@@ -1,29 +1,27 @@
 //
-//  foolView.m
+//  ziYuan.m
 //  HighBall
 //
-//  Created by imac on 15-8-21.
+//  Created by imac on 15-8-25.
 //  Copyright (c) 2015年 YM. All rights reserved.
 //
 
-
-#import "foolView.h"
+#import "ziYuan.h"
 #import "JKAlertDialog.h"
 
 #define Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define Frame [[UIScreen mainScreen]bounds]
-@interface foolView()
-@property (nonatomic,strong)UILabel *zong;
-@property (nonatomic,assign)NSInteger nums;
-
-@end
-@implementation foolView
-
-
+@implementation ziYuan
 static NSInteger num = 1;
-
 static NSInteger mon = 200;
-
+static NSInteger num1;
+static NSInteger num2;
+static NSInteger num3;
+static NSInteger num4;
+static NSInteger num5;
+static NSInteger num6;
+static NSInteger num7;
+static NSInteger num8;
 - (UILabel *)money{
     if (!_money) {
         _money = [[UILabel alloc]initWithFrame:CGRectMake(self.frame.size.width-320, 15, 150, 40)];
@@ -32,27 +30,29 @@ static NSInteger mon = 200;
     }
     return _money;
 }
--(void)show:(NSString *)money{
+-(void)show:(NSInteger )money{
     self.backgroundColor = Color(249, 57, 28);
     self.frame = CGRectMake(0, Frame.size.height - 134, Frame.size.width, 70);
     //接收事件
-    self.money.text = money;
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(num:) name:@"num" object:nil];
+    self.money.text = [NSString stringWithFormat:@"¥ %d",money];
+    num7 = money;
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(num:) name:@"numOfziYuan" object:nil];
     [self initWithFootView:self];
-    }
-#warning mark 金额变化
+}
 - (void)num:(NSNotification *)notification{
+    num1 = [notification.userInfo[@"num1"]integerValue];
+     num2 = [notification.userInfo[@"num2"]integerValue];
+     num3 = [notification.userInfo[@"num3"]integerValue];
+    if (num1>=0||num2>=0||num3>=0) {
+        num4 = num1*mon;
+        num5 = num2*mon;
+        num6 = num3*mon;
+    }
+    num8 = num4+num5+num6;
     
-    num = [notification.userInfo[@"num"]integerValue];
-   
-        self.nums = num*mon;
-    
-        self.money.text = [NSString stringWithFormat:@"¥ %ld",(long)self.nums];
-   
+    self.money.text = [NSString stringWithFormat:@"¥ %d",(num4+num5+num6+num7)];
     
 }
-
-
 - (void)initWithFootView:(UIView *)footView{
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 15, 100, 40)];
     self.zong = label;
@@ -65,8 +65,8 @@ static NSInteger mon = 200;
      金额变化
      */
     
-   
-   
+    
+    
     
     [footView addSubview:self.money];
     
@@ -114,9 +114,9 @@ static NSInteger mon = 200;
 }
 - (void)mingxi{
     
-        
     
-    UIView *alertView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Frame.size.width-120, 150)];
+    
+    UIView *alertView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Frame.size.width-120, 320)];
     alertView.backgroundColor = [UIColor clearColor];
     UILabel *feiLabel = [[UILabel alloc]initWithFrame:CGRectMake(-20, 10, 120, 40)];
     feiLabel.text = @"费用明细";
@@ -141,15 +141,65 @@ static NSInteger mon = 200;
     shuLabel.text = [NSString stringWithFormat:@"/人x%ld",(long)num];
     shuLabel.font = [UIFont systemFontOfSize:15];
     [alertView addSubview:shuLabel];
+    
+    
+    
+    
+    
     UIImageView *imageView2 = [[UIImageView alloc]initWithFrame:CGRectMake(-25, chengLabel.frame.origin.y+chengLabel.frame.size.height+10, alertView.frame.size.width+50, 1)];
     imageView2.backgroundColor = [UIColor grayColor];
     [alertView addSubview:imageView2];
-    UILabel *zongLabel = [[UILabel alloc]initWithFrame:CGRectMake(alertView.frame.size.width-60, imageView2.frame.origin.y+imageView2.frame.size.height+10, 60, 30)];
+    
+    
+    UILabel *fujialabel = [[UILabel alloc]initWithFrame:CGRectMake(0, imageView2.frame.origin.y+10, 100, 30)];
+    fujialabel.font = [UIFont systemFontOfSize:20];
+    fujialabel.text = @"附加费";
+    [alertView addSubview:fujialabel];
+    UILabel *fujiaLabel2 = [[UILabel alloc]initWithFrame:CGRectMake(alertView.frame.size.width-70, fujialabel.frame.origin.y,70 , 30)];
+    fujiaLabel2.text = [NSString stringWithFormat:@"¥ %d",num8];
+    fujiaLabel2.textColor = [UIColor orangeColor];
+    [alertView addSubview:fujiaLabel2];
+    
+    self.haoLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, fujialabel.frame.origin.y+fujialabel.frame.size.height+10, 200,30 )];
+    self.haoLabel.numberOfLines = 0;
+        self.haoLabel.font = [UIFont systemFontOfSize:17];
+    [alertView addSubview:self.haoLabel];
+    
+    UILabel *numLabel = [[UILabel alloc]initWithFrame:CGRectMake(alertView.frame.size.width-40, self.haoLabel.frame.origin.y, 40, 30)];
+    numLabel.text = [NSString stringWithFormat:@"%d 人",num1];
+    [alertView addSubview:numLabel];
+    
+    self.chaLabel = [[UILabel alloc]initWithFrame:CGRectMake(0,self.haoLabel.frame.origin.y+10+self.haoLabel.frame.size.height , 200, 30)];
+    self.chaLabel.numberOfLines = 0;
+    
+    self.chaLabel.font = [UIFont systemFontOfSize:17];
+    [alertView addSubview:self.chaLabel];
+
+    UILabel *numLabel2 = [[UILabel alloc]initWithFrame:CGRectMake(alertView.frame.size.width-40, self.chaLabel.frame.origin.y, 40, 30)];
+    numLabel2.text = [NSString stringWithFormat:@"%d 人",num2];
+    [alertView addSubview:numLabel2];
+    
+    
+    self.danLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, self.chaLabel.frame.origin.y+10+self.chaLabel.frame.size.height,200 , 30)];
+    self.danLabel.numberOfLines = 0;
+    self.danLabel.text = @"12345";
+    self.danLabel.font = [UIFont systemFontOfSize:17];
+    [alertView addSubview:self.danLabel];
+    
+    UILabel *numLabel3 = [[UILabel alloc]initWithFrame:CGRectMake(alertView.frame.size.width-40, self.danLabel.frame.origin.y, 40, 30)];
+    numLabel3.text = [NSString stringWithFormat:@"%d 人",num3];
+    [alertView addSubview:numLabel3];
+    
+    UIImageView *imageView3 = [[UIImageView alloc]initWithFrame:CGRectMake(-25, self.danLabel.frame.origin.y+self.danLabel.frame.size.height+10, alertView.frame.size.width+50, 1)];
+    imageView3.backgroundColor = [UIColor grayColor];
+    [alertView addSubview:imageView3];
+    
+    UILabel *zongLabel = [[UILabel alloc]initWithFrame:CGRectMake(alertView.frame.size.width-60, imageView3.frame.origin.y+imageView3.frame.size.height+10, 60, 30)];
     zongLabel.text = self.money.text;
     zongLabel.textColor = [UIColor orangeColor];
     zongLabel.font = [UIFont systemFontOfSize:17];
     [alertView addSubview:zongLabel];
-    UILabel *zongLabel2 = [[UILabel alloc]initWithFrame:CGRectMake(alertView.frame.size.width-150, imageView2.frame.origin.y+imageView2.frame.size.height+10, 140, 30)];
+    UILabel *zongLabel2 = [[UILabel alloc]initWithFrame:CGRectMake(alertView.frame.size.width-150, imageView3.frame.origin.y+imageView3.frame.size.height+10, 140, 30)];
     zongLabel2.text = @"订单总额：";
     
     zongLabel2.font = [UIFont systemFontOfSize:20];
@@ -157,22 +207,20 @@ static NSInteger mon = 200;
     
     JKAlertDialog *alert = [[JKAlertDialog alloc]initWithName:@"" message:@"" color:[UIColor whiteColor] andBoolen:YES AlertsWidth:alertView.frame.size.width AlertsHeight:alertView.frame.size.height];
     alert.shopView = alertView;
-        [alert show];
-    }
+    [alert show];
+}
 - (void)xiayibu{
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setValue:self.money.text forKey:@"money"];
+    [defaults setValue:self.money.text forKey:@"money2"];
     
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"ziYuan" object:nil];
-        
+//    [[NSNotificationCenter defaultCenter]postNotificationName:@"ziYuan" object:nil];
+    
     
     [defaults synchronize];
 }
 -(void)dealloc{
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"title" object:nil];
-
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"num" object:nil];
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"nums" object:nil];
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"numOfziYuan" object:nil];
 }
+
 @end
