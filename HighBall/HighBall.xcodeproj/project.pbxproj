@@ -50,6 +50,9 @@
 		880F32901B7F3A1A00C94868 /* searchTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880F328E1B7F3A1A00C94868 /* searchTableViewController.xib */; };
 		880F32941B7F3A2C00C94868 /* searchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880F32921B7F3A2C00C94868 /* searchViewController.m */; };
 		880F32951B7F3A2C00C94868 /* searchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880F32931B7F3A2C00C94868 /* searchViewController.xib */; };
+		88130DF81B8D624A00259332 /* dingDanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88130DF61B8D624A00259332 /* dingDanViewController.m */; };
+		88130DF91B8D624A00259332 /* dingDanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88130DF71B8D624A00259332 /* dingDanViewController.xib */; };
+		88130DFB1B8D67BA00259332 /* iconfont-tianjiayuangong.png in Resources */ = {isa = PBXBuildFile; fileRef = 88130DFA1B8D67BA00259332 /* iconfont-tianjiayuangong.png */; };
 		8815471D1B5F3BA200A74949 /* shoopHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8815471B1B5F3BA200A74949 /* shoopHomeViewController.m */; };
 		8815471E1B5F3BA200A74949 /* shoopHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8815471C1B5F3BA200A74949 /* shoopHomeViewController.xib */; };
 		88162EB41B8C464B000CC9C8 /* ziYuan.m in Sources */ = {isa = PBXBuildFile; fileRef = 88162EB31B8C464B000CC9C8 /* ziYuan.m */; };
@@ -124,6 +127,11 @@
 		88711D581B6B601D00A05BA1 /* iconfont-shouyeshouye.png in Resources */ = {isa = PBXBuildFile; fileRef = 88711D551B6B601D00A05BA1 /* iconfont-shouyeshouye.png */; };
 		88711D731B6B6E7100A05BA1 /* iconfont-shouyeshouye_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 88711D721B6B6E7100A05BA1 /* iconfont-shouyeshouye_selected.png */; };
 		88711D761B6B71DF00A05BA1 /* shopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88711D751B6B71DF00A05BA1 /* shopViewController.m */; };
+		887661951B8D9B8C0030FAA6 /* xinZengViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 887661931B8D9B8C0030FAA6 /* xinZengViewController.m */; };
+		887661961B8D9B8C0030FAA6 /* xinZengViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887661941B8D9B8C0030FAA6 /* xinZengViewController.xib */; };
+		8876619A1B8DA0E20030FAA6 /* dingDanViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 887661981B8DA0E20030FAA6 /* dingDanViewCell.m */; };
+		8876619B1B8DA0E20030FAA6 /* dingDanViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887661991B8DA0E20030FAA6 /* dingDanViewCell.xib */; };
+		8876619F1B8DB3CA0030FAA6 /* dingDansViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8876619D1B8DB3CA0030FAA6 /* dingDansViewCell.m */; };
 		8879033F1B4A28FA0047C38B /* FillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8879033D1B4A28FA0047C38B /* FillViewController.m */; };
 		887903401B4A28FA0047C38B /* FillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8879033E1B4A28FA0047C38B /* FillViewController.xib */; };
 		8879034A1B4A5E190047C38B /* huabian.png in Resources */ = {isa = PBXBuildFile; fileRef = 887903491B4A5E190047C38B /* huabian.png */; };
@@ -408,6 +416,10 @@
 		880F32911B7F3A2C00C94868 /* searchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchViewController.h; sourceTree = "<group>"; };
 		880F32921B7F3A2C00C94868 /* searchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchViewController.m; sourceTree = "<group>"; };
 		880F32931B7F3A2C00C94868 /* searchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = searchViewController.xib; sourceTree = "<group>"; };
+		88130DF51B8D624A00259332 /* dingDanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dingDanViewController.h; sourceTree = "<group>"; };
+		88130DF61B8D624A00259332 /* dingDanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dingDanViewController.m; sourceTree = "<group>"; };
+		88130DF71B8D624A00259332 /* dingDanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dingDanViewController.xib; sourceTree = "<group>"; };
+		88130DFA1B8D67BA00259332 /* iconfont-tianjiayuangong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-tianjiayuangong.png"; sourceTree = "<group>"; };
 		8815471A1B5F3BA200A74949 /* shoopHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoopHomeViewController.h; sourceTree = "<group>"; };
 		8815471B1B5F3BA200A74949 /* shoopHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoopHomeViewController.m; sourceTree = "<group>"; };
 		8815471C1B5F3BA200A74949 /* shoopHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shoopHomeViewController.xib; sourceTree = "<group>"; };
@@ -512,6 +524,14 @@
 		88711D721B6B6E7100A05BA1 /* iconfont-shouyeshouye_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-shouyeshouye_selected.png"; sourceTree = "<group>"; };
 		88711D741B6B71DF00A05BA1 /* shopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shopViewController.h; sourceTree = "<group>"; };
 		88711D751B6B71DF00A05BA1 /* shopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shopViewController.m; sourceTree = "<group>"; };
+		887661921B8D9B8C0030FAA6 /* xinZengViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinZengViewController.h; sourceTree = "<group>"; };
+		887661931B8D9B8C0030FAA6 /* xinZengViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xinZengViewController.m; sourceTree = "<group>"; };
+		887661941B8D9B8C0030FAA6 /* xinZengViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xinZengViewController.xib; sourceTree = "<group>"; };
+		887661971B8DA0E20030FAA6 /* dingDanViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dingDanViewCell.h; sourceTree = "<group>"; };
+		887661981B8DA0E20030FAA6 /* dingDanViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dingDanViewCell.m; sourceTree = "<group>"; };
+		887661991B8DA0E20030FAA6 /* dingDanViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dingDanViewCell.xib; sourceTree = "<group>"; };
+		8876619C1B8DB3CA0030FAA6 /* dingDansViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dingDansViewCell.h; sourceTree = "<group>"; };
+		8876619D1B8DB3CA0030FAA6 /* dingDansViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dingDansViewCell.m; sourceTree = "<group>"; };
 		8879033C1B4A28FA0047C38B /* FillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FillViewController.h; path = "球场预定/支付/FillViewController.h"; sourceTree = "<group>"; };
 		8879033D1B4A28FA0047C38B /* FillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FillViewController.m; path = "球场预定/支付/FillViewController.m"; sourceTree = "<group>"; };
 		8879033E1B4A28FA0047C38B /* FillViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FillViewController.xib; path = "球场预定/支付/FillViewController.xib"; sourceTree = "<group>"; };
@@ -986,10 +1006,22 @@
 				882CA6141B8714BA00D15C71 /* ziYuanViewController.h */,
 				882CA6151B8714BA00D15C71 /* ziYuanViewController.m */,
 				882CA6161B8714BA00D15C71 /* ziYuanViewController.xib */,
+				88130DF51B8D624A00259332 /* dingDanViewController.h */,
+				88130DF61B8D624A00259332 /* dingDanViewController.m */,
+				88130DF71B8D624A00259332 /* dingDanViewController.xib */,
+				887661971B8DA0E20030FAA6 /* dingDanViewCell.h */,
+				887661981B8DA0E20030FAA6 /* dingDanViewCell.m */,
+				887661991B8DA0E20030FAA6 /* dingDanViewCell.xib */,
+				8876619C1B8DB3CA0030FAA6 /* dingDansViewCell.h */,
+				8876619D1B8DB3CA0030FAA6 /* dingDansViewCell.m */,
+				887661921B8D9B8C0030FAA6 /* xinZengViewController.h */,
+				887661931B8D9B8C0030FAA6 /* xinZengViewController.m */,
+				887661941B8D9B8C0030FAA6 /* xinZengViewController.xib */,
 				88C068961B85D60600F01428 /* right_arrow@2x.png */,
 				88C068971B85D60600F01428 /* right_arrow.png */,
 				88C068981B85D60600F01428 /* left_arrow@2x.png */,
 				88C068991B85D60600F01428 /* left_arrow.png */,
+				88130DFA1B8D67BA00259332 /* iconfont-tianjiayuangong.png */,
 			);
 			name = "选择界面";
 			sourceTree = "<group>";
@@ -1947,16 +1979,19 @@
 				88825B0C1B70A0E2004DA252 /* 3f443e226b11207e165a8033babfa2b0.jpg in Resources */,
 				8815471E1B5F3BA200A74949 /* shoopHomeViewController.xib in Resources */,
 				880F32951B7F3A2C00C94868 /* searchViewController.xib in Resources */,
+				88130DF91B8D624A00259332 /* dingDanViewController.xib in Resources */,
 				887903501B4A61020047C38B /* chuxuka.png in Resources */,
 				88A695581AEB2AE60020F51F /* shouer.png in Resources */,
 				88AF48741B57BA98001AEC7C /* AirFlightViewController.xib in Resources */,
 				88A695511AEB2AE60020F51F /* Home6.png in Resources */,
+				8876619B1B8DA0E20030FAA6 /* dingDanViewCell.xib in Resources */,
 				88BD8C771B4D08D70025F011 /* PubSelectViewController.xib in Resources */,
 				88BD8CA21B4D09970025F011 /* PubDailTableViewController.xib in Resources */,
 				8879034A1B4A5E190047C38B /* huabian.png in Resources */,
 				88E423D61B79CB19009B305B /* newAddressViewController.xib in Resources */,
 				88C0689A1B85D60600F01428 /* right_arrow@2x.png in Resources */,
 				88932A6A1B7B320C00B3A99A /* bankViewController.xib in Resources */,
+				88130DFB1B8D67BA00259332 /* iconfont-tianjiayuangong.png in Resources */,
 				88C0689C1B85D60600F01428 /* left_arrow@2x.png in Resources */,
 				881F0E3C1B4E672D002E0C9C /* zhixiang.png in Resources */,
 				8826F49B1B830F5C00C2F899 /* SecondTableViewCell.xib in Resources */,
@@ -2015,6 +2050,7 @@
 				88825B161B70B541004DA252 /* judgeTableViewController.xib in Resources */,
 				880949241B4F703D0007E788 /* CadinSchedleTableViewController.xib in Resources */,
 				880EDDF01B1E9A8B00B5FC25 /* cloudy2.png in Resources */,
+				887661961B8D9B8C0030FAA6 /* xinZengViewController.xib in Resources */,
 				88970CB21B1EA03500CC15C7 /* phone.png in Resources */,
 				88A6954D1AEB2AE60020F51F /* Home2.png in Resources */,
 				88B94C4B1B4635E10099CA24 /* OrderTableViewCell.xib in Resources */,
@@ -2135,6 +2171,7 @@
 				88450ABE1B7C8867004E1522 /* mealTableViewCell.m in Sources */,
 				88B94C5B1B4635F80099CA24 /* BallSpellDetailsViewController.m in Sources */,
 				88A695BA1AEB6DA30020F51F /* UIWebView+AFNetworking.m in Sources */,
+				8876619F1B8DB3CA0030FAA6 /* dingDansViewCell.m in Sources */,
 				88BD8C9F1B4D09970025F011 /* PubDailTableViewCell.m in Sources */,
 				88B53F191B3C012500638573 /* SDImageCache.m in Sources */,
 				88B53F251B3C012500638573 /* UIImageView+WebCache.m in Sources */,
@@ -2185,6 +2222,7 @@
 				880E23871B6778B5006728E3 /* AirViewController.m in Sources */,
 				88B94C611B4635F80099CA24 /* WeatherViewController.m in Sources */,
 				88B94C2B1B4634830099CA24 /* Citie.m in Sources */,
+				887661951B8D9B8C0030FAA6 /* xinZengViewController.m in Sources */,
 				88B94C9B1B4636DB0099CA24 /* CalendarMonthCollectionViewLayout.m in Sources */,
 				88825B051B70A049004DA252 /* TableViewCell.m in Sources */,
 				88932A6E1B7B475100B3A99A /* shuoMingViewController.m in Sources */,
@@ -2238,6 +2276,7 @@
 				88A695B51AEB6DA30020F51F /* UIAlertView+AFNetworking.m in Sources */,
 				883CD8901AE7915D00A50F7E /* main.m in Sources */,
 				882CA6131B86F98500D15C71 /* foolView.m in Sources */,
+				8876619A1B8DA0E20030FAA6 /* dingDanViewCell.m in Sources */,
 				88AF485D1B57B325001AEC7C /* AirOrderTableViewCell.m in Sources */,
 				88A695B11AEB6DA30020F51F /* AFURLResponseSerialization.m in Sources */,
 				880E237D1B675D11006728E3 /* AirFilghtView.m in Sources */,
@@ -2259,6 +2298,7 @@
 				88AF485B1B57B325001AEC7C /* AirOrderTableViewController.m in Sources */,
 				88B53F1C1B3C012500638573 /* SDWebImageDownloader.m in Sources */,
 				88825B001B70A038004DA252 /* longShopViewController.m in Sources */,
+				88130DF81B8D624A00259332 /* dingDanViewController.m in Sources */,
 				884076F21B6CB3D800418E9D /* shopDetailsViewController.m in Sources */,
 				88B94C191B4634460099CA24 /* BallSpellJoserPaser.m in Sources */,
 				88B53F221B3C012500638573 /* UIImage+MultiFormat.m in Sources */,

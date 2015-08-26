@@ -10,9 +10,10 @@
 
 @interface ziYuan : UIView
 @property (nonatomic,strong)UILabel *money;
-- (void)show:(NSInteger)money;
+- (void)show:(NSInteger)money andHeaderName:(NSString *)name;
 @property (nonatomic,strong)UILabel *zong;
 @property (nonatomic,strong)UILabel *chaLabel;
 @property (nonatomic,strong)UILabel *haoLabel;
 @property (nonatomic,strong)UILabel *danLabel;
+@property (nonatomic,strong)NSString *name;
 @end

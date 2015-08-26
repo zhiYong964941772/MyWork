@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef  void(^labelName)(NSString *hao,NSString *cha,NSString *dan);
 
 @interface ziYuanViewController : UIViewController
+@property (nonatomic,copy)labelName blockLabel;
+
++ (void)initWithLabel:(labelName)blockLabel;
 
 @end

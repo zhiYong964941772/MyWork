@@ -8,7 +8,8 @@
 
 #import "ziYuan.h"
 #import "JKAlertDialog.h"
-
+#import "ziYuanViewController.h"
+#import "dingDanViewController.h"
 #define Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define Frame [[UIScreen mainScreen]bounds]
 @implementation ziYuan
@@ -24,19 +25,21 @@ static NSInteger num7;
 static NSInteger num8;
 - (UILabel *)money{
     if (!_money) {
-        _money = [[UILabel alloc]initWithFrame:CGRectMake(self.frame.size.width-320, 15, 150, 40)];
+        _money = [[UILabel alloc]initWithFrame:CGRectMake(50, 15, 150, 40)];
         self.money.textColor = [UIColor whiteColor];
         self.money.font = [UIFont systemFontOfSize:22];
     }
     return _money;
+
 }
--(void)show:(NSInteger )money{
+- (void)show:(NSInteger)money andHeaderName:(NSString *)name{
     self.backgroundColor = Color(249, 57, 28);
     self.frame = CGRectMake(0, Frame.size.height - 134, Frame.size.width, 70);
     //接收事件
     self.money.text = [NSString stringWithFormat:@"¥ %d",money];
     num7 = money;
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(num:) name:@"numOfziYuan" object:nil];
+    self.name = name;
     [self initWithFootView:self];
 }
 - (void)num:(NSNotification *)notification{
@@ -53,8 +56,9 @@ static NSInteger num8;
     self.money.text = [NSString stringWithFormat:@"¥ %d",(num4+num5+num6+num7)];
     
 }
+
 - (void)initWithFootView:(UIView *)footView{
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 15, 100, 40)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 15, 80, 40)];
     self.zong = label;
     label.textColor = [UIColor whiteColor];
     label.font = [UIFont systemFontOfSize:17];
@@ -95,13 +99,27 @@ static NSInteger num8;
     label3.textAlignment = NSTextAlignmentCenter;
     label3.textColor = [UIColor whiteColor];
     [footView addSubview:label3];
+    NSLog(@"%@",self.name);
+    if ([self.name isEqualToString:@"选择资源"]) {
+        
+    
     UILabel *label4 = [[UILabel alloc]initWithFrame:CGRectMake(label3.frame.origin.x +label3.frame.size.width, 0, 80, footView.frame.size.height)];
     label4.textColor = [UIColor whiteColor];
-    label4.text = @"选择资源";
+    label4.text = @"提交订单";
     label4.font = [UIFont systemFontOfSize:15];
     label4.backgroundColor = Color(249, 98, 30);
     [footView addSubview:label4];
-    
+    }else{
+        
+        UILabel *label4 = [[UILabel alloc]initWithFrame:CGRectMake(label3.frame.origin.x +label3.frame.size.width, 0, 80, footView.frame.size.height)];
+        label4.textColor = [UIColor whiteColor];
+        label4.text = @"去支付";
+        label4.font = [UIFont systemFontOfSize:15];
+        label4.backgroundColor = Color(249, 98, 30);
+        [footView addSubview:label4];
+        
+        
+    }
     
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn2.frame = CGRectMake(label3.frame.origin.x, 0, 170, footView.frame.size.height);
@@ -145,12 +163,11 @@ static NSInteger num8;
     
     
     
-    
     UIImageView *imageView2 = [[UIImageView alloc]initWithFrame:CGRectMake(-25, chengLabel.frame.origin.y+chengLabel.frame.size.height+10, alertView.frame.size.width+50, 1)];
     imageView2.backgroundColor = [UIColor grayColor];
     [alertView addSubview:imageView2];
     
-    
+   
     UILabel *fujialabel = [[UILabel alloc]initWithFrame:CGRectMake(0, imageView2.frame.origin.y+10, 100, 30)];
     fujialabel.font = [UIFont systemFontOfSize:20];
     fujialabel.text = @"附加费";
@@ -182,7 +199,7 @@ static NSInteger num8;
     
     self.danLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, self.chaLabel.frame.origin.y+10+self.chaLabel.frame.size.height,200 , 30)];
     self.danLabel.numberOfLines = 0;
-    self.danLabel.text = @"12345";
+    //self.danLabel.text = @"12345";
     self.danLabel.font = [UIFont systemFontOfSize:17];
     [alertView addSubview:self.danLabel];
     
@@ -204,7 +221,12 @@ static NSInteger num8;
     
     zongLabel2.font = [UIFont systemFontOfSize:20];
     [alertView addSubview:zongLabel2];
-    
+    [ziYuanViewController initWithLabel:^(NSString *hao, NSString *cha, NSString *dan) {
+        self.haoLabel.text = hao;
+        self.chaLabel.text = cha;
+        self.danLabel.text = dan;
+        
+    }];
     JKAlertDialog *alert = [[JKAlertDialog alloc]initWithName:@"" message:@"" color:[UIColor whiteColor] andBoolen:YES AlertsWidth:alertView.frame.size.width AlertsHeight:alertView.frame.size.height];
     alert.shopView = alertView;
     [alert show];
@@ -214,7 +236,7 @@ static NSInteger num8;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setValue:self.money.text forKey:@"money2"];
     
-//    [[NSNotificationCenter defaultCenter]postNotificationName:@"ziYuan" object:nil];
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"dingDan" object:nil];
     
     
     [defaults synchronize];

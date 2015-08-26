@@ -8,6 +8,7 @@
 
 #import "ziYuanViewController.h"
 #import "ziYuan.h"
+#import "dingDanViewController.h"
 @interface ziYuanViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *fujiaLabel;
 @property (weak, nonatomic) IBOutlet UILabel *shenhjiLabel;
@@ -20,21 +21,31 @@ static NSInteger num2 = 0;
 static NSInteger num3 = 0;
 
 @implementation ziYuanViewController
++(void)initWithLabel:(labelName)blockLabel{
+    blockLabel(@"123",@"456",@"789");
 
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
    self.title = @"选择资源";
     ziYuan *fool = [[ziYuan alloc]init];
     self.fool = fool;
-    fool.danLabel.text = @"123";
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        [fool show:200];
-    [defaults synchronize];
+    
+           [fool show:200 andHeaderName: @"选择资源"];
+    
+    
     [self.view addSubview:fool];
    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(dingDan) name:@"dingDan" object:nil];
+}
+- (void)dingDan{
+    dingDanViewController *dingDan = [[dingDanViewController alloc]initWithNibName:@"dingDanViewController" bundle:nil];
+    [self.navigationController pushViewController:dingDan animated:YES];
+    
+    
+    
     
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

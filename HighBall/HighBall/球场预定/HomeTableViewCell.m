@@ -26,6 +26,7 @@
     /**
      *  重新绘制视图
      */
+    
     self.headImageView.layer.cornerRadius=5;
     self.headImageView.layer.borderWidth=0.5;
     self.headImageView.layer.borderColor=[UIColor grayColor].CGColor;
