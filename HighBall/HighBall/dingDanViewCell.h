@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface dingDanViewCell : UITableViewCell
-
+@property (nonatomic,strong)NSString *names;
+@property (nonatomic,strong)NSString *phones;
 @end

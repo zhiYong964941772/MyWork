@@ -7,17 +7,22 @@
 //
 
 #import "dingDanViewCell.h"
-
+@interface dingDanViewCell()
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *phone;
+@end
 @implementation dingDanViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    self.name.text = self.names;
+    self.phone.text = self.phones;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+   
 }
+
 
 @end

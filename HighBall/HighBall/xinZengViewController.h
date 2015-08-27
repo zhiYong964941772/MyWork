@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void(^credentialsName)(NSString *name,NSString *phoneNum,NSString *credentials);
 @interface xinZengViewController : UIViewController
-
+@property (nonatomic,copy)credentialsName credentialsBlock;
+- (void)credentialsNameWithBlock:(credentialsName)credentials;
 @end

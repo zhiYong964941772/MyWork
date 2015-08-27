@@ -34,6 +34,8 @@
     
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+
     UIImage *image = [UIImage imageNamed:@"blueNavi.png"];
     CGSize imageSize = self.navigationBar.bounds.size;
     image = [self scaleToSize:image size:imageSize];
@@ -49,6 +51,7 @@
         viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back2) Image:@"navigationbar_more" HightImage:@"navigationbar_more_highlighted"];
     }
     [super pushViewController:viewController animated:animated];
+    self.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor]};
 }
 - (UIImage *)scaleToSize:(UIImage *)img size:(CGSize)size{
     UIGraphicsBeginImageContext(size);
@@ -60,6 +63,13 @@
 
 - (void)back{
     [self popViewControllerAnimated:YES];
+    
+    UIImage *image = [UIImage imageNamed:@"blueNavi.png"];
+    CGSize imageSize = self.navigationBar.bounds.size;
+    image = [self scaleToSize:image size:imageSize];
+    self.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+
 }
 - (void)back2{
     [self popToRootViewControllerAnimated:YES];

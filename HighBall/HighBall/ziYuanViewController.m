@@ -28,6 +28,8 @@ static NSInteger num3 = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
    self.title = @"选择资源";
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(ziYuan) name:@"ziYuan123" object:nil];
+
     ziYuan *fool = [[ziYuan alloc]init];
     self.fool = fool;
     
@@ -36,9 +38,8 @@ static NSInteger num3 = 0;
     
     [self.view addSubview:fool];
    
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(dingDan) name:@"dingDan" object:nil];
-}
-- (void)dingDan{
+    }
+- (void)ziYuan{
     dingDanViewController *dingDan = [[dingDanViewController alloc]initWithNibName:@"dingDanViewController" bundle:nil];
     [self.navigationController pushViewController:dingDan animated:YES];
     
@@ -101,7 +102,9 @@ static NSInteger num3 = 0;
     
     
 }
-
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"ziYuan123" object:nil];
+}
     
 
 

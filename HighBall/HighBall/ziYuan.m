@@ -12,6 +12,7 @@
 #import "dingDanViewController.h"
 #define Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define Frame [[UIScreen mainScreen]bounds]
+
 @implementation ziYuan
 static NSInteger num = 1;
 static NSInteger mon = 200;
@@ -235,8 +236,12 @@ static NSInteger num8;
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setValue:self.money.text forKey:@"money2"];
+    if ([self.name isEqualToString:@"选择资源"]) {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"ziYuan123" object:nil];
+    }else {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"dingDan123" object:nil];
+}
     
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"dingDan" object:nil];
     
     
     [defaults synchronize];

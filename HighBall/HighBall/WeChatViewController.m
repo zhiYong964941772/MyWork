@@ -24,7 +24,7 @@
      *
      *  @return 空值
      */
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(pay) name:@"weChat" object:nil];
+    
     self.image = [UIImage imageNamed:@"blackImage"];
     CGSize imageSize = self.navigationController.navigationBar.bounds.size;
     self.image = [self scaleToSize:self.image size:imageSize];
@@ -71,11 +71,12 @@
     NSLog(@"微信接口没有接入");
     NSLog(@"%lu",(unsigned long)self.navigationController.viewControllers.count);
 }
-- (void)pay{
+- (void)viewWillDisappear:(BOOL)animated{
     /**
      *  监听事件的实现
      */
     self.arrayView.hidden = YES;
+    [super viewWillDisappear:animated];
 }
 - (void)dealloc{
     /**

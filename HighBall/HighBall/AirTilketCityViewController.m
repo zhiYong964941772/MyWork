@@ -57,6 +57,7 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     //数据持久化
+    self.navigationController.navigationBarHidden = YES;
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *str = [defaults objectForKey:@"city"];
     self.locationLable.text = str;

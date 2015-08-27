@@ -131,7 +131,6 @@
 		887661961B8D9B8C0030FAA6 /* xinZengViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887661941B8D9B8C0030FAA6 /* xinZengViewController.xib */; };
 		8876619A1B8DA0E20030FAA6 /* dingDanViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 887661981B8DA0E20030FAA6 /* dingDanViewCell.m */; };
 		8876619B1B8DA0E20030FAA6 /* dingDanViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 887661991B8DA0E20030FAA6 /* dingDanViewCell.xib */; };
-		8876619F1B8DB3CA0030FAA6 /* dingDansViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8876619D1B8DB3CA0030FAA6 /* dingDansViewCell.m */; };
 		8879033F1B4A28FA0047C38B /* FillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8879033D1B4A28FA0047C38B /* FillViewController.m */; };
 		887903401B4A28FA0047C38B /* FillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8879033E1B4A28FA0047C38B /* FillViewController.xib */; };
 		8879034A1B4A5E190047C38B /* huabian.png in Resources */ = {isa = PBXBuildFile; fileRef = 887903491B4A5E190047C38B /* huabian.png */; };
@@ -139,6 +138,7 @@
 		887903501B4A61020047C38B /* chuxuka.png in Resources */ = {isa = PBXBuildFile; fileRef = 8879034C1B4A61020047C38B /* chuxuka.png */; };
 		887903511B4A61020047C38B /* weixin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8879034D1B4A61020047C38B /* weixin.png */; };
 		887903521B4A61020047C38B /* xinyongka.png in Resources */ = {isa = PBXBuildFile; fileRef = 8879034E1B4A61020047C38B /* xinyongka.png */; };
+		888086651B8EAF640085940B /* dingDanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 888086641B8EAF640085940B /* dingDanView.m */; };
 		88825AA61B6F39A1004DA252 /* iconfont-guanzhu.png in Resources */ = {isa = PBXBuildFile; fileRef = 88825AA51B6F39A0004DA252 /* iconfont-guanzhu.png */; };
 		88825AA81B6F3B40004DA252 /* gouwuche.png in Resources */ = {isa = PBXBuildFile; fileRef = 88825AA71B6F3B40004DA252 /* gouwuche.png */; };
 		88825AAB1B6F4375004DA252 /* UIButton+button.m in Sources */ = {isa = PBXBuildFile; fileRef = 88825AAA1B6F4375004DA252 /* UIButton+button.m */; };
@@ -530,8 +530,6 @@
 		887661971B8DA0E20030FAA6 /* dingDanViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dingDanViewCell.h; sourceTree = "<group>"; };
 		887661981B8DA0E20030FAA6 /* dingDanViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dingDanViewCell.m; sourceTree = "<group>"; };
 		887661991B8DA0E20030FAA6 /* dingDanViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dingDanViewCell.xib; sourceTree = "<group>"; };
-		8876619C1B8DB3CA0030FAA6 /* dingDansViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dingDansViewCell.h; sourceTree = "<group>"; };
-		8876619D1B8DB3CA0030FAA6 /* dingDansViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dingDansViewCell.m; sourceTree = "<group>"; };
 		8879033C1B4A28FA0047C38B /* FillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FillViewController.h; path = "球场预定/支付/FillViewController.h"; sourceTree = "<group>"; };
 		8879033D1B4A28FA0047C38B /* FillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FillViewController.m; path = "球场预定/支付/FillViewController.m"; sourceTree = "<group>"; };
 		8879033E1B4A28FA0047C38B /* FillViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FillViewController.xib; path = "球场预定/支付/FillViewController.xib"; sourceTree = "<group>"; };
@@ -540,6 +538,8 @@
 		8879034C1B4A61020047C38B /* chuxuka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chuxuka.png; sourceTree = "<group>"; };
 		8879034D1B4A61020047C38B /* weixin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weixin.png; sourceTree = "<group>"; };
 		8879034E1B4A61020047C38B /* xinyongka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xinyongka.png; sourceTree = "<group>"; };
+		888086631B8EAF640085940B /* dingDanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dingDanView.h; sourceTree = "<group>"; };
+		888086641B8EAF640085940B /* dingDanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dingDanView.m; sourceTree = "<group>"; };
 		88825AA51B6F39A0004DA252 /* iconfont-guanzhu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-guanzhu.png"; sourceTree = "<group>"; };
 		88825AA71B6F3B40004DA252 /* gouwuche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gouwuche.png; sourceTree = "<group>"; };
 		88825AA91B6F4375004DA252 /* UIButton+button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+button.h"; sourceTree = "<group>"; };
@@ -1012,8 +1012,6 @@
 				887661971B8DA0E20030FAA6 /* dingDanViewCell.h */,
 				887661981B8DA0E20030FAA6 /* dingDanViewCell.m */,
 				887661991B8DA0E20030FAA6 /* dingDanViewCell.xib */,
-				8876619C1B8DB3CA0030FAA6 /* dingDansViewCell.h */,
-				8876619D1B8DB3CA0030FAA6 /* dingDansViewCell.m */,
 				887661921B8D9B8C0030FAA6 /* xinZengViewController.h */,
 				887661931B8D9B8C0030FAA6 /* xinZengViewController.m */,
 				887661941B8D9B8C0030FAA6 /* xinZengViewController.xib */,
@@ -1701,6 +1699,8 @@
 				882CA6121B86F98500D15C71 /* foolView.m */,
 				88162EB21B8C464B000CC9C8 /* ziYuan.h */,
 				88162EB31B8C464B000CC9C8 /* ziYuan.m */,
+				888086631B8EAF640085940B /* dingDanView.h */,
+				888086641B8EAF640085940B /* dingDanView.m */,
 			);
 			name = "类";
 			sourceTree = "<group>";
@@ -2171,7 +2171,6 @@
 				88450ABE1B7C8867004E1522 /* mealTableViewCell.m in Sources */,
 				88B94C5B1B4635F80099CA24 /* BallSpellDetailsViewController.m in Sources */,
 				88A695BA1AEB6DA30020F51F /* UIWebView+AFNetworking.m in Sources */,
-				8876619F1B8DB3CA0030FAA6 /* dingDansViewCell.m in Sources */,
 				88BD8C9F1B4D09970025F011 /* PubDailTableViewCell.m in Sources */,
 				88B53F191B3C012500638573 /* SDImageCache.m in Sources */,
 				88B53F251B3C012500638573 /* UIImageView+WebCache.m in Sources */,
@@ -2253,6 +2252,7 @@
 				88450AB91B7C881E004E1522 /* mealViewController.m in Sources */,
 				882304C91B687BE100CE063F /* BallTarBarViewController.m in Sources */,
 				881F0E361B4E4F19002E0C9C /* AirTicketViewController.m in Sources */,
+				888086651B8EAF640085940B /* dingDanView.m in Sources */,
 				88B94C2C1B4634830099CA24 /* CourselInfo.m in Sources */,
 				88B94C181B4634460099CA24 /* BallSpellAPI.m in Sources */,
 				88B94C4C1B4635E10099CA24 /* OrderTableViewController.m in Sources */,

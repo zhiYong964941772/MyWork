@@ -33,7 +33,7 @@
     
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    
+     
            viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back) Image:@"navigationbar_back" HightImage:@"navigationbar_back_highlighted"];
         
 //        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back2) Image:@"navigationbar_more" HightImage:@"navigationbar_more_highlighted"];
@@ -59,7 +59,7 @@
     if (self.viewControllers.count>1) {
         
         [self popViewControllerAnimated:YES];
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"weChat" object:nil];
+       
         UIImage *image = [UIImage imageNamed:@"blueNavi.png"];
         CGSize imageSize = self.navigationBar.bounds.size;
         image = [self scaleToSize:image size:imageSize];

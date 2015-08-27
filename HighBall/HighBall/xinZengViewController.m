@@ -9,29 +9,43 @@
 #import "xinZengViewController.h"
 
 @interface xinZengViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *name;
+@property (weak, nonatomic) IBOutlet UITextField *phoneNum;
+@property (weak, nonatomic) IBOutlet UILabel *credentialsName;
 
+@property (weak, nonatomic) IBOutlet UITextField *credentials;
 @end
 
 @implementation xinZengViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self initWithCredentials];
+}
+- (void)initWithCredentials{
+    self.credentialsName.text = self.credentials.text;
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStylePlain target:self action:@selector(BtnBlock)];
+    self.navigationItem.rightBarButtonItem = rightBtn;
+    
+}
+- (void)BtnBlock{
+    
+    self.credentialsBlock(self.name.text,self.phoneNum.text,self.credentials.text);
+ 
+    
+}
+-(void)credentialsNameWithBlock:(credentialsName)credentials{
+    credentials = self.credentialsBlock;
+    
+    
+}
+- (IBAction)credentials:(UIButton *)sender {
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end
