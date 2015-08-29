@@ -114,15 +114,34 @@
     self.secondfootView.hidden = YES;
     UIView *fool = [[UIView alloc]initWithFrame:[[UIScreen mainScreen]bounds ]];
     fool.backgroundColor = [UIColor whiteColor];
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(50,50, 280, 320)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(90,90, 280, 320)];
     label.numberOfLines = 0;
     label.text = @"您的购物车是空的";
     label.font = [UIFont systemFontOfSize:25];
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, fool.frame.size.width, 44)];
+    headerView.backgroundColor  = [UIColor blueColor];
+    UILabel *label2 = [[UILabel alloc]initWithFrame:CGRectMake(headerView.frame.size.width/2-20,headerView.frame.size.height/2-10, 80, 30)];
+    label2.text = @"购物车";
+    [headerView addSubview:label2];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(10, 10, 60, 30);
+    [btn setTitle:@"返回" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [headerView addSubview:btn];
     self.NoView = fool;
     [self.NoView addSubview:label];
+    [self.NoView addSubview:headerView];
     
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    UIView *topView = window.subviews[0];
+    [topView addSubview:fool];
+    self.tableView.hidden = YES;
     
-    [self.tableView addSubview:self.NoView];
+}
+- (void)back{
+    NSLog(@"返回");
+
+    
     
 }
 - (IBAction)NOButton:(UIButton *)sender {
@@ -141,64 +160,6 @@
 
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Table view delegate
-
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-    
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -14,6 +14,7 @@
 #import "judgeTableViewController.h"
 #import "shopJudgeTableView.h"
 #import "JKAlertDialog.h"
+#define CGRectframe  [[UIScreen mainScreen]bounds]
 @interface shopDetailsViewController ()<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIView *shopView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -74,23 +75,14 @@
 //自定义控健
 - (void)Button{
     self.tarBarView.backgroundColor = [UIColor grayColor];
-    CGRect frame = [[UIScreen mainScreen]bounds];
+    
        UIButton *lovebtn = [UIButton buttonWithTitle:@"关注" Image:[UIImage imageNamed:@"iconfont-guanzhu.png"] HighlightedImage:[UIImage imageNamed:@"iconfont-guanzhu.png"] NormalColor:[UIColor whiteColor] selectedColor:[UIColor grayColor] Action:@selector(guanzhu) Target:self];
     UIButton *shopbtn = [UIButton buttonWithTitle:@"购物车" Image:[UIImage imageNamed:@"gouwuche.png"] HighlightedImage:[UIImage imageNamed:@"gouwuche.png"] NormalColor:[UIColor whiteColor] selectedColor:[UIColor grayColor] Action:@selector(gouwuche) Target:self];
     UIButton *pullShop = [UIButton buttonWithTitle:@"加入购物车" Image:nil HighlightedImage:nil NormalColor:[UIColor whiteColor] selectedColor:[UIColor grayColor] Action:@selector(jiaru) Target:self];
-    lovebtn.x = 0;
-    lovebtn.y = 0;
-    shopbtn.x = 100;
-    shopbtn.y = 0;
-    pullShop.x = 240;
-    pullShop.y = 0;
-    lovebtn.width = 120;
-    lovebtn.height = 50;
-    shopbtn.width = 120;
-    shopbtn.height = 50;
-    pullShop.width = frame.size.width-lovebtn.width-shopbtn.width;
-    pullShop.height = 50;
-    [self.tarBarView addSubview:lovebtn];
+    lovebtn.frame = CGRectMake(30, 2, self.tarBarView.frame.size.height, self.tarBarView.frame.size.height);
+    shopbtn.frame = CGRectMake(CGRectframe.size.width/2-30, 2, self.tarBarView.frame.size.height, self.tarBarView.frame.size.height);
+    pullShop.frame = CGRectMake(shopbtn.frame.origin.x+shopbtn.frame.size.width+20, 0, CGRectframe.size.width-(shopbtn.frame.origin.x+shopbtn.frame.size.width), self.tarBarView.frame.size.height);
+       [self.tarBarView addSubview:lovebtn];
     [self.tarBarView addSubview:shopbtn];
     [self.tarBarView addSubview:pullShop];
     

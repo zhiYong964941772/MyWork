@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"确认订单";
-    
+   
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

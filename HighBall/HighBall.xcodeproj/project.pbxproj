@@ -81,6 +81,8 @@
 		882CA6181B8714BA00D15C71 /* ziYuanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882CA6161B8714BA00D15C71 /* ziYuanViewController.xib */; };
 		8831E00A1B7856ED0070029F /* payshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8831E0081B7856ED0070029F /* payshopViewController.m */; };
 		8831E00B1B7856ED0070029F /* payshopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8831E0091B7856ED0070029F /* payshopViewController.xib */; };
+		883B6A141B914D9E00FE9780 /* credentialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883B6A121B914D9E00FE9780 /* credentialsViewController.m */; };
+		883B6A151B914D9E00FE9780 /* credentialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883B6A131B914D9E00FE9780 /* credentialsViewController.xib */; };
 		883CD8901AE7915D00A50F7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CD88F1AE7915D00A50F7E /* main.m */; };
 		883CD8931AE7915D00A50F7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 883CD8921AE7915D00A50F7E /* AppDelegate.m */; };
 		883CD89B1AE7915D00A50F7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883CD89A1AE7915D00A50F7E /* Images.xcassets */; };
@@ -461,6 +463,9 @@
 		8831E0071B7856ED0070029F /* payshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payshopViewController.h; sourceTree = "<group>"; };
 		8831E0081B7856ED0070029F /* payshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = payshopViewController.m; sourceTree = "<group>"; };
 		8831E0091B7856ED0070029F /* payshopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = payshopViewController.xib; sourceTree = "<group>"; };
+		883B6A111B914D9E00FE9780 /* credentialsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = credentialsViewController.h; sourceTree = "<group>"; };
+		883B6A121B914D9E00FE9780 /* credentialsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = credentialsViewController.m; sourceTree = "<group>"; };
+		883B6A131B914D9E00FE9780 /* credentialsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = credentialsViewController.xib; sourceTree = "<group>"; };
 		883CD88A1AE7915D00A50F7E /* HighBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883CD88E1AE7915D00A50F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883CD88F1AE7915D00A50F7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1015,6 +1020,9 @@
 				887661921B8D9B8C0030FAA6 /* xinZengViewController.h */,
 				887661931B8D9B8C0030FAA6 /* xinZengViewController.m */,
 				887661941B8D9B8C0030FAA6 /* xinZengViewController.xib */,
+				883B6A111B914D9E00FE9780 /* credentialsViewController.h */,
+				883B6A121B914D9E00FE9780 /* credentialsViewController.m */,
+				883B6A131B914D9E00FE9780 /* credentialsViewController.xib */,
 				88C068961B85D60600F01428 /* right_arrow@2x.png */,
 				88C068971B85D60600F01428 /* right_arrow.png */,
 				88C068981B85D60600F01428 /* left_arrow@2x.png */,
@@ -1100,6 +1108,7 @@
 				883CD88C1AE7915D00A50F7E /* HighBall */,
 				883CD8A61AE7915D00A50F7E /* HighBallTests */,
 				883CD88B1AE7915D00A50F7E /* Products */,
+				883CD89C1AE7915D00A50F7E /* LaunchScreen.xib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1123,7 +1132,6 @@
 				88BA0A1D1AEA1DE600DFBBC3 /* View */,
 				88BA0A1C1AEA1DDF00DFBBC3 /* Controller */,
 				88BA0A1B1AEA1DC800DFBBC3 /* Model */,
-				883CD89C1AE7915D00A50F7E /* LaunchScreen.xib */,
 				88A6952B1AEB2AE50020F51F /* image */,
 				8800C7821AF8A2F60019B478 /* frameworks */,
 				883CD88D1AE7915D00A50F7E /* Supporting Files */,
@@ -2124,6 +2132,7 @@
 				887903521B4A61020047C38B /* xinyongka.png in Resources */,
 				880EDDF51B1E9A8B00B5FC25 /* shower3.png in Resources */,
 				88BD8CAF1B4D09C90025F011 /* PubsTableViewController.xib in Resources */,
+				883B6A151B914D9E00FE9780 /* credentialsViewController.xib in Resources */,
 				88E423E61B79F255009B305B /* blackImage.png in Resources */,
 				88B94C491B4635E10099CA24 /* FillTableViewCell.xib in Resources */,
 				88B94C371B4634F80099CA24 /* HomeTableViewCell.xib in Resources */,
@@ -2304,6 +2313,7 @@
 				88B53F221B3C012500638573 /* UIImage+MultiFormat.m in Sources */,
 				88B53F1B1B3C012500638573 /* SDWebImageDecoder.m in Sources */,
 				88E423BF1B79A90B009B305B /* listViewController.m in Sources */,
+				883B6A141B914D9E00FE9780 /* credentialsViewController.m in Sources */,
 				88B53F211B3C012500638573 /* UIImage+GIF.m in Sources */,
 				8826F49A1B830F5C00C2F899 /* SecondTableViewCell.m in Sources */,
 				88B94C781B4636190099CA24 /* BallSpellNameTableViewController.m in Sources */,
@@ -2336,6 +2346,7 @@
 				883CD89D1AE7915D00A50F7E /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = HighBall;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
