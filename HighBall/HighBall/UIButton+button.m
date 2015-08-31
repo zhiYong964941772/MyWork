@@ -39,4 +39,20 @@
     return btn;
     
 }
+- (UIButton *)buttonWithBackGroundImage:(NSString *)imageStr WithTitle:(NSString *)title WithAction:(SEL)action Targget:(id)target WithBackGroundColor:(UIColor *)color WithX:(CGFloat)x WithY:(CGFloat)y WithWidth:(CGFloat)width WithHeight:(CGFloat)height{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(x, y, width, height);
+    [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    UIImage *image = [UIImage imageNamed:imageStr];
+    [btn setBackgroundImage:image forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor clearColor];
+    [btn setTitle:title forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:35];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+    btn.titleLabel.textAlignment = NSTextAlignmentCenter;
+    btn.userInteractionEnabled = YES;
+    return btn;
+    
+}
 @end

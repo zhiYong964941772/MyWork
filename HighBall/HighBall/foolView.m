@@ -26,7 +26,7 @@ static NSInteger mon = 200;
 
 - (UILabel *)money{
     if (!_money) {
-        _money = [[UILabel alloc]initWithFrame:CGRectMake(self.frame.size.width-320, 15, 150, 40)];
+        _money = [[UILabel alloc]initWithFrame:CGRectMake(55, 15, 150, 40)];
         self.money.textColor = [UIColor whiteColor];
         self.money.font = [UIFont systemFontOfSize:22];
     }
@@ -34,7 +34,7 @@ static NSInteger mon = 200;
 }
 -(void)show:(NSString *)money{
     self.backgroundColor = Color(249, 57, 28);
-    self.frame = CGRectMake(0, Frame.size.height - 134, Frame.size.width, 70);
+    self.frame = CGRectMake(0, Frame.size.height - 124, Frame.size.width, 60);
     //接收事件
     self.money.text = money;
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(num:) name:@"num" object:nil];
@@ -74,7 +74,7 @@ static NSInteger mon = 200;
      *  商品清单的显示按钮
      */
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(self.money.frame.size.width-10, 20, 40, 30);
+    btn.frame = CGRectMake(self.money.frame.origin.x+70, 20, 40, 30);
     [btn setTitle:@"明细" forState:UIControlStateNormal];
     btn.userInteractionEnabled = YES;
     [btn addTarget:self action:@selector(mingxi) forControlEvents:UIControlEventTouchUpInside];
@@ -88,17 +88,17 @@ static NSInteger mon = 200;
     /**
      x下一步
      */
-    UILabel *label3 = [[UILabel alloc]initWithFrame:CGRectMake(footView.frame.size.width-170, 0, 90, footView.frame.size.height)];
+    UILabel *label3 = [[UILabel alloc]initWithFrame:CGRectMake(footView.frame.size.width-130, 0, 80, footView.frame.size.height)];
     label3.backgroundColor = Color(249, 98, 30);
     label3.text = @"下一步";
-    label3.font = [UIFont systemFontOfSize:25];
+    label3.font = [UIFont systemFontOfSize:17];
     label3.textAlignment = NSTextAlignmentCenter;
     label3.textColor = [UIColor whiteColor];
     [footView addSubview:label3];
     UILabel *label4 = [[UILabel alloc]initWithFrame:CGRectMake(label3.frame.origin.x +label3.frame.size.width, 0, 80, footView.frame.size.height)];
     label4.textColor = [UIColor whiteColor];
     label4.text = @"选择资源";
-    label4.font = [UIFont systemFontOfSize:15];
+    label4.font = [UIFont systemFontOfSize:12];
     label4.backgroundColor = Color(249, 98, 30);
     [footView addSubview:label4];
     

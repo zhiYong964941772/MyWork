@@ -14,12 +14,18 @@
 // ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 // OTHER DEALINGS IN THE SOFTWARE.
 //
-
+/**
+ *  学习
+ *
+ *  @param rgbValue 在同一个对象里，创建多个对象类，在 @interface和 @implementation里面，可以自定义属性，并且可以分类定义；
+ *
+ *  @return
+ */
 
 #import <CoreGraphics/CoreGraphics.h>
 #import <QuartzCore/QuartzCore.h>
 #import "CKCalendarView.h"
-
+#import "UIView+Extension.h"
 #define BUTTON_MARGIN 4
 #define CALENDAR_MARGIN 5
 #define TOP_HEIGHT 44
@@ -80,8 +86,22 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"d";
     [self setTitle:[dateFormatter stringFromDate:_date] forState:UIControlStateNormal];
-}
+    [self addTarget:self action:@selector(btn) forControlEvents:UIControlEventTouchUpInside];
 
+}
+- (void)btn{
+    self.selected=!self.selected;
+    NSLog(@"%hhd",self.selected);
+    if (self.selected == YES) {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"btnName" object:nil userInfo:@{@"btnName":[NSString stringWithFormat:@"%hhd",self.selected]}];
+    }else{
+        self.selected = !self.selected;
+    }
+    NSLog(@"%hhd",self.selected);
+
+    
+    
+}
 @end
 
 
@@ -233,13 +253,14 @@
     [super layoutSubviews];
 
     CGFloat containerWidth = self.bounds.size.width - (CALENDAR_MARGIN * 2)+10;
-    self.cellWidth = (containerWidth / 7.0) - CELL_BORDER_WIDTH;
+    self.cellWidth = (containerWidth / 8.0) - CELL_BORDER_WIDTH;
 
     CGFloat containerHeight = ([self numberOfWeeksInMonthContainingDate:self.monthShowing] * (self.cellWidth + CELL_BORDER_WIDTH) + DAYS_HEADER_HEIGHT);
 
-
+    CGRect frame = [[UIScreen mainScreen]bounds];
     CGRect newFrame = self.frame;
     newFrame.size.height = containerHeight + CALENDAR_MARGIN + TOP_HEIGHT;
+    
     self.frame = newFrame;
 
     self.highlight.frame = CGRectMake(1, 1, self.bounds.size.width - 2, 1);
@@ -248,9 +269,12 @@
     self.prevButton.frame = CGRectMake(BUTTON_MARGIN, BUTTON_MARGIN, 48, 38);
     self.nextButton.frame = CGRectMake(self.bounds.size.width - 48 - BUTTON_MARGIN, BUTTON_MARGIN, 48, 38);
 
-    self.calendarContainer.frame = CGRectMake(0, CGRectGetMaxY(self.titleLabel.frame)+5, containerWidth, containerHeight);
-    self.daysHeader.frame = CGRectMake(0, 0, self.calendarContainer.frame.size.width, DAYS_HEADER_HEIGHT);
-
+    self.calendarContainer.frame = CGRectMake(20, CGRectGetMaxY(self.titleLabel.frame)+5, containerWidth-40, containerHeight);
+        self.daysHeader.frame = CGRectMake(0, 0, self.calendarContainer.frame.size.width, DAYS_HEADER_HEIGHT);
+    self.layer.frame = CGRectMake(frame.size.width/2-(frame.size.width-20)/2, 0, frame.size.width-20, containerHeight+50);
+    
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"height" object:nil userInfo:@{@"height":[NSString stringWithFormat:@"%f",self.layer.frame.size.height]}];
+    
     CGRect lastDayFrame = CGRectZero;
     for (UILabel *dayLabel in self.dayOfWeekLabels) {
         dayLabel.frame = CGRectMake(CGRectGetMaxX(lastDayFrame) + CELL_BORDER_WIDTH, lastDayFrame.origin.y, self.cellWidth, self.daysHeader.frame.size.height);
@@ -293,6 +317,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy年MM月";
     self.titleLabel.text = [dateFormatter stringFromDate:aMonthShowing];
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"labelName" object:nil userInfo:@{@"labelName":self.titleLabel.text}];
     [self setNeedsLayout];
 }
 

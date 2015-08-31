@@ -14,7 +14,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *shenhjiLabel;
 @property (weak, nonatomic) IBOutlet UILabel *danfangLabel;
 @property (nonatomic,strong)ziYuan *fool;
-
+@property (weak, nonatomic) IBOutlet UILabel *calender;
+@property (strong,nonatomic)NSString *calenderStr;
 @end
 static NSInteger num = 0;
 static NSInteger num2 = 0;
@@ -29,7 +30,8 @@ static NSInteger num3 = 0;
     [super viewDidLoad];
    self.title = @"选择资源";
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(ziYuan) name:@"ziYuan123" object:nil];
-
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(labelName:) name:@"labelName" object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(btnName:) name:@"btnName" object:nil];
     ziYuan *fool = [[ziYuan alloc]init];
     self.fool = fool;
     
@@ -39,6 +41,15 @@ static NSInteger num3 = 0;
     [self.view addSubview:fool];
    
     }
+- (void)labelName:(NSNotification *)notification{
+    self.calenderStr = notification.userInfo[@"labelName"];
+}
+- (void)btnName:(NSNotification *)notification{
+    NSString *str = notification.userInfo[@"btnName"];
+    self.calender.text = [NSString stringWithFormat:@"%@%@日",self.calenderStr,str];
+    NSLog(@"%@",[NSString stringWithFormat:@"%@%@日",self.calenderStr,str]);
+    
+}
 - (void)ziYuan{
     dingDanViewController *dingDan = [[dingDanViewController alloc]initWithNibName:@"dingDanViewController" bundle:nil];
     [self.navigationController pushViewController:dingDan animated:YES];

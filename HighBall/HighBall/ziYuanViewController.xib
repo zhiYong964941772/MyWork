@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ziYuanViewController">
             <connections>
+                <outlet property="calender" destination="OAP-9B-1ZD" id="pEa-Dk-QVZ"/>
                 <outlet property="danfangLabel" destination="tS9-IV-0TL" id="GHY-H2-Dsw"/>
                 <outlet property="fujiaLabel" destination="mhz-Yt-EYq" id="kad-St-ZjG"/>
                 <outlet property="shenhjiLabel" destination="yKH-W2-L94" id="EI3-cI-aO4"/>
@@ -152,7 +153,7 @@
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBB-sW-VJO">
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBB-sW-VJO">
                             <rect key="frame" x="277" y="78" width="30" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="yAL-26-TWR"/>
@@ -224,7 +225,7 @@
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqZ-0n-eNa">
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqZ-0n-eNa">
                             <rect key="frame" x="277" y="143" width="30" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="xnA-5o-0F4"/>
@@ -315,7 +316,7 @@
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsL-VE-3wv">
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsL-VE-3wv">
                             <rect key="frame" x="225" y="78" width="30" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="SKR-e1-JUO"/>

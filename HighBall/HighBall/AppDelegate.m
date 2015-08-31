@@ -7,9 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "coverViewController.h"
 
 
-#import "BallTarBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -31,9 +31,9 @@
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
 
-    BallTarBarViewController *ball = [[BallTarBarViewController alloc]init];
     
-    self.window.rootViewController=ball;
+    coverViewController *cover = [[coverViewController alloc]init];
+    self.window.rootViewController=cover;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -88,16 +88,23 @@
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.ballSpellInfos.count;
+    if (self.ballSpellInfos.count == 0) {
+        return 10;
+    }else{
+        return self.ballSpellInfos.count;}
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     mealTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     if (!cell) {
         cell = [[[NSBundle mainBundle]loadNibNamed:@"mealTableViewCell" owner:self options:nil]lastObject];
     }
+    if (self.ballSpellInfos.count == 0) {
+        
+        return cell;
+    }else{
     cell.ballInfo = self.ballSpellInfos[indexPath.row];
     return cell;
-    
+    }
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -48,7 +48,7 @@
         
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back) Image:@"navigationbar_back" HightImage:@"navigationbar_back_highlighted"];
         
-        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back2) Image:@"navigationbar_more" HightImage:@"navigationbar_more_highlighted"];
+        //viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back2) Image:@"navigationbar_more" HightImage:@"navigationbar_more_highlighted"];
     }
     [super pushViewController:viewController animated:animated];
     self.navigationBar.titleTextAttributes=@{NSForegroundColorAttributeName:[UIColor whiteColor]};
@@ -71,9 +71,9 @@
     [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
 
 }
-- (void)back2{
-    [self popToRootViewControllerAnimated:YES];
-}
+//- (void)back2{
+//    [self popToRootViewControllerAnimated:YES];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

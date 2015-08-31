@@ -108,6 +108,13 @@
 		884076FC1B6CBE9400418E9D /* iconfont-iconstar.png in Resources */ = {isa = PBXBuildFile; fileRef = 884076FB1B6CBE9400418E9D /* iconfont-iconstar.png */; };
 		884076FE1B6CC5FE00418E9D /* iconfont-tubiaojinru36 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 884076FD1B6CC5FE00418E9D /* iconfont-tubiaojinru36 (1).png */; };
 		884077001B6CC60E00418E9D /* iconfont-jinru (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 884076FF1B6CC60E00418E9D /* iconfont-jinru (1).png */; };
+		8844CF6D1B93F0760045B14E /* coverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8844CF6C1B93F0760045B14E /* coverViewController.m */; };
+		8844CF721B93FA2A0045B14E /* 74d938e3aea5dbe5294274b3fd6ed2b0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8844CF6E1B93FA2A0045B14E /* 74d938e3aea5dbe5294274b3fd6ed2b0.jpg */; };
+		8844CF741B93FA2B0045B14E /* d1ef1a74dd24f5ef06f4364ab8516c44.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8844CF701B93FA2A0045B14E /* d1ef1a74dd24f5ef06f4364ab8516c44.jpg */; };
+		8844CF751B93FA2B0045B14E /* af87498441700cfeba3baa6d154c51b5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8844CF711B93FA2A0045B14E /* af87498441700cfeba3baa6d154c51b5.jpg */; };
+		8844CF771B93FC0F0045B14E /* 3770a2e114baea4209e54a461972ca4f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8844CF761B93FC0F0045B14E /* 3770a2e114baea4209e54a461972ca4f.jpg */; };
+		8844CF7B1B93FFA30045B14E /* UILabel+getLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8844CF7A1B93FFA30045B14E /* UILabel+getLabel.m */; };
+		8844CF7F1B9425210045B14E /* iconfont-wangzhanshiliangtu09.png in Resources */ = {isa = PBXBuildFile; fileRef = 8844CF7E1B9425210045B14E /* iconfont-wangzhanshiliangtu09.png */; };
 		88450AB91B7C881E004E1522 /* mealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88450AB71B7C881E004E1522 /* mealViewController.m */; };
 		88450ABA1B7C881E004E1522 /* mealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88450AB81B7C881E004E1522 /* mealViewController.xib */; };
 		88450ABE1B7C8867004E1522 /* mealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88450ABC1B7C8867004E1522 /* mealTableViewCell.m */; };
@@ -501,6 +508,15 @@
 		884076FB1B6CBE9400418E9D /* iconfont-iconstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-iconstar.png"; sourceTree = "<group>"; };
 		884076FD1B6CC5FE00418E9D /* iconfont-tubiaojinru36 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-tubiaojinru36 (1).png"; sourceTree = "<group>"; };
 		884076FF1B6CC60E00418E9D /* iconfont-jinru (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-jinru (1).png"; sourceTree = "<group>"; };
+		8844CF6B1B93F0760045B14E /* coverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coverViewController.h; sourceTree = "<group>"; };
+		8844CF6C1B93F0760045B14E /* coverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = coverViewController.m; sourceTree = "<group>"; };
+		8844CF6E1B93FA2A0045B14E /* 74d938e3aea5dbe5294274b3fd6ed2b0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 74d938e3aea5dbe5294274b3fd6ed2b0.jpg; sourceTree = "<group>"; };
+		8844CF701B93FA2A0045B14E /* d1ef1a74dd24f5ef06f4364ab8516c44.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d1ef1a74dd24f5ef06f4364ab8516c44.jpg; sourceTree = "<group>"; };
+		8844CF711B93FA2A0045B14E /* af87498441700cfeba3baa6d154c51b5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = af87498441700cfeba3baa6d154c51b5.jpg; sourceTree = "<group>"; };
+		8844CF761B93FC0F0045B14E /* 3770a2e114baea4209e54a461972ca4f.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3770a2e114baea4209e54a461972ca4f.jpg; sourceTree = "<group>"; };
+		8844CF791B93FFA30045B14E /* UILabel+getLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+getLabel.h"; sourceTree = "<group>"; };
+		8844CF7A1B93FFA30045B14E /* UILabel+getLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+getLabel.m"; sourceTree = "<group>"; };
+		8844CF7E1B9425210045B14E /* iconfont-wangzhanshiliangtu09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-wangzhanshiliangtu09.png"; sourceTree = "<group>"; };
 		88450AB61B7C881E004E1522 /* mealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mealViewController.h; sourceTree = "<group>"; };
 		88450AB71B7C881E004E1522 /* mealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mealViewController.m; sourceTree = "<group>"; };
 		88450AB81B7C881E004E1522 /* mealViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mealViewController.xib; sourceTree = "<group>"; };
@@ -997,6 +1013,8 @@
 				88825AAA1B6F4375004DA252 /* UIButton+button.m */,
 				88E423E71B79F753009B305B /* UINavigationBar+NavigationBackgroudColor.h */,
 				88E423E81B79F753009B305B /* UINavigationBar+NavigationBackgroudColor.m */,
+				8844CF791B93FFA30045B14E /* UILabel+getLabel.h */,
+				8844CF7A1B93FFA30045B14E /* UILabel+getLabel.m */,
 			);
 			name = "底层数据";
 			sourceTree = "<group>";
@@ -1127,6 +1145,13 @@
 				880F328B1B7F39F300C94868 /* 测试 */,
 				883CD8911AE7915D00A50F7E /* AppDelegate.h */,
 				883CD8921AE7915D00A50F7E /* AppDelegate.m */,
+				8844CF6B1B93F0760045B14E /* coverViewController.h */,
+				8844CF6C1B93F0760045B14E /* coverViewController.m */,
+				8844CF6E1B93FA2A0045B14E /* 74d938e3aea5dbe5294274b3fd6ed2b0.jpg */,
+				8844CF701B93FA2A0045B14E /* d1ef1a74dd24f5ef06f4364ab8516c44.jpg */,
+				8844CF711B93FA2A0045B14E /* af87498441700cfeba3baa6d154c51b5.jpg */,
+				8844CF761B93FC0F0045B14E /* 3770a2e114baea4209e54a461972ca4f.jpg */,
+				8844CF7E1B9425210045B14E /* iconfont-wangzhanshiliangtu09.png */,
 				883CD89A1AE7915D00A50F7E /* Images.xcassets */,
 				88BA0A1E1AEA1DEF00DFBBC3 /* HighUitil（预定搞定） */,
 				88BA0A1D1AEA1DE600DFBBC3 /* View */,
@@ -1982,6 +2007,7 @@
 				881FA3661B02FA1900429D50 /* mapapi.bundle in Resources */,
 				884076F31B6CB3D800418E9D /* shopDetailsViewController.xib in Resources */,
 				88B94C6C1B4636090099CA24 /* ConcludSpellTableViewController.xib in Resources */,
+				8844CF7F1B9425210045B14E /* iconfont-wangzhanshiliangtu09.png in Resources */,
 				88AF487B1B57BAD5001AEC7C /* twoImage.png in Resources */,
 				8879034F1B4A61020047C38B /* zhifubao.png in Resources */,
 				88825B0C1B70A0E2004DA252 /* 3f443e226b11207e165a8033babfa2b0.jpg in Resources */,
@@ -1991,6 +2017,7 @@
 				887903501B4A61020047C38B /* chuxuka.png in Resources */,
 				88A695581AEB2AE60020F51F /* shouer.png in Resources */,
 				88AF48741B57BA98001AEC7C /* AirFlightViewController.xib in Resources */,
+				8844CF751B93FA2B0045B14E /* af87498441700cfeba3baa6d154c51b5.jpg in Resources */,
 				88A695511AEB2AE60020F51F /* Home6.png in Resources */,
 				8876619B1B8DA0E20030FAA6 /* dingDanViewCell.xib in Resources */,
 				88BD8C771B4D08D70025F011 /* PubSelectViewController.xib in Resources */,
@@ -2026,6 +2053,7 @@
 				882CA6181B8714BA00D15C71 /* ziYuanViewController.xib in Resources */,
 				88970CB11B1EA03500CC15C7 /* map.png in Resources */,
 				88BD8C841B4D09180025F011 /* PayOrderTableViewCell.xib in Resources */,
+				8844CF721B93FA2A0045B14E /* 74d938e3aea5dbe5294274b3fd6ed2b0.jpg in Resources */,
 				88825B061B70A049004DA252 /* TableViewCell.xib in Resources */,
 				88B94C771B4636190099CA24 /* BallSpellCityViewController.xib in Resources */,
 				88E423E31B79E1FF009B305B /* WeChatViewController.xib in Resources */,
@@ -2081,6 +2109,7 @@
 				88825B241B70C5CC004DA252 /* iconfont-jiahao.png in Resources */,
 				881F0E3E1B4E6FFA002E0C9C /* wangfan.png in Resources */,
 				8831E00B1B7856ED0070029F /* payshopViewController.xib in Resources */,
+				8844CF741B93FA2B0045B14E /* d1ef1a74dd24f5ef06f4364ab8516c44.jpg in Resources */,
 				88FA9C921B71A87E008B4F8D /* shopJudgeTableView.xib in Resources */,
 				883F6FA71B4695AD00D53E79 /* jiantou.png in Resources */,
 				2B9A55571B724B8100D42B7E /* longShopViewController.xib in Resources */,
@@ -2107,6 +2136,7 @@
 				88E423DD1B79DAB2009B305B /* 虚线.jpg in Resources */,
 				880EDDF31B1E9A8B00B5FC25 /* tstorm3.png in Resources */,
 				884A096F1B6A1B2E004287CD /* hallball02.jpg in Resources */,
+				8844CF771B93FC0F0045B14E /* 3770a2e114baea4209e54a461972ca4f.jpg in Resources */,
 				883DC4831B60820A007B95F5 /* AirTilketCityViewController.xib in Resources */,
 				88A695521AEB2AE60020F51F /* Home7.png in Resources */,
 				88A695571AEB2AE60020F51F /* pujidao.png in Resources */,
@@ -2182,6 +2212,7 @@
 				88A695BA1AEB6DA30020F51F /* UIWebView+AFNetworking.m in Sources */,
 				88BD8C9F1B4D09970025F011 /* PubDailTableViewCell.m in Sources */,
 				88B53F191B3C012500638573 /* SDImageCache.m in Sources */,
+				8844CF7B1B93FFA30045B14E /* UILabel+getLabel.m in Sources */,
 				88B53F251B3C012500638573 /* UIImageView+WebCache.m in Sources */,
 				88B94C481B4635E10099CA24 /* FillTableViewCell.m in Sources */,
 				88AFEAE31B60C01300849AB6 /* city.m in Sources */,
@@ -2264,6 +2295,7 @@
 				888086651B8EAF640085940B /* dingDanView.m in Sources */,
 				88B94C2C1B4634830099CA24 /* CourselInfo.m in Sources */,
 				88B94C181B4634460099CA24 /* BallSpellAPI.m in Sources */,
+				8844CF6D1B93F0760045B14E /* coverViewController.m in Sources */,
 				88B94C4C1B4635E10099CA24 /* OrderTableViewController.m in Sources */,
 				88AF48751B57BA98001AEC7C /* AirFlightTableViewCell.m in Sources */,
 				88B94C2A1B4634830099CA24 /* BallSpellPrice.m in Sources */,

@@ -22,32 +22,35 @@ static NSInteger num = 1;//商品的数量
 @property (nonatomic,strong)foolView *fool;
 @property (nonatomic,strong)CKCalendarView *calendar;
 @property (nonatomic,strong)UILabel *sum;
-
+@property (nonatomic,assign)CGFloat heights;
+@property (nonatomic,strong)UIView *heightView;
 @end
 
 @implementation CKViewController
-
+void (^ heighta)(CGFloat heights);
 - (id)init {
     self = [super init];
     if (self) {
        
         
         CKCalendarView *calendar = [[CKCalendarView alloc] initWithStartDay:startMonday];
-        CGRect frame = [[UIScreen mainScreen]bounds];
-        calendar.frame = CGRectMake(frame.size.width/2-calendar.frame.size.width/2-5, 10, 330, 200);
+        
+        //calendar.frame = CGRectMake(frame.size.width/2-calendar.frame.size.width/2-5, 10, Frame.size.width, 150);
         //NSLog(@"%@",CGSizeCreateDictionaryRepresentation(calendar.frame.size));
-        UIView *backgrouView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Frame.size.width, calendar.frame.size.height+164)];
-        backgrouView.backgroundColor = [UIColor whiteColor];
+        UIView *backgrouView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Frame.size.width, calendar.frame.size.height)];
+        backgrouView.backgroundColor = [UIColor clearColor];
         [backgrouView addSubview:calendar];
-        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, Frame.size.height-calendar.frame.size.height-90, Frame.size.width, 135)];
         self.fool = [[foolView alloc]init];
         [self.fool show:@"¥ 200"];
+                
+        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(HeightOfView:) name:@"height" object:nil];
+        
+        
+        UIView *view = [[UIView alloc]init];
+       
         
         view.backgroundColor = [UIColor whiteColor];
-        [self initWithView:view];
-       
-        [self.view addSubview:view];
-        
+        self.heightView = view;
         [self.view addSubview:backgrouView];
         [self.view addSubview:self.fool];
         self.view.backgroundColor = Color(230,230,230);
@@ -55,7 +58,18 @@ static NSInteger num = 1;//商品的数量
     }
     return self;
 }
+- (void)HeightOfView:(NSNotification *)notification{
+    NSString *height = notification.userInfo[@"height"];
+    CGFloat y = [height integerValue];
+    self.heightView.frame = CGRectMake(0, y+10, Frame.size.width,135 );
+    
+    [self initWithView:self.heightView];
+    
+    [self.view addSubview:self.heightView];
 
+    
+    
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -187,5 +201,7 @@ static NSInteger num = 1;//商品的数量
         return YES;
     }
 }
-
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"height" object:nil];
+}
 @end
