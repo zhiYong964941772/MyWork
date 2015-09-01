@@ -25,7 +25,7 @@ enum {
     startMonday = 2,
 };
 typedef int startDay;
-
+@property(nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) NSDate *selectedDate;
 @property (nonatomic, weak) id<CKCalendarDelegate> delegate;
 

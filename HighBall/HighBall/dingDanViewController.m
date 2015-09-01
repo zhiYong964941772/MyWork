@@ -36,10 +36,12 @@ void (^changCellBlock)(NSString *name,NSString *phone);
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"提交订单";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
     
     
     ziYuan *footView = [[ziYuan alloc]init];
-    [footView show:300 andHeaderName:@"提交订单"];
+    [footView show:[defaults objectForKey:@"money"] andHeaderName:@"提交订单"];
     footView.name = self.title;
     [self.view addSubview:footView];
     self.ding = [[dingDanView alloc]initWithFrame:CGRectMake(0, 0, UIFrame.size.width, 100)];
@@ -50,7 +52,7 @@ void (^changCellBlock)(NSString *name,NSString *phone);
     self.ding.tabel.delegate = self;
     self.ding.tabel.dataSource =self;
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(dingDan) name:@"dingDan123" object:nil];
-
+    [defaults synchronize];
 }
 //去支付
 - (void)viewWillAppear:(BOOL)animated{

@@ -24,10 +24,11 @@ static NSInteger num = 1;//商品的数量
 @property (nonatomic,strong)UILabel *sum;
 @property (nonatomic,assign)CGFloat heights;
 @property (nonatomic,strong)UIView *heightView;
+@property (nonatomic,strong)NSString *date;
 @end
 
 @implementation CKViewController
-void (^ heighta)(CGFloat heights);
+
 - (id)init {
     self = [super init];
     if (self) {
@@ -41,11 +42,13 @@ void (^ heighta)(CGFloat heights);
         backgrouView.backgroundColor = [UIColor clearColor];
         [backgrouView addSubview:calendar];
         self.fool = [[foolView alloc]init];
-        [self.fool show:@"¥ 200"];
+        [self.fool show:@"200"];
                 
         [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(HeightOfView:) name:@"height" object:nil];
-        
-        
+       
+       //self.date = calendar.titleLabel.text;
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:calendar.titleLabel.text forKey:@"dateOfziYuan"];
         UIView *view = [[UIView alloc]init];
        
         
@@ -54,6 +57,7 @@ void (^ heighta)(CGFloat heights);
         [self.view addSubview:backgrouView];
         [self.view addSubview:self.fool];
         self.view.backgroundColor = Color(230,230,230);
+        [defaults synchronize];
         
     }
     return self;
@@ -79,6 +83,7 @@ void (^ heighta)(CGFloat heights);
 }
 - (void)ziYuan{
     ziYuanViewController *ziYuan = [[ziYuanViewController alloc]initWithNibName:@"ziYuanViewController" bundle:nil];
+  
     [self.navigationController pushViewController:ziYuan animated:YES];
     
     
@@ -179,7 +184,9 @@ void (^ heighta)(CGFloat heights);
             break;
     }
     
-    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.sum.text forKey:@"peopleNum"];
+    [defaults synchronize];
     
     
 }

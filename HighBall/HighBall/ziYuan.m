@@ -33,12 +33,12 @@ static NSInteger num8;
     return _money;
 
 }
-- (void)show:(NSInteger)money andHeaderName:(NSString *)name{
+- (void)show:(NSString *)money andHeaderName:(NSString *)name{
     self.backgroundColor = Color(249, 57, 28);
    self.frame = CGRectMake(0, Frame.size.height - 124, Frame.size.width, 60);
     //接收事件
-    self.money.text = [NSString stringWithFormat:@"¥ %d",money];
-    num7 = money;
+    self.money.text = [NSString stringWithFormat:@"¥ %@",money];
+    num7 = [money integerValue];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(num:) name:@"numOfziYuan" object:nil];
     self.name = name;
     [self initWithFootView:self];

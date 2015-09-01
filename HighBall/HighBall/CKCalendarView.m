@@ -93,7 +93,11 @@
     self.selected=!self.selected;
     NSLog(@"%hhd",self.selected);
     if (self.selected == YES) {
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"btnName" object:nil userInfo:@{@"btnName":[NSString stringWithFormat:@"%hhd",self.selected]}];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:self.titleLabel.text forKey:@"dateOf"];
+        [defaults synchronize];
+        
+     NSLog(@"当前的日期%@",self.titleLabel.text);
     }else{
         self.selected = !self.selected;
     }
@@ -108,7 +112,7 @@
 @interface CKCalendarView ()
 
 @property(nonatomic, strong) UIView *highlight;
-@property(nonatomic, strong) UILabel *titleLabel;
+
 @property(nonatomic, strong) UIButton *prevButton;
 @property(nonatomic, strong) UIButton *nextButton;
 @property(nonatomic, strong) UIView *calendarContainer;
@@ -206,6 +210,7 @@
          
          :returns:添加到主视图
          */
+        
         GradientView *daysHeader = [[GradientView alloc] initWithFrame:CGRectZero];
     
         daysHeader.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth;
@@ -317,7 +322,7 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy年MM月";
     self.titleLabel.text = [dateFormatter stringFromDate:aMonthShowing];
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"labelName" object:nil userInfo:@{@"labelName":self.titleLabel.text}];
+    
     [self setNeedsLayout];
 }
 

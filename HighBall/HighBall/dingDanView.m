@@ -29,7 +29,8 @@
         UILabel *chu = [self labelWithLabel:17 WithColor:color(blackColor) Withx:10 Withy:10 WithWidth:65 WithHeight:30 WithText:@"出行人"];
         chuxing = chu;
         [self addSubview:chu];
-        UILabel *nums = [self labelWithLabel:16 WithColor:color(blueColor) Withx:80 Withy:10 WithWidth:20 WithHeight:30 WithText:@"1"];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        UILabel *nums = [self labelWithLabel:16 WithColor:color(blueColor) Withx:80 Withy:10 WithWidth:20 WithHeight:30 WithText:[defaults objectForKey:@"peopleNum"]];
         num = nums;
         [self addSubview:nums];
         UILabel *zi = [self labelWithLabel:17 WithColor:color(blackColor) Withx:95 Withy:10 WithWidth:20 WithHeight:30 WithText:@"位"];
@@ -47,7 +48,7 @@
         tabel.userInteractionEnabled = YES;
         [self addSubview:tabel];
        
-     
+        [defaults synchronize];
     }
     return self;
 }

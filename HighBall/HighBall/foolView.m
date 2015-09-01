@@ -36,7 +36,7 @@ static NSInteger mon = 200;
     self.backgroundColor = Color(249, 57, 28);
     self.frame = CGRectMake(0, Frame.size.height - 124, Frame.size.width, 60);
     //接收事件
-    self.money.text = money;
+    self.money.text = [NSString stringWithFormat:@"¥ %@",money];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(num:) name:@"num" object:nil];
     [self initWithFootView:self];
     }
@@ -48,7 +48,12 @@ static NSInteger mon = 200;
         self.nums = num*mon;
     
         self.money.text = [NSString stringWithFormat:@"¥ %ld",(long)self.nums];
-   
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *str = [NSString stringWithFormat:@"%d",self.nums];
+    
+    
+    [defaults setValue:str forKey:@"money"];
+ [defaults synchronize];
     
 }
 
@@ -161,13 +166,11 @@ static NSInteger mon = 200;
     }
 - (void)xiayibu{
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setValue:self.money.text forKey:@"money"];
     
         [[NSNotificationCenter defaultCenter]postNotificationName:@"ziYuan" object:nil];
         
     
-    [defaults synchronize];
+   
 }
 -(void)dealloc{
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"title" object:nil];
