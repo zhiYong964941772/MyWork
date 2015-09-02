@@ -39,12 +39,13 @@
     return btn;
     
 }
-- (UIButton *)buttonWithBackGroundImage:(NSString *)imageStr WithTitle:(NSString *)title WithAction:(SEL)action Targget:(id)target WithBackGroundColor:(UIColor *)color WithX:(CGFloat)x WithY:(CGFloat)y WithWidth:(CGFloat)width WithHeight:(CGFloat)height{
+- (UIButton *)buttonWithBackGroundImage:(NSString *)imageStr HighlightedImage:(NSString *)highlightedImage WithTitle:(NSString *)title WithAction:(SEL)action Targget:(id)target WithBackGroundColor:(UIColor *)color WithX:(CGFloat)x WithY:(CGFloat)y WithWidth:(CGFloat)width WithHeight:(CGFloat)height {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(x, y, width, height);
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     UIImage *image = [UIImage imageNamed:imageStr];
-    [btn setBackgroundImage:image forState:UIControlStateNormal];
+    [btn setImage:image forState:UIControlStateNormal];
+    [btn setImage:[UIImage imageNamed:highlightedImage] forState:UIControlStateHighlighted];
     btn.backgroundColor = [UIColor clearColor];
     [btn setTitle:title forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:35];

@@ -128,6 +128,11 @@
 		884A09711B6A1B2E004287CD /* hallball03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 884A096D1B6A1B2E004287CD /* hallball03.jpg */; };
 		884A09721B6A1B2E004287CD /* hallball04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 884A096E1B6A1B2E004287CD /* hallball04.jpg */; };
 		884E01521B73292A008E242F /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884E01511B73292A008E242F /* BaiduMapAPI.framework */; };
+		886443C01B968FFF0042A843 /* phoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 886443BF1B968FFF0042A843 /* phoneViewController.m */; };
+		886443CF1B96A2C90042A843 /* iconfont-dianhua (3).png in Resources */ = {isa = PBXBuildFile; fileRef = 886443CD1B96A2C90042A843 /* iconfont-dianhua (3).png */; };
+		886443D01B96A2C90042A843 /* iconfont-dianhua (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 886443CE1B96A2C90042A843 /* iconfont-dianhua (2).png */; };
+		886443D31B96AA0D0042A843 /* iconfont-yijianbohao (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 886443D11B96AA0D0042A843 /* iconfont-yijianbohao (1).png */; };
+		886443D41B96AA0D0042A843 /* iconfont-yijianbohao.png in Resources */ = {isa = PBXBuildFile; fileRef = 886443D21B96AA0D0042A843 /* iconfont-yijianbohao.png */; };
 		886FD4161B6091B500D8E47E /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 886FD4151B6091B500D8E47E /* SearchBar.m */; };
 		886FD4191B6091C200D8E47E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 886FD4181B6091C200D8E47E /* UIView+Extension.m */; };
 		886FD41B1B609ACF00D8E47E /* 目的城市.png in Resources */ = {isa = PBXBuildFile; fileRef = 886FD41A1B609ACF00D8E47E /* 目的城市.png */; };
@@ -534,6 +539,12 @@
 		884A096D1B6A1B2E004287CD /* hallball03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hallball03.jpg; sourceTree = "<group>"; };
 		884A096E1B6A1B2E004287CD /* hallball04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hallball04.jpg; sourceTree = "<group>"; };
 		884E01511B73292A008E242F /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = ../../Desktop/BaiduMap_IOSSDK_v2.8.0_All/BaiduMap_IOSSDK_v2.8.0_Sample/BaiduMapAPI.framework; sourceTree = "<group>"; };
+		886443BE1B968FFF0042A843 /* phoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phoneViewController.h; sourceTree = "<group>"; };
+		886443BF1B968FFF0042A843 /* phoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = phoneViewController.m; sourceTree = "<group>"; };
+		886443CD1B96A2C90042A843 /* iconfont-dianhua (3).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-dianhua (3).png"; sourceTree = "<group>"; };
+		886443CE1B96A2C90042A843 /* iconfont-dianhua (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-dianhua (2).png"; sourceTree = "<group>"; };
+		886443D11B96AA0D0042A843 /* iconfont-yijianbohao (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-yijianbohao (1).png"; sourceTree = "<group>"; };
+		886443D21B96AA0D0042A843 /* iconfont-yijianbohao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-yijianbohao.png"; sourceTree = "<group>"; };
 		886FD4141B6091B500D8E47E /* SearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
 		886FD4151B6091B500D8E47E /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
 		886FD4171B6091C200D8E47E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -1375,6 +1386,19 @@
 			name = "商城";
 			sourceTree = "<group>";
 		};
+		886443BD1B968FA30042A843 /* 热线 */ = {
+			isa = PBXGroup;
+			children = (
+				886443BE1B968FFF0042A843 /* phoneViewController.h */,
+				886443BF1B968FFF0042A843 /* phoneViewController.m */,
+				886443CD1B96A2C90042A843 /* iconfont-dianhua (3).png */,
+				886443CE1B96A2C90042A843 /* iconfont-dianhua (2).png */,
+				886443D11B96AA0D0042A843 /* iconfont-yijianbohao (1).png */,
+				886443D21B96AA0D0042A843 /* iconfont-yijianbohao.png */,
+			);
+			name = "热线";
+			sourceTree = "<group>";
+		};
 		886FD4131B60918400D8E47E /* 继承 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1829,6 +1853,7 @@
 		88BA0A1C1AEA1DDF00DFBBC3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				886443BD1B968FA30042A843 /* 热线 */,
 				882304CE1B68856900CE063F /* 用户设置 */,
 				883CDA511AE791B300A50F7E /* 首页 */,
 			);
@@ -2065,6 +2090,7 @@
 				884076FC1B6CBE9400418E9D /* iconfont-iconstar.png in Resources */,
 				881F0E3A1B4E5032002E0C9C /* header.png in Resources */,
 				88A6954E1AEB2AE60020F51F /* Home3.png in Resources */,
+				886443CF1B96A2C90042A843 /* iconfont-dianhua (3).png in Resources */,
 				88FA9C991B71AC84008B4F8D /* iconfont-gou.png in Resources */,
 				884A09711B6A1B2E004287CD /* hallball03.jpg in Resources */,
 				88C3CE771B6620CF001A1A0E /* 901b56a138683b88c540997771b885c6.png in Resources */,
@@ -2103,8 +2129,10 @@
 				88009E251B47DBB400CD5BB9 /* contact.png in Resources */,
 				884076ED1B6CA05600418E9D /* iconfont-category (1)_search.png in Resources */,
 				88932A6F1B7B475100B3A99A /* shuoMingViewController.xib in Resources */,
+				886443D41B96AA0D0042A843 /* iconfont-yijianbohao.png in Resources */,
 				882BD9751B81D6620070D27E /* mealDetailsController.xib in Resources */,
 				88B94C5F1B4635F80099CA24 /* ScheduleViewController.xib in Resources */,
+				886443D01B96A2C90042A843 /* iconfont-dianhua (2).png in Resources */,
 				88825B231B70C5CC004DA252 /* iconfont-jianhao.png in Resources */,
 				88825B241B70C5CC004DA252 /* iconfont-jiahao.png in Resources */,
 				881F0E3E1B4E6FFA002E0C9C /* wangfan.png in Resources */,
@@ -2134,6 +2162,7 @@
 				88B94C6A1B4636090099CA24 /* ConcludeSpellTableViewCell.xib in Resources */,
 				88BD8CA61B4D09970025F011 /* PubMapViewController.xib in Resources */,
 				88E423DD1B79DAB2009B305B /* 虚线.jpg in Resources */,
+				886443D31B96AA0D0042A843 /* iconfont-yijianbohao (1).png in Resources */,
 				880EDDF31B1E9A8B00B5FC25 /* tstorm3.png in Resources */,
 				884A096F1B6A1B2E004287CD /* hallball02.jpg in Resources */,
 				8844CF771B93FC0F0045B14E /* 3770a2e114baea4209e54a461972ca4f.jpg in Resources */,
@@ -2327,6 +2356,7 @@
 				88B53F171B3C012500638573 /* MKAnnotationView+WebCache.m in Sources */,
 				88E423C41B79A940009B305B /* listTableViewCell.m in Sources */,
 				88C068911B85CED300F01428 /* CKViewController.m in Sources */,
+				886443C01B968FFF0042A843 /* phoneViewController.m in Sources */,
 				880F328F1B7F3A1A00C94868 /* searchTableViewController.m in Sources */,
 				8809492D1B4F78950007E788 /* CadinDaileViewController.m in Sources */,
 				8879033F1B4A28FA0047C38B /* FillViewController.m in Sources */,

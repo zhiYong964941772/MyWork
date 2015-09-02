@@ -37,7 +37,7 @@
         imageView.y = 0;
         if (i == 0) {
             UILabel *label =  [[UILabel alloc]ofLabelWithX:20 WithY:50 WithWidth:250 WithHeight:50 WithFont:20 WithColor:[UIColor grayColor] WithText:@"你知道你的时间非常值钱"];
-            UILabel *label2 =  [[UILabel alloc]ofLabelWithX:20 WithY:100 WithWidth:200 WithHeight:50 WithFont:20 WithColor:[UIColor grayColor] WithText:@"却忽略身体的价值......"];
+            UILabel *label2 =  [[UILabel alloc]ofLabelWithX:20 WithY:100 WithWidth:200 WithHeight:50 WithFont:20 WithColor:[UIColor grayColor] WithText:@"却忽略身体的价值......" ];
             label.backgroundColor = [UIColor clearColor];
             [imageView addSubview:label];
             [imageView addSubview:label2];
@@ -57,8 +57,7 @@
             UILabel *label =  [[UILabel alloc]ofLabelWithX:scrollView.center.x-120 WithY:100 WithWidth:250 WithHeight:50 WithFont:20 WithColor:[UIColor whiteColor] WithText:@"一切尽在这里，高球APP，你的人生亮点"];
             label.backgroundColor = [UIColor clearColor];
             [imageView addSubview:label];
-            UIButton *btn = [[UIButton alloc]buttonWithBackGroundImage:@"" WithTitle:@"立即体验" WithAction:@selector(btn) Targget:self WithBackGroundColor:[UIColor whiteColor] WithX:scrollView.center.x-120 WithY:scrollView.height-150 WithWidth:250 WithHeight:50 ];
-            [imageView addSubview:btn];
+            UIButton *btn = [[UIButton alloc]buttonWithBackGroundImage:@"" HighlightedImage:@"" WithTitle:@"立即体验" WithAction:@selector(btn) Targget:self WithBackGroundColor:[UIColor whiteColor] WithX:scrollView.center.x-120 WithY:scrollView.height-150 WithWidth:250 WithHeight:50 ];            [imageView addSubview:btn];
              imageView.userInteractionEnabled = YES;
             
         }

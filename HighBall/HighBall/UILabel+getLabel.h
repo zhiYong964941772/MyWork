@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel (getLabel)
-- (UILabel *)ofLabelWithX:(CGFloat)x WithY:(CGFloat)y WithWidth:(CGFloat)width WithHeight:(CGFloat)height WithFont:(CGFloat )font WithColor:(UIColor *)color WithText:(NSString *)text;
+- (UILabel *)ofLabelWithX:(CGFloat)x WithY:(CGFloat)y WithWidth:(CGFloat)width WithHeight:(CGFloat)height WithFont:(CGFloat )font WithColor:(UIColor *)color WithText:(NSString *)text ;
+- (CGSize)boundingWithRect:(CGSize)size;
 @end

@@ -10,6 +10,7 @@
 #import "HomeViewController.h"
 #import "BallNavigationController.h"
 #import "UserViewController.h"
+#import "phoneViewController.h"
 @interface BallTarBarViewController ()
 
 @end
@@ -21,6 +22,8 @@
     [super viewDidLoad];
     HomeViewController *home = [[HomeViewController alloc]init];
     [self addWithController:home Title:@"首页" Image:@"tabbar_home" SelectedImage:@"tabbar_home_selected"];
+    phoneViewController *phone = [[phoneViewController alloc]init];
+    [self addWithController:phone Title:@"热线" Image:@"iconfont-dianhua (2).png" SelectedImage:@"iconfont-dianhua (3).png"];
     UserViewController *user = [[UserViewController alloc]init];
     [self addWithController:user Title:@"个人中心" Image:@"tabbar_profile" SelectedImage:@"tabbar_profile_selected"];
     

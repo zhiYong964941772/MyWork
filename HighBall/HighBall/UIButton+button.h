@@ -10,5 +10,5 @@
 
 @interface UIButton (button)
 +(UIButton *)buttonWithTitle:(NSString *)title Image:(UIImage *)image HighlightedImage:(UIImage *)highlightedImage NormalColor:(UIColor *)color selectedColor:(UIColor *)selectColor Action:(SEL)action Target:(id)target;
-- (UIButton *)buttonWithBackGroundImage:(NSString *)imageStr WithTitle:(NSString *)title WithAction:(SEL)action Targget:(id)target WithBackGroundColor:(UIColor *)color WithX:(CGFloat)x WithY:(CGFloat)y WithWidth:(CGFloat)width WithHeight:(CGFloat)height;
+- (UIButton *)buttonWithBackGroundImage:(NSString *)imageStr HighlightedImage:(NSString *)highlightedImage WithTitle:(NSString *)title WithAction:(SEL)action Targget:(id)target WithBackGroundColor:(UIColor *)color WithX:(CGFloat)x WithY:(CGFloat)y WithWidth:(CGFloat)width WithHeight:(CGFloat)height  ;
 @end
