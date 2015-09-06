@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "coverViewController.h"
-
+#import "BallTarBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +21,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[UIApplication sharedApplication]keyWindow].tintColor=[UIColor redColor];
-    
+    NSString *path = NSHomeDirectory();
+    NSLog(@"%@",path);
     _manager = [[BMKMapManager alloc]init];
     BOOL ret = [_manager start:@"GPrNEMXru1rSp3WO1VaEiHbx" generalDelegate:self];
     
@@ -31,9 +32,21 @@
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
 
+    NSString *key = @"CFBundleVersion";
+    NSString *CFBundleVersion  = [NSBundle mainBundle].infoDictionary[key];
+    NSString *defaults = [[NSUserDefaults standardUserDefaults]objectForKey:key];
+    if ([CFBundleVersion isEqualToString:defaults]) {
+        BallTarBarViewController *ball = [[BallTarBarViewController alloc]init];
+        self.window.rootViewController = ball;
+
+    }else{
     
     coverViewController *cover = [[coverViewController alloc]init];
-    self.window.rootViewController=cover;
+        self.window.rootViewController=cover;}
+    [[NSUserDefaults standardUserDefaults]setObject:CFBundleVersion forKey: @"CFBundleVersion"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+   
+   
     [self.window makeKeyAndVisible];
     return YES;
 }

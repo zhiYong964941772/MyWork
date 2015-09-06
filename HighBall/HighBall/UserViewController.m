@@ -24,7 +24,7 @@
     self.isFullScreen = YES;
     }
 - (void)viewWillAppear:(BOOL)animated{
-    self.navigationController.navigationBarHidden = YES;
+   
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -108,7 +108,7 @@
     
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    self.isFullScreen = !self.isFullScreen;
+   self.isFullScreen = !self.isFullScreen;
     UITouch *touch = [touches anyObject];
     CGPoint touchPoint = [touch locationInView:self.view];
     CGPoint imagePoint = self.userImage.frame.origin;
@@ -118,7 +118,7 @@
     }if (self.isFullScreen) {
         self.userImage.frame = CGRectMake(0, 0, 320, 480);
     }else{
-        self.userImage.frame = CGRectMake(0, 0, 60, 60);
+        self.userImage.frame = CGRectMake(14, 14, 60, 60);
     }
     [UIView commitAnimations];
     

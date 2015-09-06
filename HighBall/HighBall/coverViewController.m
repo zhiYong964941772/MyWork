@@ -84,8 +84,9 @@
 }
 - (void)btn{
     BallTarBarViewController *ball = [[BallTarBarViewController alloc]init];
-    
-    [self presentViewController:ball animated:YES completion:nil];
+    UIWindow *window = [[UIApplication sharedApplication]keyWindow];
+    window.rootViewController = ball;
+   
     
     
 }
