@@ -104,7 +104,7 @@ static NSString *iden = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:iden];
         NSString *str=nil;
     if (!cell) {
-        cell = [tableView dequeueReusableCellWithIdentifier:iden forIndexPath:indexPath];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:iden];
         
     }
     Province *p=_array[didSection];

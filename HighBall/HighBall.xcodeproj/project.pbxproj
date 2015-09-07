@@ -39,6 +39,7 @@
 		880E237D1B675D11006728E3 /* AirFilghtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 880E237C1B675D11006728E3 /* AirFilghtView.m */; };
 		880E23811B675DC8006728E3 /* AirFilghtView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880E23801B675DC8006728E3 /* AirFilghtView.xib */; };
 		880E23871B6778B5006728E3 /* AirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880E23861B6778B5006728E3 /* AirViewController.m */; };
+		880E9BEB1B9D33B800F03A76 /* UserViewOfTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 880E9BEA1B9D33B800F03A76 /* UserViewOfTable.m */; };
 		880EDDEE1B1E9A8B00B5FC25 /* overcast.png in Resources */ = {isa = PBXBuildFile; fileRef = 880EDDDE1B1E9A8B00B5FC25 /* overcast.png */; };
 		880EDDF01B1E9A8B00B5FC25 /* cloudy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 880EDDE01B1E9A8B00B5FC25 /* cloudy2.png */; };
 		880EDDF21B1E9A8B00B5FC25 /* sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 880EDDE21B1E9A8B00B5FC25 /* sunny.png */; };
@@ -417,6 +418,8 @@
 		880E23801B675DC8006728E3 /* AirFilghtView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirFilghtView.xib; sourceTree = "<group>"; };
 		880E23851B6778B5006728E3 /* AirViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirViewController.h; sourceTree = "<group>"; };
 		880E23861B6778B5006728E3 /* AirViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirViewController.m; sourceTree = "<group>"; };
+		880E9BE91B9D33B800F03A76 /* UserViewOfTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewOfTable.h; sourceTree = "<group>"; };
+		880E9BEA1B9D33B800F03A76 /* UserViewOfTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewOfTable.m; sourceTree = "<group>"; };
 		880EDDDE1B1E9A8B00B5FC25 /* overcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overcast.png; sourceTree = "<group>"; };
 		880EDDE01B1E9A8B00B5FC25 /* cloudy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudy2.png; sourceTree = "<group>"; };
 		880EDDE21B1E9A8B00B5FC25 /* sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunny.png; sourceTree = "<group>"; };
@@ -1083,6 +1086,8 @@
 				882304CF1B6885E200CE063F /* UserViewController.h */,
 				882304D01B6885E200CE063F /* UserViewController.m */,
 				882304D11B6885E200CE063F /* UserViewController.xib */,
+				880E9BE91B9D33B800F03A76 /* UserViewOfTable.h */,
+				880E9BEA1B9D33B800F03A76 /* UserViewOfTable.m */,
 			);
 			name = "用户设置";
 			sourceTree = "<group>";
@@ -2300,6 +2305,7 @@
 				88BD8CA11B4D09970025F011 /* PubDailTableViewController.m in Sources */,
 				880E237A1B675B48006728E3 /* AirTime.m in Sources */,
 				88B94C991B4636DB0099CA24 /* CalendarHomeViewController.m in Sources */,
+				880E9BEB1B9D33B800F03A76 /* UserViewOfTable.m in Sources */,
 				88BD8C761B4D08D70025F011 /* PubSelectViewController.m in Sources */,
 				88B94C2D1B4634830099CA24 /* Province.m in Sources */,
 				88B94C9D1B4636DB0099CA24 /* CalendarViewController.m in Sources */,

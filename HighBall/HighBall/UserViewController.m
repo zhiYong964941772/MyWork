@@ -8,8 +8,11 @@
 
 #import "UserViewController.h"
 #import "AFNetworking.h"
+#import "UserViewOfTable.h"
+#define UIFrame [[UIScreen mainScreen]bounds]
 
 @interface UserViewController ()<UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@property (strong,nonatomic) UserViewOfTable *table;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *moneyLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *userImage;
@@ -22,14 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.isFullScreen = YES;
-    }
-- (void)viewWillAppear:(BOOL)animated{
+    UserViewOfTable *table = [[UserViewOfTable alloc]init];
+    self.table = table;
+    [self.view addSubview:table.view];
    
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
-}
+       }
 //创建提示功能模块，调用系统功能。
 - (IBAction)photoImage:(UIButton *)sender {
     UIActionSheet *action;
@@ -42,6 +42,7 @@
     }
     action.tag = 255;
     [action showInView:self.view];//功能显示的位置
+    
  }
 //功能视图显示是调用的方法
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
@@ -104,23 +105,6 @@
     NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
     NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]stringByAppendingPathComponent:name];
     [imageData writeToFile:fullPath atomically:NO];
-    
-    
-}
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-   self.isFullScreen = !self.isFullScreen;
-    UITouch *touch = [touches anyObject];
-    CGPoint touchPoint = [touch locationInView:self.view];
-    CGPoint imagePoint = self.userImage.frame.origin;
-    if (imagePoint.x <= touchPoint.x&& imagePoint.x+self.userImage.frame.size.width>=touchPoint.x && imagePoint.y<=touchPoint.y) {
-        [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:1];
-    }if (self.isFullScreen) {
-        self.userImage.frame = CGRectMake(0, 0, 320, 480);
-    }else{
-        self.userImage.frame = CGRectMake(14, 14, 60, 60);
-    }
-    [UIView commitAnimations];
     
     
 }
