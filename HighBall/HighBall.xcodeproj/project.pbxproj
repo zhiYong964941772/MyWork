@@ -39,7 +39,6 @@
 		880E237D1B675D11006728E3 /* AirFilghtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 880E237C1B675D11006728E3 /* AirFilghtView.m */; };
 		880E23811B675DC8006728E3 /* AirFilghtView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880E23801B675DC8006728E3 /* AirFilghtView.xib */; };
 		880E23871B6778B5006728E3 /* AirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880E23861B6778B5006728E3 /* AirViewController.m */; };
-		880E9BEB1B9D33B800F03A76 /* UserViewOfTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 880E9BEA1B9D33B800F03A76 /* UserViewOfTable.m */; };
 		880EDDEE1B1E9A8B00B5FC25 /* overcast.png in Resources */ = {isa = PBXBuildFile; fileRef = 880EDDDE1B1E9A8B00B5FC25 /* overcast.png */; };
 		880EDDF01B1E9A8B00B5FC25 /* cloudy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 880EDDE01B1E9A8B00B5FC25 /* cloudy2.png */; };
 		880EDDF21B1E9A8B00B5FC25 /* sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 880EDDE21B1E9A8B00B5FC25 /* sunny.png */; };
@@ -65,8 +64,6 @@
 		881FA3661B02FA1900429D50 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 881FA3651B02FA1900429D50 /* mapapi.bundle */; };
 		882304C91B687BE100CE063F /* BallTarBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882304C81B687BE100CE063F /* BallTarBarViewController.m */; };
 		882304CC1B687E6400CE063F /* BallNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882304CB1B687E6400CE063F /* BallNavigationController.m */; };
-		882304D21B6885E200CE063F /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882304D01B6885E200CE063F /* UserViewController.m */; };
-		882304D31B6885E200CE063F /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 882304D11B6885E200CE063F /* UserViewController.xib */; };
 		882304D61B68AA5A00CE063F /* ideal-space.png in Resources */ = {isa = PBXBuildFile; fileRef = 882304D51B68AA5A00CE063F /* ideal-space.png */; };
 		882304DA1B68AC3200CE063F /* space_backimage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 882304D91B68AC3200CE063F /* space_backimage.jpeg */; };
 		882304DC1B68B34500CE063F /* avatar_default_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882304DB1B68B34500CE063F /* avatar_default_big@2x.png */; };
@@ -176,6 +173,13 @@
 		88932A731B7B483300B3A99A /* baozhang.png in Resources */ = {isa = PBXBuildFile; fileRef = 88932A721B7B483300B3A99A /* baozhang.png */; };
 		88970CB11B1EA03500CC15C7 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 88970CAF1B1EA03500CC15C7 /* map.png */; };
 		88970CB21B1EA03500CC15C7 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 88970CB01B1EA03500CC15C7 /* phone.png */; };
+		88A0D4C91BA2C3210019F8FB /* MyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D4C11BA2C3210019F8FB /* MyHomeViewController.m */; };
+		88A0D4CA1BA2C3210019F8FB /* MyHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A0D4C21BA2C3210019F8FB /* MyHomeViewController.xib */; };
+		88A0D4CB1BA2C3210019F8FB /* SKSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D4C41BA2C3210019F8FB /* SKSTableView.m */; };
+		88A0D4CC1BA2C3210019F8FB /* SKSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D4C61BA2C3210019F8FB /* SKSTableViewCell.m */; };
+		88A0D4CD1BA2C3210019F8FB /* SKSTableViewCellIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A0D4C81BA2C3210019F8FB /* SKSTableViewCellIndicator.m */; };
+		88A0D4D01BA2C3310019F8FB /* expandableImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A0D4CE1BA2C3310019F8FB /* expandableImage.png */; };
+		88A0D4D11BA2C3310019F8FB /* expandableImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A0D4CF1BA2C3310019F8FB /* expandableImage@2x.png */; };
 		88A59CA81B73610D00D5D9D2 /* confirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A59CA61B73610D00D5D9D2 /* confirmViewController.m */; };
 		88A59CA91B73610D00D5D9D2 /* confirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88A59CA71B73610D00D5D9D2 /* confirmViewController.xib */; };
 		88A695451AEB2AE60020F51F /* mapImag.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A6952E1AEB2AE60020F51F /* mapImag.png */; };
@@ -418,8 +422,6 @@
 		880E23801B675DC8006728E3 /* AirFilghtView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirFilghtView.xib; sourceTree = "<group>"; };
 		880E23851B6778B5006728E3 /* AirViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirViewController.h; sourceTree = "<group>"; };
 		880E23861B6778B5006728E3 /* AirViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirViewController.m; sourceTree = "<group>"; };
-		880E9BE91B9D33B800F03A76 /* UserViewOfTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewOfTable.h; sourceTree = "<group>"; };
-		880E9BEA1B9D33B800F03A76 /* UserViewOfTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewOfTable.m; sourceTree = "<group>"; };
 		880EDDDE1B1E9A8B00B5FC25 /* overcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overcast.png; sourceTree = "<group>"; };
 		880EDDE01B1E9A8B00B5FC25 /* cloudy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudy2.png; sourceTree = "<group>"; };
 		880EDDE21B1E9A8B00B5FC25 /* sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunny.png; sourceTree = "<group>"; };
@@ -455,9 +457,6 @@
 		882304C81B687BE100CE063F /* BallTarBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallTarBarViewController.m; sourceTree = "<group>"; };
 		882304CA1B687E6400CE063F /* BallNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallNavigationController.h; sourceTree = "<group>"; };
 		882304CB1B687E6400CE063F /* BallNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallNavigationController.m; sourceTree = "<group>"; };
-		882304CF1B6885E200CE063F /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
-		882304D01B6885E200CE063F /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
-		882304D11B6885E200CE063F /* UserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
 		882304D51B68AA5A00CE063F /* ideal-space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ideal-space.png"; sourceTree = "<group>"; };
 		882304D91B68AC3200CE063F /* space_backimage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space_backimage.jpeg; sourceTree = "<group>"; };
 		882304DB1B68B34500CE063F /* avatar_default_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_default_big@2x.png"; sourceTree = "<group>"; };
@@ -604,6 +603,17 @@
 		88932A721B7B483300B3A99A /* baozhang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baozhang.png; sourceTree = "<group>"; };
 		88970CAF1B1EA03500CC15C7 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		88970CB01B1EA03500CC15C7 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		88A0D4C01BA2C3210019F8FB /* MyHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHomeViewController.h; sourceTree = "<group>"; };
+		88A0D4C11BA2C3210019F8FB /* MyHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHomeViewController.m; sourceTree = "<group>"; };
+		88A0D4C21BA2C3210019F8FB /* MyHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyHomeViewController.xib; sourceTree = "<group>"; };
+		88A0D4C31BA2C3210019F8FB /* SKSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSTableView.h; sourceTree = "<group>"; };
+		88A0D4C41BA2C3210019F8FB /* SKSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSTableView.m; sourceTree = "<group>"; };
+		88A0D4C51BA2C3210019F8FB /* SKSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSTableViewCell.h; sourceTree = "<group>"; };
+		88A0D4C61BA2C3210019F8FB /* SKSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSTableViewCell.m; sourceTree = "<group>"; };
+		88A0D4C71BA2C3210019F8FB /* SKSTableViewCellIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSTableViewCellIndicator.h; sourceTree = "<group>"; };
+		88A0D4C81BA2C3210019F8FB /* SKSTableViewCellIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSTableViewCellIndicator.m; sourceTree = "<group>"; };
+		88A0D4CE1BA2C3310019F8FB /* expandableImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expandableImage.png; sourceTree = "<group>"; };
+		88A0D4CF1BA2C3310019F8FB /* expandableImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expandableImage@2x.png"; sourceTree = "<group>"; };
 		88A59CA51B73610D00D5D9D2 /* confirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = confirmViewController.h; sourceTree = "<group>"; };
 		88A59CA61B73610D00D5D9D2 /* confirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = confirmViewController.m; sourceTree = "<group>"; };
 		88A59CA71B73610D00D5D9D2 /* confirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = confirmViewController.xib; sourceTree = "<group>"; };
@@ -1083,11 +1093,17 @@
 		882304CE1B68856900CE063F /* 用户设置 */ = {
 			isa = PBXGroup;
 			children = (
-				882304CF1B6885E200CE063F /* UserViewController.h */,
-				882304D01B6885E200CE063F /* UserViewController.m */,
-				882304D11B6885E200CE063F /* UserViewController.xib */,
-				880E9BE91B9D33B800F03A76 /* UserViewOfTable.h */,
-				880E9BEA1B9D33B800F03A76 /* UserViewOfTable.m */,
+				88A0D4C01BA2C3210019F8FB /* MyHomeViewController.h */,
+				88A0D4C11BA2C3210019F8FB /* MyHomeViewController.m */,
+				88A0D4C21BA2C3210019F8FB /* MyHomeViewController.xib */,
+				88A0D4C31BA2C3210019F8FB /* SKSTableView.h */,
+				88A0D4C41BA2C3210019F8FB /* SKSTableView.m */,
+				88A0D4C51BA2C3210019F8FB /* SKSTableViewCell.h */,
+				88A0D4C61BA2C3210019F8FB /* SKSTableViewCell.m */,
+				88A0D4C71BA2C3210019F8FB /* SKSTableViewCellIndicator.h */,
+				88A0D4C81BA2C3210019F8FB /* SKSTableViewCellIndicator.m */,
+				88A0D4CE1BA2C3310019F8FB /* expandableImage.png */,
+				88A0D4CF1BA2C3310019F8FB /* expandableImage@2x.png */,
 			);
 			name = "用户设置";
 			sourceTree = "<group>";
@@ -2140,6 +2156,7 @@
 				886443D01B96A2C90042A843 /* iconfont-dianhua (2).png in Resources */,
 				88825B231B70C5CC004DA252 /* iconfont-jianhao.png in Resources */,
 				88825B241B70C5CC004DA252 /* iconfont-jiahao.png in Resources */,
+				88A0D4CA1BA2C3210019F8FB /* MyHomeViewController.xib in Resources */,
 				881F0E3E1B4E6FFA002E0C9C /* wangfan.png in Resources */,
 				8831E00B1B7856ED0070029F /* payshopViewController.xib in Resources */,
 				8844CF741B93FA2B0045B14E /* d1ef1a74dd24f5ef06f4364ab8516c44.jpg in Resources */,
@@ -2152,6 +2169,7 @@
 				88FA9CA31B71B203008B4F8D /* iconfont-14052230.png in Resources */,
 				88B94CAF1B46373C0099CA24 /* searchcity.png in Resources */,
 				8809492E1B4F78950007E788 /* CadinDaileViewController.xib in Resources */,
+				88A0D4D11BA2C3310019F8FB /* expandableImage@2x.png in Resources */,
 				88B94C801B4636280099CA24 /* MapViewController.xib in Resources */,
 				884A09721B6A1B2E004287CD /* hallball04.jpg in Resources */,
 				884A09701B6A1B2E004287CD /* hallball01.jpg in Resources */,
@@ -2170,6 +2188,7 @@
 				886443D31B96AA0D0042A843 /* iconfont-yijianbohao (1).png in Resources */,
 				880EDDF31B1E9A8B00B5FC25 /* tstorm3.png in Resources */,
 				884A096F1B6A1B2E004287CD /* hallball02.jpg in Resources */,
+				88A0D4D01BA2C3310019F8FB /* expandableImage.png in Resources */,
 				8844CF771B93FC0F0045B14E /* 3770a2e114baea4209e54a461972ca4f.jpg in Resources */,
 				883DC4831B60820A007B95F5 /* AirTilketCityViewController.xib in Resources */,
 				88A695521AEB2AE60020F51F /* Home7.png in Resources */,
@@ -2190,7 +2209,6 @@
 				880EDDF71B1E9A8B00B5FC25 /* fog.png in Resources */,
 				88FEEF631B1C0FB7009997EF /* daohang.png in Resources */,
 				88E423DB1B79D478009B305B /* invoiceViewController.xib in Resources */,
-				882304D31B6885E200CE063F /* UserViewController.xib in Resources */,
 				88009E171B47762600CD5BB9 /* mapImage.png in Resources */,
 				8809493D1B4F9A350007E788 /* CredentialsChooseViewController.xib in Resources */,
 				887903521B4A61020047C38B /* xinyongka.png in Resources */,
@@ -2231,6 +2249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88BD8C831B4D09180025F011 /* PayOrderTableViewCell.m in Sources */,
+				88A0D4CD1BA2C3210019F8FB /* SKSTableViewCellIndicator.m in Sources */,
 				88B53F1D1B3C012500638573 /* SDWebImageDownloaderOperation.m in Sources */,
 				88A695B81AEB6DA30020F51F /* UIProgressView+AFNetworking.m in Sources */,
 				88BD8CA31B4D09970025F011 /* PubInformationViewController.m in Sources */,
@@ -2238,7 +2257,6 @@
 				88E423CE1B79C32B009B305B /* addressViewController.m in Sources */,
 				882BD9741B81D6620070D27E /* mealDetailsController.m in Sources */,
 				88B94C361B4634F80099CA24 /* HomeTableViewCell.m in Sources */,
-				882304D21B6885E200CE063F /* UserViewController.m in Sources */,
 				88A695B91AEB6DA30020F51F /* UIRefreshControl+AFNetworking.m in Sources */,
 				880949371B4F94150007E788 /* InsertPersonViewController.m in Sources */,
 				88450ABE1B7C8867004E1522 /* mealTableViewCell.m in Sources */,
@@ -2295,6 +2313,7 @@
 				880E23871B6778B5006728E3 /* AirViewController.m in Sources */,
 				88B94C611B4635F80099CA24 /* WeatherViewController.m in Sources */,
 				88B94C2B1B4634830099CA24 /* Citie.m in Sources */,
+				88A0D4C91BA2C3210019F8FB /* MyHomeViewController.m in Sources */,
 				887661951B8D9B8C0030FAA6 /* xinZengViewController.m in Sources */,
 				88B94C9B1B4636DB0099CA24 /* CalendarMonthCollectionViewLayout.m in Sources */,
 				88825B051B70A049004DA252 /* TableViewCell.m in Sources */,
@@ -2303,9 +2322,9 @@
 				88A695AE1AEB6DA30020F51F /* AFSecurityPolicy.m in Sources */,
 				88AF48731B57BA98001AEC7C /* AirFlightViewController.m in Sources */,
 				88BD8CA11B4D09970025F011 /* PubDailTableViewController.m in Sources */,
+				88A0D4CB1BA2C3210019F8FB /* SKSTableView.m in Sources */,
 				880E237A1B675B48006728E3 /* AirTime.m in Sources */,
 				88B94C991B4636DB0099CA24 /* CalendarHomeViewController.m in Sources */,
-				880E9BEB1B9D33B800F03A76 /* UserViewOfTable.m in Sources */,
 				88BD8C761B4D08D70025F011 /* PubSelectViewController.m in Sources */,
 				88B94C2D1B4634830099CA24 /* Province.m in Sources */,
 				88B94C9D1B4636DB0099CA24 /* CalendarViewController.m in Sources */,
@@ -2354,6 +2373,7 @@
 				882CA6131B86F98500D15C71 /* foolView.m in Sources */,
 				8876619A1B8DA0E20030FAA6 /* dingDanViewCell.m in Sources */,
 				88AF485D1B57B325001AEC7C /* AirOrderTableViewCell.m in Sources */,
+				88A0D4CC1BA2C3210019F8FB /* SKSTableViewCell.m in Sources */,
 				88A695B11AEB6DA30020F51F /* AFURLResponseSerialization.m in Sources */,
 				880E237D1B675D11006728E3 /* AirFilghtView.m in Sources */,
 				884076EA1B6C7E9900418E9D /* shopSearchViewController.m in Sources */,
